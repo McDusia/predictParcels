@@ -10,7 +10,7 @@ class LinearRegression:
         self.n_samples = len(_y)
         self.X = normalization(_x, len(_y))
         self.n_features = np.size(self.X, 1)
-        self.y = _y #[:, np.newaxis]
+        self.y = _y
         self.params = np.zeros((self.n_features, 1))
         self.J_history = np.zeros((n_iters, 1))
         self.coef_ = None
@@ -93,14 +93,14 @@ lin = LinearRegression(X, y, 0.01, 1500)
 initial_cost = compute_cost(lin.X, lin.y, lin.params)
 print("Initial cost is: ", initial_cost, "\n")
 
-(J_history, optimal_params) = gradient_descent(lin.X, lin.y, lin.params, 0.01, 1500)
+#(J_history, optimal_params) = gradient_descent(lin.X, lin.y, lin.params, 0.01, 1500)
 
-#lin.fit()
+lin.fit()
 
-print("Optimal parameters are: \n", optimal_params, "\n")
+print("Optimal parameters are: \n", lin.params, "\n")
 
-print("Final cost is: ", J_history[-1])
-plt.plot(range(len(J_history)), J_history, 'r')
+print("Final cost is: ", lin.J_history[-1])
+plt.plot(range(len(lin.J_history)), lin.J_history, 'r')
 
 plt.title("Convergence Graph of Cost Function")
 plt.xlabel("Number of Iterations")
