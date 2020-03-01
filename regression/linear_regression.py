@@ -1,6 +1,9 @@
 import numpy as np
 from sklearn.datasets import load_boston
 import matplotlib.pyplot as plt
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 
 class LinearRegression:
@@ -8,35 +11,38 @@ class LinearRegression:
         self.learning_rate = learning_rate
         self.n_iters = n_iters
         self.n_samples = len(_y)
-        self.X = normalization(_x, len(_y))
+        self.X = self.normalization(_x)
         self.n_features = np.size(self.X, 1)
         self.y = _y
         self.params = np.zeros((self.n_features, 1))
         self.J_history = np.zeros((n_iters, 1))
-        self.coef_ = None
-        self.intercept_ = None
 
     def fit(self):
         for i in range(self.n_iters):
-            self.params = self.params - (self.learning_rate/self.n_samples) * self.X.T @ (self.X @ self.params - self.y)
+            self.params = self.params - (self.learning_rate / self.n_samples) * self.X.T @ (
+                    self.X @ self.params - self.y)
             self.J_history[i] = self.compute_cost()
-        self.intercept_ = self.params[0]
-        self.coef_ = self.params[1:]
         return self
 
-    def score(self):
-        y = self.y
-        X = self.X
-        X = normalization(X)
+    def score(self, X=None, y=None):
+        if X is None:
+            X = self.X
+        else:
+            n_samples = np.size(X, 0)
+            X = np.hstack((np.ones(
+                (n_samples, 1)), (X - np.mean(X, 0)) / np.std(X, 0)))
+
+        if y is None:
+            y = self.y
+        else:
+            y = y[:, np.newaxis]
+
         y_pred = X @ self.params
         score = 1 - (((y - y_pred) ** 2).sum() / ((y - y.mean()) ** 2).sum())
-
         return score
 
     # (1/2) x Mean Squared Error (MSE)
     # h - hypothesis function, candidate function for mapping from input X to outputs y
-    # funkcja kosztu, y - oczekiwana etykieta, X - dane wejściowe, params - paramtery modelu,
-    # h - oszacowana wartość, h-y - różnica pomiedzy wartością oszacowaną, a oczekiwaną
     def compute_cost(self):
         h = self.X @ self.params
         return (1 / (2 * self.n_samples)) * np.sum((h - self.y) ** 2)
@@ -50,56 +56,30 @@ class LinearRegression:
     def get_params(self):
         return self.params
 
-
-# (1/n_samples) * X.T @ (X @ params - y) - pochodna cząstkowa funkcji kosztu
-# params holds the updated parameter values according to the update rule.
-def gradient_descent(X, y, params, learning_rate, n_iters):
-    n_samples = len(y)
-    J_history = np.zeros((n_iters, 1))
-
-    for i in range(n_iters):
-        params = params - (learning_rate/n_samples) * X.T @ (X @ params - y)
-        J_history[i] = compute_cost(X, y, params)
-
-    return J_history, params
-
-# normalization, rescaling the values into a range of [0,1]
+    # normalization, rescaling the values into a range of [0,1]
     # to boost our accuracy while lowering the cost (error).
-def normalization(x, _n_samples):
-    mu = np.mean(x, 0)
-    sigma = np.std(x, 0)
-    print('sigma')
-    print(sigma)
-    x_tmp = (x - mu) / sigma
-    return np.hstack((np.ones((_n_samples, 1)), x_tmp))
-
-
-def compute_cost(_x, _y, _params):
-    h = _x @ _params
-    return (1 / (2 * len(_y))) * np.sum((h - _y) ** 2)
+    def normalization(self, x):
+        mu = np.mean(x, 0)
+        sigma = np.std(x, 0)
+        x_tmp = (x - mu) / sigma
+        return np.hstack((np.ones((self.n_samples, 1)), x_tmp))
 
 
 dataset = load_boston()
 
-X = dataset.data    # feature samples
-y = dataset.target[:, np.newaxis]    # target values, labels,
-# np.newaxis function - increase the dimension of an array by one more dimension
+X = dataset.data  # feature samples
+y = dataset.target[:, np.newaxis]  # target values, labels,
 
-print("Total samples in our dataset is: {}".format(X.shape[0]))
-n_samples = len(y)
-
+logging.debug("Total samples in our dataset is: {}".format(X.shape[0]))
 lin = LinearRegression(X, y, 0.01, 1500)
 
-initial_cost = compute_cost(lin.X, lin.y, lin.params)
-print("Initial cost is: ", initial_cost, "\n")
-
-#(J_history, optimal_params) = gradient_descent(lin.X, lin.y, lin.params, 0.01, 1500)
+initial_cost = lin.compute_cost()
+logging.debug("Initial cost is: %s", initial_cost)
 
 lin.fit()
+logging.info("Optimal parameters are: %s ", lin.params)
+logging.info("Final cost is: %s", lin.J_history[-1])
 
-print("Optimal parameters are: \n", lin.params, "\n")
-
-print("Final cost is: ", lin.J_history[-1])
 plt.plot(range(len(lin.J_history)), lin.J_history, 'r')
 
 plt.title("Convergence Graph of Cost Function")
