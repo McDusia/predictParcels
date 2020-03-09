@@ -1,9 +1,28 @@
-import numpy as np
-from sklearn.datasets import load_boston
-import matplotlib.pyplot as plt
 import logging
+import numpy as np
+
+# import matplotlib.pyplot as plt
 
 logging.basicConfig(level=logging.DEBUG)
+
+# TODO fix this implementation with out dataset
+def run_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set):
+    lin = LinearRegression(x_train_set, y_train_set, 0.01, 1500)
+    initial_cost = lin.compute_cost()
+    logging.debug("Initial cost is: %s", initial_cost)
+    lin.fit()
+    logging.info("Optimal parameters are: %s ", lin.params)
+    logging.info("Final cost is: %s", lin.J_history[-1])
+    # plt.plot(range(len(lin.J_history)), lin.J_history, 'r')
+    #
+    # plt.title("Convergence Graph of Cost Function")
+    # plt.xlabel("Number of Iterations")
+    # plt.ylabel("Cost")
+    # plt.show()
+    #
+    our_train_accuracy = lin.score()
+    our_test_accuracy = lin.score(x_test_set, y_test_set)
+    return our_train_accuracy, our_test_accuracy
 
 
 class LinearRegression:
@@ -63,26 +82,3 @@ class LinearRegression:
         sigma = np.std(x, 0)
         x_tmp = (x - mu) / sigma
         return np.hstack((np.ones((self.n_samples, 1)), x_tmp))
-
-
-dataset = load_boston()
-
-X = dataset.data  # feature samples
-y = dataset.target[:, np.newaxis]  # target values, labels,
-
-logging.debug("Total samples in our dataset is: {}".format(X.shape[0]))
-lin = LinearRegression(X, y, 0.01, 1500)
-
-initial_cost = lin.compute_cost()
-logging.debug("Initial cost is: %s", initial_cost)
-
-lin.fit()
-logging.info("Optimal parameters are: %s ", lin.params)
-logging.info("Final cost is: %s", lin.J_history[-1])
-
-plt.plot(range(len(lin.J_history)), lin.J_history, 'r')
-
-plt.title("Convergence Graph of Cost Function")
-plt.xlabel("Number of Iterations")
-plt.ylabel("Cost")
-plt.show()
