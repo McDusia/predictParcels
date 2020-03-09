@@ -12,13 +12,12 @@ CREATE PROCEDURE [dbo].[GetDataToTrainClassificationModel]
     @LimitDate nvarchar(8),
     @ExcludedList nvarchar(MAX)
 AS
-SELECT OBJECTID, PERIMETER, PARCEL_TYP, TRA_1, LAND_Curr_Roll_Yr,
- IMPROVE_Curr_Roll_YR,
-		MA_House_Number, MA_Zip_Cde, Recording_Date,
+SELECT OBJECTID, PERIMETER, PARCEL_TYP, LAND_Curr_Roll_Yr,
+ IMPROVE_Curr_Roll_YR, Recording_Date,
         Hmownr_Exempt_Number, Hmownr_Exempt_Value,
         BD_LINE_1_Yr_Built, BD_LINE_1_No_of_Units, BD_LINE_1_No_of_Bedrooms, BD_LINE_1_No_of_Baths,
-        BD_LINE_1_Sq_Ft_of_Main_Improve, BD_LINE_2_Subpart, BD_LINE_2_Yr_Built, BD_LINE_2_No_of_Units,
-        BD_LINE_2_No_of_Bedrooms, BD_LINE_2_No_of_Baths, BD_LINE_2_Sq_Ft_of_Main_Improve, BD_LINE_3_Subpart,
+        BD_LINE_1_Sq_Ft_of_Main_Improve, BD_LINE_2_Yr_Built, BD_LINE_2_No_of_Units,
+        BD_LINE_2_No_of_Bedrooms, BD_LINE_2_No_of_Baths, BD_LINE_2_Sq_Ft_of_Main_Improve,
         BD_LINE_3_Yr_Built, BD_LINE_3_No_of_Units, BD_LINE_3_No_of_Bedrooms, BD_LINE_3_No_of_Baths,
         BD_LINE_3_Sq_Ft_of_Main_Improve,
 		Cluster_Location, Cluster_Type,

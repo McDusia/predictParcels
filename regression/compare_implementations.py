@@ -20,12 +20,11 @@ def compare_implementations():
 
     [x_train_set, x_test_set, y_train_set, y_test_set] \
         = DataSplitter(data, target_column_name=target_column_name).get_x_y_data()
+    [sklearn_train_accuracy, sklearn_test_accuracy] = run_sklearn_linear_regression(x_train_set, x_test_set,
+                                                                                    y_train_set, y_test_set)
+    # [our_train_accuracy, our_test_accuracy] = run_linear_regression(x_test_set, x_test_set,
+    #                                                                 y_test_set, y_test_set)
 
-    # [sklearn_train_accuracy, sklearn_test_accuracy] = run_sklearn_linear_regression(x_train_set, x_test_set,
-    #                                                                                 y_train_set, y_test_set)
-    [our_train_accuracy, our_test_accuracy] = run_linear_regression(x_train_set, x_test_set,
-                                                                    y_train_set, y_test_set)
-    #
     # pd.DataFrame(
     #     [[our_train_accuracy, sklearn_train_accuracy],
     #      [our_test_accuracy, sklearn_test_accuracy]],

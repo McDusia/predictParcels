@@ -1,10 +1,11 @@
 import logging
 import numpy as np
+
 # import matplotlib.pyplot as plt
 
 logging.basicConfig(level=logging.DEBUG)
 
-
+# TODO fix this implementation with out dataset
 def run_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set):
     lin = LinearRegression(x_train_set, y_train_set, 0.01, 1500)
     initial_cost = lin.compute_cost()
@@ -18,7 +19,7 @@ def run_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set):
     # plt.xlabel("Number of Iterations")
     # plt.ylabel("Cost")
     # plt.show()
-
+    #
     our_train_accuracy = lin.score()
     our_test_accuracy = lin.score(x_test_set, y_test_set)
     return our_train_accuracy, our_test_accuracy
@@ -30,7 +31,7 @@ class LinearRegression:
         self.n_iters = n_iters
         self.n_samples = len(_y)
         self.X = self.normalization(_x)
-        self.n_features = np.size(_x, 1)
+        self.n_features = np.size(self.X, 1)
         self.y = _y
         self.params = np.zeros((self.n_features, 1))
         self.J_history = np.zeros((n_iters, 1))
@@ -76,7 +77,6 @@ class LinearRegression:
 
     # normalization, rescaling the values into a range of [0,1]
     # to boost our accuracy while lowering the cost (error).
-    # TODO this doean't work with out dataset -> problems with str and float
     def normalization(self, x):
         mu = np.mean(x, 0)
         sigma = np.std(x, 0)
