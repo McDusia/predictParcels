@@ -10,8 +10,14 @@ class DataSplitter:
         self.test_size = test_size
         self.random_state = random_state
 
-    def get_x_y_data(self):
-        x_train_set, x_test_set, y_train_set, y_test_set = train_test_split(self.data[self.X_columns],
-                                                                            self.data[self.target_column],
+    def get_x_y_data_train_test(self):
+        x_train_set, x_test_set, y_train_set, y_test_set = train_test_split(self.get_x_data(),
+                                                                            self.get_y_data(),
                                                                             test_size=0.33, random_state=42)
         return x_train_set, x_test_set, y_train_set, y_test_set
+
+    def get_y_data(self):
+        return self.data[self.target_column]
+
+    def get_x_data(self):
+        return self.data[self.X_columns]
