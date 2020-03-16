@@ -1,3 +1,6 @@
+pydot==1.4.1
+scikit-learn==0.22.2.post1
+numpy==1.18.1
 matplotlib==2.2.2
 pymssql==2.1.4
 Cython==0.29.15

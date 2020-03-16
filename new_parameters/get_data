@@ -1,0 +1,11 @@
+from arcgis.gis import GIS
+from arcgis.geocoding import geocode
+
+gis = GIS()
+
+geocode_fs = geocode(address=None,
+                    location=[-118.71511, 34.09042],
+                    category="Coffee shop",
+                    out_fields="Place_addr, PlaceName",
+                    max_locations=25,
+                    as_featureset=True)
