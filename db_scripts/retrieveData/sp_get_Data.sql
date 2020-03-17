@@ -3,10 +3,10 @@
 -- ===============================================
 CREATE OR ALTER PROCEDURE dbo.GetDateToTrainModel
     @LimitDate nvarchar(30),
-    @BucketType nvarchar(30),
     @ExcludedList nvarchar(MAX)
 AS
-SELECT  OBJECTID,
+SELECT
+--         OBJECTID,
         PERIMETER,
         PARCEL_TYP,
         TRA_1,
@@ -16,14 +16,14 @@ SELECT  OBJECTID,
         IMPROVE_Curr_Value,
         SA_House_Number,
         SA_Zip_Cde,
-        MA_House_Number,
-        MA_Zip_Cde,
-        Recording_Date,
+--         MA_House_Number,
+--         MA_Zip_Cde,
+--         Recording_Date,
         Hmownr_Exempt_Number,
         Hmownr_Exempt_Value,
-        LS1_Sale_Date,
-        LS2_Sale_Date,
-        LS3_Sale_Date,
+--         LS1_Sale_Date,
+--         LS2_Sale_Date,
+--         LS3_Sale_Date,
         BD_LINE_1_Yr_Built,
         BD_LINE_1_No_of_Units,
         BD_LINE_1_No_of_Bedrooms,
@@ -48,7 +48,7 @@ SELECT  OBJECTID,
         Cluster_Location,
         Cluster_Type,
         Cluster_Appraisal_Unit,
-        Document_Transfer_Tax_Sales_Amo,
+--         Document_Transfer_Tax_Sales_Amo,
         BD_LINE_1_Year_Changed,
         BD_LINE_1_Unit_Cost_Main,
         BD_LINE_1_RCN_Main,
@@ -61,9 +61,11 @@ SELECT  OBJECTID,
         BD_LINE_4_Year_Changed,
         Landlord_Reappraisal_Year,
         Landlord_Number_of_Units,
-        Recorders_Document_Number,
-        Price_Per_Single_Area_Unit,
+--         Recorders_Document_Number,
+--         Price_Per_Single_Area_Unit,
         Parcel_Area,
+        CENTER_LAT,
+        CENTER_LON,
         Residential,
         Special_Purposes_Plan,
         Agricultural,
@@ -79,8 +81,8 @@ SELECT  OBJECTID,
         City_int,
         Sale_Amount
 FROM PARCEL_VECTORS
-WHERE Price_Group_int LIKE @BucketType
-      AND LS1_Sale_Date > @LimitDate
+WHERE LS1_Sale_Date > @LimitDate
+      AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
 GO

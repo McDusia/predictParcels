@@ -26,3 +26,6 @@ Run SQL query:
  WITH MOVE 'LosAngelesCounty' TO '/var/opt/mssql/data/LosAngeles.mdf',
  MOVE 'LosAngelesCounty_log' TO '/var/opt/mssql/data/LosAngeles.ldf'
  GO```
+
+# To start docker:
+`docker container start containerName`
