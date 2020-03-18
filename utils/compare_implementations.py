@@ -13,7 +13,7 @@ from regression.linear_regression import run_linear_regression
 def compare_implementations():
     logging.basicConfig(level=logging.DEBUG)
     database_handler = DatabaseHandler()
-    query = "EXEC GetDataToTrainClassificationModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
+    query = "EXEC GetDateToTrainModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
                                                                                                  excluded_values)
     data = database_handler.execute_query(query)
 

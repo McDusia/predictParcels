@@ -9,7 +9,7 @@ from utils.database_handler import DatabaseHandler
 def get_basic_splitted_train_data(test_size=0.25):
     logging.basicConfig(level=logging.DEBUG)
     database_handler = DatabaseHandler()
-    query = "EXEC GetBasicDataToTrainModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
+    query = "EXEC GetDateToTrainModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
                                                                                         excluded_values)
     data = database_handler.execute_query(query)
 
@@ -24,7 +24,7 @@ def get_basic_splitted_train_data(test_size=0.25):
 def get_basic_train_data():
     logging.basicConfig(level=logging.DEBUG)
     database_handler = DatabaseHandler()
-    query = "EXEC GetBasicDataToTrainModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
+    query = "EXEC GetDateToTrainModel @LimitDate = {}, @ExcludedList ='{}'".format(limit_date,
                                                                                         excluded_values)
     data = database_handler.execute_query(query)
 
