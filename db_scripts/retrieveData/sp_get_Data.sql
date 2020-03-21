@@ -14,7 +14,7 @@ SELECT
         LAND_Curr_Value,
         IMPROVE_Curr_Roll_YR,
         IMPROVE_Curr_Value,
-        SA_House_Number,
+--        SA_House_Number,
         SA_Zip_Cde,
 --         MA_House_Number,
 --         MA_Zip_Cde,
