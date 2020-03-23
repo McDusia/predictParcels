@@ -1,0 +1,89 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 29232
+INFO:root:                            OLS Regression Results
+==============================================================================
+Dep. Variable:            Sale_Amount   R-squared:                       0.634
+Model:                            OLS   Adj. R-squared:                  0.633
+Method:                 Least Squares   F-statistic:                     684.3
+Date:                Mon, 23 Mar 2020   Prob (F-statistic):               0.00
+Time:                        18:58:57   Log-Likelihood:            -4.1970e+05
+No. Observations:               23385   AIC:                         8.395e+05
+Df Residuals:                   23325   BIC:                         8.400e+05
+Df Model:                          59
+Covariance Type:            nonrobust
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+PERIMETER                            2.093e+04    607.624     34.444      0.000    1.97e+04    2.21e+04
+PARCEL_TYP                           2.771e+07   4.06e+05     68.259      0.000    2.69e+07    2.85e+07
+TRA_1                                -116.6995     30.050     -3.884      0.000    -175.599     -57.800
+LAND_Curr_Roll_Yr                   -8929.2768   8095.817     -1.103      0.270   -2.48e+04    6939.056
+LAND_Curr_Value                         1.8287      1.054      1.735      0.083      -0.237       3.894
+IMPROVE_Curr_Roll_YR                -8929.2693   8095.817     -1.103      0.270   -2.48e+04    6939.064
+IMPROVE_Curr_Value                      0.2928      0.377      0.776      0.438      -0.447       1.033
+SA_Zip_Cde                              0.0162      0.002      9.318      0.000       0.013       0.020
+Hmownr_Exempt_Number                   -0.0368      0.005     -6.847      0.000      -0.047      -0.026
+Hmownr_Exempt_Value                  -257.2845     37.578     -6.847      0.000    -330.939    -183.630
+BD_LINE_1_Yr_Built                   6175.2331    843.181      7.324      0.000    4522.542    7827.924
+BD_LINE_1_No_of_Units               -5.832e+04   1.36e+04     -4.281      0.000    -8.5e+04   -3.16e+04
+BD_LINE_1_No_of_Bedrooms             4.883e+04   2.68e+04      1.825      0.068   -3608.079    1.01e+05
+BD_LINE_1_No_of_Baths                5.738e+04   2.79e+04      2.060      0.039    2782.437    1.12e+05
+BD_LINE_1_Sq_Ft_of_Main_Improve        68.5268     18.870      3.632      0.000      31.541     105.512
+BD_LINE_2_Subpart                   -2.776e+04    1.7e+04     -1.630      0.103   -6.11e+04    5622.698
+BD_LINE_2_Yr_Built                  -7897.0785   1694.694     -4.660      0.000   -1.12e+04   -4575.366
+BD_LINE_2_No_of_Units               -2.742e+05   6.84e+04     -4.010      0.000   -4.08e+05    -1.4e+05
+BD_LINE_2_No_of_Bedrooms             2.897e+05   1.21e+05      2.389      0.017     5.2e+04    5.27e+05
+BD_LINE_2_No_of_Baths                2.814e+04   1.35e+05      0.208      0.835   -2.37e+05    2.93e+05
+BD_LINE_2_Sq_Ft_of_Main_Improve       -97.6075     47.075     -2.073      0.038    -189.877      -5.338
+BD_LINE_3_Subpart                    1.626e+04   1.88e+04      0.867      0.386   -2.05e+04     5.3e+04
+BD_LINE_3_Yr_Built                  -4992.0690   2980.986     -1.675      0.094   -1.08e+04     850.859
+BD_LINE_3_No_of_Units                8.997e+04   7.56e+04      1.190      0.234   -5.82e+04    2.38e+05
+BD_LINE_3_No_of_Bedrooms             3.454e+05   3.63e+05      0.952      0.341   -3.66e+05    1.06e+06
+BD_LINE_3_No_of_Baths               -6.033e+05   4.29e+05     -1.405      0.160   -1.44e+06    2.38e+05
+BD_LINE_3_Sq_Ft_of_Main_Improve       -92.8244    123.876     -0.749      0.454    -335.630     149.982
+Current_Land_Base_Year               2.271e+04   1.81e+04      1.256      0.209   -1.27e+04    5.81e+04
+Current_Improvement_Base_Year         775.5494   7643.973      0.101      0.919   -1.42e+04    1.58e+04
+Current_Land_Base_Value                -1.3571      1.086     -1.250      0.211      -3.486       0.772
+Current_Improvement_Base_Value          0.2661      0.375      0.709      0.479      -0.470       1.002
+Cluster_Location                      1.51e+06   2.75e+04     54.898      0.000    1.46e+06    1.56e+06
+Cluster_Type                         -4.57e+06   1.05e+05    -43.412      0.000   -4.78e+06   -4.36e+06
+Cluster_Appraisal_Unit              -2.149e+05   4260.722    -50.444      0.000   -2.23e+05   -2.07e+05
+BD_LINE_1_Year_Changed               -1.42e+04    274.754    -51.694      0.000   -1.47e+04   -1.37e+04
+BD_LINE_1_Unit_Cost_Main             -359.7188     64.490     -5.578      0.000    -486.123    -233.315
+BD_LINE_1_RCN_Main                      1.3524      0.882      1.533      0.125      -0.377       3.082
+BD_LINE_2_Year_Changed               1.166e+04    710.841     16.398      0.000    1.03e+04     1.3e+04
+BD_LINE_2_Unit_Cost_Main             1699.2417    613.579      2.769      0.006     496.587    2901.896
+BD_LINE_2_RCN_Main                      1.1173      1.974      0.566      0.571      -2.751       4.986
+BD_LINE_3_Year_Changed               2417.1288   1201.173      2.012      0.044      62.751    4771.507
+BD_LINE_3_Unit_Cost_Main              797.7806   1267.829      0.629      0.529   -1687.248    3282.809
+BD_LINE_3_RCN_Main                    -28.2749     40.104     -0.705      0.481    -106.881      50.331
+BD_LINE_4_Year_Changed                378.8246    845.110      0.448      0.654   -1277.646    2035.296
+Landlord_Reappraisal_Year           -1746.4073    132.286    -13.202      0.000   -2005.696   -1487.119
+Landlord_Number_of_Units            -8526.3827   1.28e+04     -0.668      0.504   -3.36e+04    1.65e+04
+Parcel_Area                             5.0206      2.285      2.197      0.028       0.542       9.500
+CENTER_LAT                           1.229e+07   2.77e+05     44.390      0.000    1.17e+07    1.28e+07
+CENTER_LON                            3.48e+06   8.02e+04     43.406      0.000    3.32e+06    3.64e+06
+Residential                         -6.157e+05   2.73e+05     -2.253      0.024   -1.15e+06      -8e+04
+Special_Purposes_Plan               -2.762e+05   1.07e+06     -0.258      0.797   -2.38e+06    1.83e+06
+Agricultural                         2.085e+06   9.02e+05      2.312      0.021    3.17e+05    3.85e+06
+Commercial                           1.942e+07   6.09e+05     31.873      0.000    1.82e+07    2.06e+07
+Manufacturing                        -7.11e+06   1.07e+06     -6.665      0.000    -9.2e+06   -5.02e+06
+SA_Localization_int                   -41.0742      3.814    -10.768      0.000     -48.551     -33.598
+MA_Localization_int                    16.7385      2.162      7.742      0.000      12.500      20.976
+MA_Direction_int                    -1.292e+06   9.59e+04    -13.483      0.000   -1.48e+06    -1.1e+06
+SA_Direction_int                     1.053e+06   9.78e+04     10.769      0.000    8.61e+05    1.24e+06
+Simple_Zone_int                     -3.644e+04    2.9e+04     -1.256      0.209   -9.33e+04    2.04e+04
+Zoning_Code_int                      -206.4253     47.282     -4.366      0.000    -299.101    -113.750
+BD_LINE_1_Quality__Class___Shap_int -1006.7155    309.887     -3.249      0.001   -1614.115    -399.316
+City_int                            -6575.0825   1914.990     -3.433      0.001   -1.03e+04   -2821.576
+==============================================================================
+Omnibus:                    13699.576   Durbin-Watson:                   1.989
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):          1015442.979
+Skew:                           2.007   Prob(JB):                         0.00
+Kurtosis:                      35.032   Cond. No.                     1.00e+16
+==============================================================================
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large,  1e+16. This might indicate that there are
+strong multicollinearity or other numerical problems.
+INFO:root:Squared Mean Error: 15263469.980235934, Mean Absolute Error: 8859229.470356781

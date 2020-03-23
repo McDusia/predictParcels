@@ -3,7 +3,9 @@
 -- ===============================================
 CREATE OR ALTER PROCEDURE dbo.GetDateToTrainModel
     @LimitDate nvarchar(30),
-    @ExcludedList nvarchar(MAX)
+    @ExcludedList nvarchar(MAX),
+    @PriceGroupInt nvarchar(30),
+    @BuildingsPresent nvarchar(4)
 AS
 SELECT
 --         OBJECTID,
@@ -85,4 +87,6 @@ WHERE LS1_Sale_Date > @LimitDate
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
+	  AND Price_Group_int in (SELECT value FROM STRING_SPLIT(@PriceGroupInt, ';'))
+	  AND BuildingsPresent in (SELECT value FROM STRING_SPLIT(@BuildingsPresent, ';'))
 GO

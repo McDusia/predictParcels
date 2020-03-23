@@ -15,5 +15,7 @@ def run_statsmodels_regression(x_train_set, x_test_set, y_train_set, y_test_set)
 
 
 if __name__ == '__main__':
-    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_splitted_train_data()
+    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_splitted_train_data(price_groups='0;1;2',
+                                                                                     buildings_present='0;1'
+                                                                                     )
     run_statsmodels_regression(x_train_set, x_test_set, y_train_set, y_test_set)
