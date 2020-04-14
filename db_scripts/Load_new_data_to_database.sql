@@ -28,13 +28,13 @@ GO
 
 
 BULK INSERT Public_Elementary_Schools
-    FROM 'C:\Users\magda\Downloads\Public_Elementary_Schools.csv'	-- Here change path
+    FROM '\data\Public_Elementary_Schools.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -65,13 +65,13 @@ GO
 
 
 BULK INSERT [Public_Middle_Schools]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Public_Middle_Schools.csv'	-- Here change path
+    FROM '\data\Public_Middle_Schools.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -101,13 +101,13 @@ CREATE TABLE [dbo].[Public_High_Schools] (
 GO
 
 BULK INSERT [Public_High_Schools]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Public_High_Schools.csv'	-- Here change path
+    FROM '\data\Public_High_Schools.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -129,13 +129,13 @@ CREATE TABLE [dbo].[Shopping_Centers] (
 GO
 
 BULK INSERT [Shopping_Centers]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Shopping_Centers.csv'	-- Here change path
+    FROM '\data\Shopping_Centers.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -161,13 +161,13 @@ CREATE TABLE [dbo].[Health_Centers] (
 GO
 
 BULK INSERT [Health_Centers]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Health_Centers.csv'	-- Here change path
+    FROM '\data\Health_Centers.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -192,13 +192,13 @@ CREATE TABLE [dbo].[Street_Maintenance] (
 GO
 
 BULK INSERT [Street_Maintenance]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Street_Maintenance.csv'	-- Here change path
+    FROM '\data\Street_Maintenance.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -223,13 +223,13 @@ CREATE TABLE [dbo].[Pools] (
 GO
 
 BULK INSERT [Pools]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Pools.csv'	-- Here change path
+    FROM '\data\Pools.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -253,13 +253,13 @@ CREATE TABLE [dbo].[Manufacturing] (
 GO
 
 BULK INSERT [Manufacturing]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Manufacturing.csv'	-- Here change path
+    FROM '\data\Manufacturing.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -284,13 +284,13 @@ CREATE TABLE [dbo].[Economic_Development] (
 GO
 
 BULK INSERT [Economic_Development]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Economic_Development.csv'	-- Here change path
+    FROM '\data\Economic_Development.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -313,13 +313,13 @@ CREATE TABLE [dbo].[Business_Centers] (
 GO
 
 BULK INSERT [Business_Centers]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Business_Centers.csv'	-- Here change path
+    FROM '\data\Business_Centers.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -344,13 +344,13 @@ CREATE TABLE [dbo].[Agriculture_and_Food] (
 GO
 
 BULK INSERT [Agriculture_and_Food]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\Agriculture_and_Food.csv'	-- Here change path
+    FROM '\data\Agriculture_and_Food.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -371,13 +371,13 @@ GO
 
 
 BULK INSERT [500Year_Flood_Plain]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\Prepared\500Year_Flood_Plain.csv'	-- Here change path
+    FROM '\data\500Year_Flood_Plain.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -404,13 +404,13 @@ GO
 
 
 BULK INSERT [Health_Clinics]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Health_Clinics.csv'	-- Here change path
+    FROM '\data\Health_Clinics.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -440,13 +440,13 @@ GO
 
 
 BULK INSERT [Natural_Areas_and_Wildlife_Sanctuaries]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Natural_Areas_and_Wildlife_Sanctuaries.csv'	-- Here change path
+    FROM '\data\Natural_Areas_and_Wildlife_Sanctuaries.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -476,13 +476,13 @@ GO
 
 
 BULK INSERT [Child_Care]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Child_Care.csv'	-- Here change path
+    FROM '\data\Child_Care.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -512,13 +512,13 @@ GO
 
 
 BULK INSERT [Crime_Prevention_and_Support]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Crime_Prevention_and_Support.csv'	-- Here change path
+    FROM '\data\Crime_Prevention_and_Support.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -547,13 +547,13 @@ GO
 
 
 BULK INSERT [Lakes_Simpler_Hydrology]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Lakes_Simpler_Hydrology.csv'	-- Here change path
+    FROM '\data\Lakes_Simpler_Hydrology.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
@@ -582,13 +582,13 @@ GO
 
 
 BULK INSERT [Water]
-    FROM 'C:\Magdalena\MAGISTERKA\new_data_csv\TODO\Water.csv'	-- Here change path
+    FROM '\data\Water.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,
     FIELDTERMINATOR = ';',  -- CSV field delimiter
     ROWTERMINATOR = '\n',
-    ERRORFILE = 'C:\Magdalena\MAGISTERKA\new_data_csv\ep_errors.txt',	-- Here change path
+    ERRORFILE = '\data\ep_errors.txt',	-- Here change path
     TABLOCK
     )
 GO
