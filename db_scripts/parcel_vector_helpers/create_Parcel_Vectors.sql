@@ -84,7 +84,7 @@ IF (NOT EXISTS (select * from information_schema.COLUMNS where TABLE_NAME = 'PAR
 			ADD 
 				Simple_Zoning_Code NVARCHAR(15), 
 				City NVARCHAR(5),
-				Price_Per_Single_Area_Unit INT,
+				Price_Per_Single_Area_Unit FLOAT(10),
 				Parcel_Area INT
 	END
 GO
@@ -103,7 +103,13 @@ UPDATE PARCEL_VECTORS
 GO
 
 UPDATE PARCEL_VECTORS
-  SET Price_Per_Single_Area_Unit=(LS1_Sale_Amount/(Parcel_Area+1))
+  SET Price_Per_Single_Area_Unit = CAST(LS1_Sale_Amount AS FLOAT(10)) / Parcel_Area
+WHERE Parcel_Area != 0
+GO
+
+UPDATE PARCEL_VECTORS
+  SET Price_Per_Single_Area_Unit=0
+WHERE Parcel_Area = 0
 GO
 
 -- =============================================
