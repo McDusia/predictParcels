@@ -1,18 +1,21 @@
 import logging
 from configuration.configuration_constants import excluded_values, \
     target_column_name, \
-    limit_date
+    limit_date, values_to_omit_in_basic_data_version
 from utils.DataSplitter import DataSplitter
 from utils.database_handler import DatabaseHandler
 
 
-def get_basic_splitted_train_data(test_size=0.25, price_groups='0;1;2', buildings_present='0;1'):
+def get_basic_splitted_train_data(test_size=0.25, price_groups='0;1;2', buildings_present='0;1', basic_data_version=False):
     logging.basicConfig(level=logging.DEBUG)
     database_handler = DatabaseHandler()
     query = "EXEC GetDateToTrainModel @LimitDate = {}, @ExcludedList ='{}', @PriceGroupInt = '{}', @BuildingsPresent = '{}'".format(
         limit_date,
         excluded_values, price_groups, buildings_present)
     data = database_handler.execute_query(query)
+
+    if basic_data_version:
+        data.drop(values_to_omit_in_basic_data_version, axis=1)
 
     logging.debug("Total samples in our dataset is: {}".format(data.shape[0]))
 

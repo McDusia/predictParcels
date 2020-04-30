@@ -1,64 +1,31 @@
+import os
 import logging
-import numpy as np
-from sklearn.model_selection import train_test_split
-from utils.database_handler import DatabaseHandler
-from configuration.configuration_constants import limit_date, excluded_values, \
-    current_bucket, train_model_with_price_parameters
-from utils.prices_mapping import parcel_prices_mapping
 from sklearn.tree import DecisionTreeRegressor
 import matplotlib.pyplot as plt
+from utils.getBasicTrainData import get_basic_splitted_train_data
+from utils.result_stats import get_result_stats
 
-import os
+# https://stackoverflow.com/questions/35064304/runtimeerror-make-sure-the-graphviz-executables-are-on-your-systems-path-aft
 os.environ["PATH"] += os.pathsep + 'C:/Program Files (x86)/Graphviz2.38/bin/'
 
 
-def get_data(database_handler):
-    logging.info('Get data')
-    if train_model_with_price_parameters:
-        procedure = 'GetDateToTrainModel'
-    else:
-        procedure = 'GetDateToTrainModelWithoutPriceParametersImportantAttributes'
-    # Type: dataframe
-    data_to_train_model = database_handler.execute_query("EXEC dbo.{} "
-                                                         "@LimitDate = {}, "
-                                                         "@BucketType={}, "
-                                                         "@ExcludedList='{}'"
-                                                         .format(procedure,
-                                                                 limit_date,
-                                                                 parcel_prices_mapping[current_bucket],
-                                                                 excluded_values))
-
-    # Pandas DataFrame.shape return a tuple representing the dimensionality of the DataFrame
-    data_size = data_to_train_model.shape[1]
-
-    # Split into X set and Y set
-    # Take all columns except the first one - OBJECID and the last one - Sale_Amount
-    x = data_to_train_model.iloc[:, 1: data_size - 1]
-    y = data_to_train_model.iloc[:, data_size - 1]
-
-    labels = np.array(y)
-    features = np.array(x)
-    feature_list = list(x.columns)
-
-    # training data - 55% of data, test data - 45 % of data
-    train_features, test_features, train_labels, test_labels = train_test_split(features, labels, test_size=0.3,
-                                                                                random_state=1)
-    log_shape(train_features, train_labels, test_features, test_labels)
+def run_decision_tree(x_train_set, x_test_set, y_train_set, y_test_set, max_depth):
+    log_shape(y_train_set, y_test_set, x_train_set, x_test_set)
 
     # Fit regression model
-    regr_1 = DecisionTreeRegressor(max_depth=2)
-    regr_2 = DecisionTreeRegressor(max_depth=5)
-    regr_1.fit(x, y)
-    regr_2.fit(x, y)
+    model = DecisionTreeRegressor(max_depth=max_depth)
+    model.fit(x_train_set, y_train_set)
+    logging.info("Model fitted")
 
-    # Predict
-    predictions_1 = regr_1.predict(test_features)
-    predictions_2 = regr_2.predict(test_features)
+    # Prediction
+    predicted_values = model.predict(x_test_set)
+    logging.info("Prediction made")
 
-    log_errors(predictions_1, test_labels)
-    log_errors(predictions_2, test_labels)
+    get_result_stats(predicted_values, y_test_set)
+    return predicted_values
 
-    # Plot the results TODO error x and y must be the same size
+
+def compare_results(x, y, test_features, predictions_1, predictions_2):
     plt.figure()
     plt.scatter(x, y, s=20, edgecolor="black",
                 c="darkorange", label="data")
@@ -73,32 +40,21 @@ def get_data(database_handler):
 
 
 def log_shape(train_features, train_labels, test_features, test_labels):
-    logging.info('Training Features Shape:', train_features.shape)
-    logging.info('Training Labels Shape:', train_labels.shape)
-    logging.info('Testing Features Shape:', test_features.shape)
-    logging.info('Testing Labels Shape:', test_labels.shape)
-
-
-def log_errors(predictions, test_labels):
-    # Calculate the absolute errors
-    errors = abs(predictions - test_labels)
-    # Print out the mean absolute error (mae)
-    mean_errors = np.mean(errors)
-    logging.info('Mean Absolute Error:', round(mean_errors, 6), 'Sale_Amount.')
-
-    # Calculate mean absolute percentage error (MAPE)
-    mape = 100 * (errors / test_labels)
-    # Calculate and display accuracy
-    accuracy = 100 - np.mean(mape)
-    logging.info('Accuracy:', round(accuracy, 6), '%.')
+    logging.debug('Training Features Shape: %s', train_features.shape)
+    logging.debug('Training Labels Shape: %s', train_labels.shape)
+    logging.debug('Testing Features Shape: %s', test_features.shape)
+    logging.debug('Testing Labels Shape: %s', test_labels.shape)
 
 
 def main():
-    database_handler = DatabaseHandler()
-    try:
-        get_data(database_handler=database_handler)
-    finally:
-        database_handler.close_connection()
+    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_splitted_train_data(test_size=0.45,
+                                                                                     basic_data_version=True)
+    predictions_1 = run_decision_tree(x_train_set, x_test_set, y_train_set, y_test_set, max_depth=3)
+    predictions_2 = run_decision_tree(x_train_set, x_test_set, y_train_set, y_test_set, max_depth=5)
+
+    # TODO fix comparing results ( wykres )
+    # compare_results(x_train_set, y_train_set, predictions_1=predictions_1, predictions_2=predictions_2,
+    #                 test_features=y_test_set)
 
 
 if __name__ == '__main__':

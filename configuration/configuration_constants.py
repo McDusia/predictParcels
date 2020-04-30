@@ -55,3 +55,5 @@ file_names_convention = 'model_' + str(limit_date) + '_' + current_bucket
 checkpoint_file_path = './../resources/'
 path_to_trained_models = './trained_models/'
 
+# TODO uzupelnic kolumnami ktore maja byc ominiete w podstawiwej wersji danych
+values_to_omit_in_basic_data_version = ['Zoning_Code_int']
