@@ -12,7 +12,7 @@ use LosAngelesParcels
 
 SELECT avg(Price_Per_Single_Area_Unit), BuildingsPresent, Price_Group_int, LS1_Sale_Date/10000 as YearSold
 FROM PARCEL_VECTORS
-WHERE LS1_Sale_Date > 20150000
+WHERE LS1_Sale_Date > 20140000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
@@ -32,14 +32,14 @@ CREATE TABLE Price_Factors (
     YearSold INT,
 );
 
-
--- insert values into Price_Factors
--- scale on BuildingsPresent
+--
+-- -- insert values into Price_Factors
+-- -- scale on BuildingsPresent
 
 INSERT INTO Price_Factors
 SELECT BuildingsPresent, NULL as Price_Group_int, avg(Price_Per_Single_Area_Unit) as AveragePrice, avg(Price_Per_Single_Area_Unit)/538.1800919705275 as ScaledPrice, LS1_Sale_Date/10000 as YearSold
 FROM PARCEL_VECTORS
-WHERE LS1_Sale_Date > 20150000
+WHERE LS1_Sale_Date > 20140000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
@@ -51,7 +51,7 @@ GROUP BY BuildingsPresent, LS1_Sale_Date/10000;
 INSERT INTO Price_Factors
 SELECT BuildingsPresent, NULL as Price_Group_int, avg(Price_Per_Single_Area_Unit) as AveragePrice, avg(Price_Per_Single_Area_Unit)/140.22179068848186 as ScaledPrice, LS1_Sale_Date/10000 as YearSold
 FROM PARCEL_VECTORS
-WHERE LS1_Sale_Date > 20150000
+WHERE LS1_Sale_Date > 20140000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
@@ -73,7 +73,7 @@ SET @BuildingsPresent = '0;1'
 INSERT INTO Price_Factors
 SELECT BuildingsPresent, Price_Group_int, avg(Price_Per_Single_Area_Unit) as AveragePrice, 0 as ScaledPrice, LS1_Sale_Date/10000 as YearSold
 FROM PARCEL_VECTORS
-WHERE LS1_Sale_Date > 20150000
+WHERE LS1_Sale_Date > 20140000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
@@ -139,3 +139,23 @@ SET PARCEL_VECTORS.ScaledPriceOnBuildingsPresentAndPriceGroup = PARCEL_VECTORS.L
 FROM PARCEL_VECTORS
 INNER JOIN PRICE_FACTORS pf
 ON PARCEL_VECTORS.BuildingsPresent = pf.BuildingsPresent and pf.Price_group_int = PARCEL_VECTORS.Price_Group_int AND pf.YearSold = PARCEL_VECTORS.LS1_Sale_Date/10000
+
+
+---- Average data to moving average [Only for plot values]
+
+use LosAngelesParcels
+CREATE TABLE Price_Averages (
+    BuildingsPresent INT NOT NULL,
+    AveragePrice FLOAT(10) NOT NULL,
+    YearSold INT,
+);
+
+INSERT INTO Price_Averages
+SELECT avg(Price_Per_Single_Area_Unit) as AveragePrice, BuildingsPresent, LS1_Sale_Date/10000 as YearSold
+FROM PARCEL_VECTORS
+WHERE Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
+      AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
+	  AND Price_Per_Single_Area_Unit > 1
+	  AND BuildingsPresent in (SELECT value FROM STRING_SPLIT(@BuildingsPresent, ';'))
+GROUP BY BuildingsPresent, Price_Group_int, LS1_Sale_Date/10000
+ORDER BY Price_Group_int, BuildingsPresent, LS1_Sale_Date/10000 asc
