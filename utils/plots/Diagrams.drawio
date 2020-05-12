@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-12T13:07:51.082Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="x2DbO55aMzY3kT1A8mi0" version="13.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-05-12T13:08:57.320Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="owJtQl8gMG6aEEbi_vVU" version="13.1.0" type="github" pages="2">
   <diagram id="XArAuKknsJqyq5xR6UzO" name="RandomForest">
     <mxGraphModel dx="1021" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,6 +37,14 @@
             <mxPoint x="536" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9WPvpmgzdbPARmL7wWRL" name="SchematMachineLearning">
+    <mxGraphModel dx="1021" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-0" />
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-1" parent="i8W28O-h85ZlFLiaDjJw-0" />
       </root>
     </mxGraphModel>
   </diagram>
