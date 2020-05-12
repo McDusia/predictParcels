@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-05-12T13:08:57.320Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="owJtQl8gMG6aEEbi_vVU" version="13.1.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-05-12T13:13:52.905Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36" etag="wv1dviNmC9746fTFYG_u" version="13.1.0" type="github" pages="2">
   <diagram id="XArAuKknsJqyq5xR6UzO" name="RandomForest">
     <mxGraphModel dx="1021" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -41,10 +41,31 @@
     </mxGraphModel>
   </diagram>
   <diagram id="9WPvpmgzdbPARmL7wWRL" name="SchematMachineLearning">
-    <mxGraphModel dx="1021" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="936" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="i8W28O-h85ZlFLiaDjJw-0" />
         <mxCell id="i8W28O-h85ZlFLiaDjJw-1" parent="i8W28O-h85ZlFLiaDjJw-0" />
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-2" value="Dane" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="i8W28O-h85ZlFLiaDjJw-1">
+          <mxGeometry x="210" y="218.75" width="70" height="67.5" as="geometry" />
+        </mxCell>
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-3" value="Metoda Uczenia Maszynowego" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="i8W28O-h85ZlFLiaDjJw-1">
+          <mxGeometry x="330" y="226.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-4" value="Inteligencja" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="i8W28O-h85ZlFLiaDjJw-1">
+          <mxGeometry x="490" y="226.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-5" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="i8W28O-h85ZlFLiaDjJw-1" target="i8W28O-h85ZlFLiaDjJw-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="256" as="sourcePoint" />
+            <mxPoint x="330" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i8W28O-h85ZlFLiaDjJw-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="i8W28O-h85ZlFLiaDjJw-1" source="i8W28O-h85ZlFLiaDjJw-3" target="i8W28O-h85ZlFLiaDjJw-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="370" as="sourcePoint" />
+            <mxPoint x="500" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
