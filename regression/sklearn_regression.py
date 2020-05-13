@@ -1,9 +1,9 @@
 import logging
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
-from utils.getBasicTrainData import get_basic_splitted_train_data
+from utils.get_basic_train_data import get_basic_data_splited_train_test
 from utils.plots.basic_plot import basic_plot, values_one_plot
-from utils.result_stats import get_result_stats
+from utils.result_stats import get_result_statistics
 
 
 def run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set):
@@ -21,7 +21,7 @@ def run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_s
 
     predicted_values = sklearn_regressor.predict(x_test_set)
 
-    get_result_stats(predicted_values=predicted_values, real_values=y_test_set)
+    get_result_statistics(predicted_values=predicted_values, real_values=y_test_set)
 
     basic_plot(y_test_set, predicted_values, "Real values", "Estimated values", "Linear regression")
     values_one_plot(y_test_set, predicted_values, "Real values", "Estimated values", "Linear regression")
@@ -30,5 +30,5 @@ def run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_s
 
 
 if __name__ == '__main__':
-    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_splitted_train_data()
+    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_data_splited_train_test()
     run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set)

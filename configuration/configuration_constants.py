@@ -56,4 +56,7 @@ checkpoint_file_path = './../resources/'
 path_to_trained_models = './trained_models/'
 
 # TODO uzupelnic kolumnami ktore maja byc ominiete w podstawiwej wersji danych
-values_to_omit_in_basic_data_version = ['Zoning_Code_int']
+values_to_omit_in_basic_data_version = ['Zoning_Code_int', 'Hmownr_Exempt_Number', 'Hmownr_Exempt_Value',
+                                        'BD_LINE_2_Subpart', 'BD_LINE_2_Subpart', 'BD_LINE_1_RCN_Main',
+                                        'BD_LINE_2_RCN_Main', 'BD_LINE_3_RCN_Main','BD_LINE_4_Year_Changed',
+                                        'Landlord_Reappraisal_Year', 'Landlord_Number_of_Units']

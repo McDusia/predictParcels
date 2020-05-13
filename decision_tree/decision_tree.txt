@@ -1,0 +1,2267 @@
+|--- Current_Land_Base_Value <= 184050.00
+|   |--- Current_Improvement_Base_Value <= 216050.00
+|   |   |--- LAND_Curr_Value <= 50008.00
+|   |   |   |--- Current_Land_Base_Year <= 1983.50
+|   |   |   |   |--- CENTER_LAT <= 34.68
+|   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1058.50
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 16708.00
+|   |   |   |   |   |   |   |--- CENTER_LAT <= 34.11
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 3615.50
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 3402.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [251145.14]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  3402.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [81917.17]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  3615.50
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 20.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [299413.21]
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int >  20.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [219801.67]
+|   |   |   |   |   |   |   |--- CENTER_LAT >  34.11
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 45550.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 18.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [363336.67]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  18.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [169001.60]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  45550.50
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 18.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [335336.33]
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int >  18.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [418753.93]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  16708.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 5253.00
+|   |   |   |   |   |   |   |   |--- MA_Direction_int <= 2.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1973.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [341603.20]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1973.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [192501.50]
+|   |   |   |   |   |   |   |   |--- MA_Direction_int >  2.00
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 453720000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [86000.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  453720000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [65000.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  5253.00
+|   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 3695.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1977.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [363025.91]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1977.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [289411.45]
+|   |   |   |   |   |   |   |   |--- Zoning_Code_int >  3695.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 7874.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [403686.87]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  7874.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [309288.29]
+|   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1058.50
+|   |   |   |   |   |   |--- SA_Zip_Cde <= 935465024.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 1975.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2144.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 7350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [366488.53]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  7350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [410235.84]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2144.50
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int <= 37963.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [199001.75]
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int >  37963.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [374170.17]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  1975.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main <= 3617.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 33183.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [294925.62]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  33183.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [378836.65]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main >  3617.00
+|   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |--- SA_Zip_Cde >  935465024.00
+|   |   |   |   |   |   |   |--- TRA_1 <= 8488.00
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 54887.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 49926.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [235002.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  49926.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [192001.00]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  54887.00
+|   |   |   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |   |   |   |--- TRA_1 >  8488.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 849.00
+|   |   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  849.00
+|   |   |   |   |   |   |   |   |   |--- City_int <= 191.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [338503.00]
+|   |   |   |   |   |   |   |   |   |--- City_int >  191.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [355003.00]
+|   |   |   |   |--- CENTER_LAT >  34.68
+|   |   |   |   |   |--- Cluster_Appraisal_Unit <= 13.50
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 41731.00
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 140860.00
+|   |   |   |   |   |   |   |   |--- MA_Direction_int <= 3.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [100667.67]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [105001.00]
+|   |   |   |   |   |   |   |   |--- MA_Direction_int >  3.50
+|   |   |   |   |   |   |   |   |   |--- value: [65000.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  140860.00
+|   |   |   |   |   |   |   |   |--- value: [155001.00]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  41731.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 1981.50
+|   |   |   |   |   |   |   |   |--- value: [178001.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year >  1981.50
+|   |   |   |   |   |   |   |   |--- value: [175001.00]
+|   |   |   |   |   |--- Cluster_Appraisal_Unit >  13.50
+|   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1516.50
+|   |   |   |   |   |   |   |--- CENTER_LON <= -118.15
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 50078.50
+|   |   |   |   |   |   |   |   |   |--- value: [199001.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  50078.50
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int <= 66184.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [129501.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int >  66184.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [142501.00]
+|   |   |   |   |   |   |   |--- CENTER_LON >  -118.15
+|   |   |   |   |   |   |   |   |--- SA_Localization_int <= 56631.50
+|   |   |   |   |   |   |   |   |   |--- value: [215002.00]
+|   |   |   |   |   |   |   |   |--- SA_Localization_int >  56631.50
+|   |   |   |   |   |   |   |   |   |--- value: [185001.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1516.50
+|   |   |   |   |   |   |   |--- CENTER_LAT <= 34.69
+|   |   |   |   |   |   |   |   |--- value: [290002.00]
+|   |   |   |   |   |   |   |--- CENTER_LAT >  34.69
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |   |--- value: [228002.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  0.50
+|   |   |   |   |   |   |   |   |   |--- value: [234002.00]
+|   |   |   |--- Current_Land_Base_Year >  1983.50
+|   |   |   |   |--- IMPROVE_Curr_Value <= 157670.50
+|   |   |   |   |   |--- Simple_Zone_int <= 9.00
+|   |   |   |   |   |   |--- SA_Zip_Cde <= 900249984.00
+|   |   |   |   |   |   |   |--- TRA_1 <= 5575.50
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 20883.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 23453.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [178938.88]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  23453.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [433803.60]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  20883.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.30
+|   |   |   |   |   |   |   |   |   |   |--- value: [82652.93]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.30
+|   |   |   |   |   |   |   |   |   |   |--- value: [201157.94]
+|   |   |   |   |   |   |   |--- TRA_1 >  5575.50
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 5918.00
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [422004.00]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  5918.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 85.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [158385.69]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  85.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [381482.00]
+|   |   |   |   |   |   |--- SA_Zip_Cde >  900249984.00
+|   |   |   |   |   |   |   |--- Parcel_Area <= 81067.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 2280.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 55.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [236002.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  55.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [28571.43]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  2280.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [227680.40]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [168453.26]
+|   |   |   |   |   |   |   |--- Parcel_Area >  81067.00
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 108822.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [259168.67]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [375003.50]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  108822.50
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 106375.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [396431.86]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  106375.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [269502.00]
+|   |   |   |   |   |--- Simple_Zone_int >  9.00
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 2718.50
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 16900.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 63337.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [144556.61]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  63337.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [58697.86]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  16900.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 47.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [300502.67]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  47.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [487754.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  2718.50
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.55
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1009.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [271994.81]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1009.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [331757.75]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.55
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 103430.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [162198.25]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  103430.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [228526.84]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 118350.00
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 14.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.25
+|   |   |   |   |   |   |   |   |   |   |--- value: [66389.22]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.25
+|   |   |   |   |   |   |   |   |   |   |--- value: [201001.40]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  14.50
+|   |   |   |   |   |   |   |   |   |--- City_int <= 222.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [129272.57]
+|   |   |   |   |   |   |   |   |   |--- City_int >  222.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [275606.58]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  118350.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 143550.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 127750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [151094.62]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  127750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [166428.25]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  143550.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 150350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [182242.24]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  150350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [190926.33]
+|   |   |   |   |--- IMPROVE_Curr_Value >  157670.50
+|   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |--- SA_Zip_Cde <= 926604992.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 1998.50
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 172744.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 26136.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [375836.33]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  26136.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [429004.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  172744.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 92.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [442004.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  92.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [472170.67]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year >  1998.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 2.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 47420.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [379003.33]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  47420.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [467504.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  2.50
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int <= 65489.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [306702.80]
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int >  65489.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [364003.00]
+|   |   |   |   |   |   |--- SA_Zip_Cde >  926604992.00
+|   |   |   |   |   |   |   |--- CENTER_LON <= -118.12
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 2009.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 196429.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [300681.11]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  196429.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [349503.12]
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  2009.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [425004.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [422504.00]
+|   |   |   |   |   |   |   |--- CENTER_LON >  -118.12
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.02
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2625.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [253502.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2625.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [173835.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.02
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1786.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [263335.33]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1786.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [319803.00]
+|   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 172250.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 162600.00
+|   |   |   |   |   |   |   |   |--- SA_Localization_int <= 93673.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 45279.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [199033.06]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  45279.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [151834.67]
+|   |   |   |   |   |   |   |   |--- SA_Localization_int >  93673.50
+|   |   |   |   |   |   |   |   |   |--- value: [300003.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  162600.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 41950.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.23
+|   |   |   |   |   |   |   |   |   |   |--- value: [234002.25]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.23
+|   |   |   |   |   |   |   |   |   |   |--- value: [206153.30]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  41950.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 171300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [211346.83]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  171300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [215252.00]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  172250.00
+|   |   |   |   |   |   |   |--- Cluster_Type <= 5.50
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 187790.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 48350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [224173.40]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  48350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [62500.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  187790.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 194200.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [236194.30]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  194200.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [246614.79]
+|   |   |   |   |   |   |   |--- Cluster_Type >  5.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2015.50
+|   |   |   |   |   |   |   |   |   |--- value: [230002.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2015.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_No_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [405004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_No_of_Units >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |--- LAND_Curr_Value >  50008.00
+|   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 865.50
+|   |   |   |   |   |--- CENTER_LON <= -118.38
+|   |   |   |   |   |   |--- CENTER_LON <= -118.54
+|   |   |   |   |   |   |   |--- Parcel_Area <= 11748.50
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 839.50
+|   |   |   |   |   |   |   |   |   |--- value: [156001.00]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  839.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2003.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [92000.50]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2003.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [40000.00]
+|   |   |   |   |   |   |   |--- Parcel_Area >  11748.50
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 81.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 165159.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [178667.67]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  165159.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [300003.00]
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  81.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 147935.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [294702.40]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  147935.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [346336.33]
+|   |   |   |   |   |   |--- CENTER_LON >  -118.54
+|   |   |   |   |   |   |   |--- SA_Zip_Cde <= 903484992.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2012.50
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 7310.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [270002.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  7310.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [402086.75]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2012.50
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 1286.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [445004.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  1286.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [484161.89]
+|   |   |   |   |   |   |   |--- SA_Zip_Cde >  903484992.00
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 32894.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 683.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [280502.20]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  683.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [380639.82]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  32894.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.17
+|   |   |   |   |   |   |   |   |   |   |--- value: [281502.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.17
+|   |   |   |   |   |   |   |   |   |   |--- value: [250335.33]
+|   |   |   |   |   |--- CENTER_LON >  -118.38
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 16047.00
+|   |   |   |   |   |   |   |--- Cluster_Location <= 11.50
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 134486.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 564.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [97273.27]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  564.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [259502.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  134486.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 3383.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [309002.80]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  3383.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [19500.00]
+|   |   |   |   |   |   |   |--- Cluster_Location >  11.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 56050.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2010.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [165601.20]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2010.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [332503.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  56050.00
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 900070016.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [375276.09]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  900070016.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [231848.15]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  16047.00
+|   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 13.50
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 99361.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 186591.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [333682.84]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  186591.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [426504.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  99361.50
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 162404.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [424448.11]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  162404.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [286502.00]
+|   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  13.50
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.99
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.97
+|   |   |   |   |   |   |   |   |   |   |--- value: [277851.56]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.97
+|   |   |   |   |   |   |   |   |   |   |--- value: [172279.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.99
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2002.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [411441.12]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2002.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [301468.45]
+|   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  865.50
+|   |   |   |   |   |--- CENTER_LAT <= 34.54
+|   |   |   |   |   |   |--- Cluster_Location <= 19.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1099.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 170577.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [372003.29]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [322218.72]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  170577.50
+|   |   |   |   |   |   |   |   |   |--- Agricultural <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [406560.39]
+|   |   |   |   |   |   |   |   |   |--- Agricultural >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [308627.75]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1099.00
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 902414976.00
+|   |   |   |   |   |   |   |   |   |--- City_int <= 75.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [30000.00]
+|   |   |   |   |   |   |   |   |   |--- City_int >  75.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [358564.15]
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  902414976.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 576.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [55000.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  576.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [393036.39]
+|   |   |   |   |   |   |--- Cluster_Location >  19.00
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 100922.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 1977.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 7.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [495004.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  7.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  1977.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1976.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [215085.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1976.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [310233.38]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  100922.50
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 41872.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1919.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [445004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1919.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [253774.91]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  41872.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2953.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [335882.31]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2953.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [440718.29]
+|   |   |   |   |   |--- CENTER_LAT >  34.54
+|   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1995.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1182.50
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 935345024.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [87500.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [105001.00]
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  935345024.00
+|   |   |   |   |   |   |   |   |   |--- value: [125001.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1182.50
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 23.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1971.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [132501.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1971.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [229710.17]
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  23.50
+|   |   |   |   |   |   |   |   |   |--- MA_Direction_int <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [286466.57]
+|   |   |   |   |   |   |   |   |   |--- MA_Direction_int >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [392503.50]
+|   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1995.00
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 100333.00
+|   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Number <= 0.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 202336.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [328788.57]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  202336.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [371670.00]
+|   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Number >  0.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2313.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [324503.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2313.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [269377.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  100333.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 2001.00
+|   |   |   |   |   |   |   |   |   |--- City_int <= 170.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [237502.00]
+|   |   |   |   |   |   |   |   |   |--- City_int >  170.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [276668.67]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  2001.00
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 7126.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [345003.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  7126.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [295669.00]
+|   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |--- Current_Improvement_Base_Value <= 116050.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 130150.00
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 2007.50
+|   |   |   |   |   |   |   |--- TRA_1 <= 5.50
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 77592.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [73166.88]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [127965.07]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  77592.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 2500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [135302.62]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  2500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [250502.14]
+|   |   |   |   |   |   |   |--- TRA_1 >  5.50
+|   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 9399.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 90143.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [170523.86]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  90143.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [202756.38]
+|   |   |   |   |   |   |   |   |--- Zoning_Code_int >  9399.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [140001.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [460004.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  2007.50
+|   |   |   |   |   |   |   |--- SA_Direction_int <= 4.00
+|   |   |   |   |   |   |   |   |--- City_int <= 148.00
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 30761.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [479004.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  30761.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [472004.00]
+|   |   |   |   |   |   |   |   |--- City_int >  148.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [376887.77]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [422932.29]
+|   |   |   |   |   |   |   |--- SA_Direction_int >  4.00
+|   |   |   |   |   |   |   |   |--- value: [155001.00]
+|   |   |   |   |   |--- Current_Land_Base_Value >  130150.00
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 64400.00
+|   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 72.50
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.64
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main <= 915.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [340003.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main >  915.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [405004.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.64
+|   |   |   |   |   |   |   |   |   |--- City_int <= 154.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [246641.02]
+|   |   |   |   |   |   |   |   |   |--- City_int >  154.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [212699.21]
+|   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  72.50
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 2035.50
+|   |   |   |   |   |   |   |   |   |--- value: [407504.00]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  2035.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1921.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [144734.27]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1921.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [205620.76]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  64400.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 92450.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 96397.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main <= 13525.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [241053.74]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main >  13525.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [439503.50]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  96397.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 2616.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [79250.50]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  2616.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [170001.17]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  92450.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 155700.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 92600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [449504.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  92600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [247279.51]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  155700.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 191268.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [274095.28]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  191268.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [170801.40]
+|   |   |   |   |--- Current_Improvement_Base_Value >  116050.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 126850.00
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 173650.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 91665.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 66800.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1168.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [202719.10]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1168.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [360003.33]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  66800.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 139596.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [209574.65]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  139596.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [237132.20]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  91665.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 192.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 145000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [420170.50]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  145000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [444004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  192.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 151177.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [243611.57]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  151177.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [266868.82]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  173650.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 86600.00
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 2016.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 198339.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [236279.65]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  198339.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [261317.64]
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  2016.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 218448.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  218448.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [394003.50]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  86600.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 103710.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 4099.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [285741.50]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  4099.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [465004.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  103710.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Sq_Ft_of_Main_Improve <= 577.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [309644.55]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Sq_Ft_of_Main_Improve >  577.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [135001.00]
+|   |   |   |   |   |--- Current_Land_Base_Value >  126850.00
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 162750.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 157300.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 139050.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built <= 1948.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [269503.45]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built >  1948.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [90000.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  139050.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 171224.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [294475.43]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  171224.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [171001.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  157300.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 190469.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 135975.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [295869.35]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  135975.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [320347.67]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  190469.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 130581.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [170167.83]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  130581.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [29000.00]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  162750.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 153850.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 195450.00
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [316678.33]
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [106250.50]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  195450.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 144908.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [336428.76]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  144908.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [351445.69]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  153850.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 191442.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 184350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [341953.12]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  184350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [362101.20]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  191442.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 205137.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [85500.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  205137.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [87000.00]
+|   |--- Current_Improvement_Base_Value >  216050.00
+|   |   |--- Current_Land_Base_Value <= 85900.00
+|   |   |   |--- IMPROVE_Curr_Value <= 275100.00
+|   |   |   |   |--- Current_Improvement_Base_Value <= 242608.50
+|   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.50
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 94904.00
+|   |   |   |   |   |   |   |--- Zoning_Code_int <= 5861.00
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.67
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1074.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [338503.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1074.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [419837.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.67
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 68948.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [330145.86]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  68948.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [368336.33]
+|   |   |   |   |   |   |   |--- Zoning_Code_int >  5861.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1011.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 73500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [339503.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  73500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [288002.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1011.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 68043.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [232502.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  68043.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [200002.00]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  94904.00
+|   |   |   |   |   |   |   |--- value: [490004.00]
+|   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.50
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 74150.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 230900.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 238694.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 220900.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [274260.33]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  220900.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [282572.06]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  238694.50
+|   |   |   |   |   |   |   |   |   |--- value: [176001.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  230900.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 62495.00
+|   |   |   |   |   |   |   |   |   |--- City_int <= 158.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [244751.67]
+|   |   |   |   |   |   |   |   |   |--- City_int >  158.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [294534.41]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  62495.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 2005.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [127750.50]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  2005.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [302503.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  74150.00
+|   |   |   |   |   |   |   |--- CENTER_LON <= -118.11
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 249827.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location <= 23.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [309541.58]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location >  23.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [390003.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  249827.00
+|   |   |   |   |   |   |   |   |   |--- value: [195001.00]
+|   |   |   |   |   |   |   |--- CENTER_LON >  -118.11
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.03
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 238487.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [244877.17]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  238487.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [307002.80]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.03
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1021.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [308574.43]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1021.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |--- Current_Improvement_Base_Value >  242608.50
+|   |   |   |   |   |--- Manufacturing <= 0.50
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 64300.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2012.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2007.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [338753.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2007.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.28
+|   |   |   |   |   |   |   |   |   |   |--- value: [407004.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.28
+|   |   |   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2012.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 248600.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main <= 5199.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [307879.09]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main >  5199.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [200002.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  248600.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 45450.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [359669.67]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  45450.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [316537.46]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  64300.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1952.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 663.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 80600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [385003.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  80600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [430004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  663.00
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [337503.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [326003.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1952.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 264900.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 246600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [309695.00]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  246600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [328181.82]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  264900.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2005.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [380003.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2005.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [336794.04]
+|   |   |   |   |   |--- Manufacturing >  0.50
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2011.00
+|   |   |   |   |   |   |   |--- value: [485004.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2011.00
+|   |   |   |   |   |   |   |--- value: [483504.00]
+|   |   |   |--- IMPROVE_Curr_Value >  275100.00
+|   |   |   |   |--- Current_Improvement_Base_Value <= 302700.00
+|   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |--- City_int <= 167.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 289166.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2362.50
+|   |   |   |   |   |   |   |   |   |--- value: [405004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2362.50
+|   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  289166.00
+|   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |--- City_int >  167.50
+|   |   |   |   |   |   |   |--- TRA_1 <= 5916.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2013.50
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 4599.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [477004.00]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  4599.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [479254.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2013.50
+|   |   |   |   |   |   |   |   |   |--- value: [498004.00]
+|   |   |   |   |   |   |   |--- TRA_1 >  5916.00
+|   |   |   |   |   |   |   |   |--- value: [430004.00]
+|   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 33000.00
+|   |   |   |   |   |   |   |--- value: [31500.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  33000.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 312180.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 70850.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 275100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [334078.71]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  275100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [348296.10]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  70850.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 293835.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [360227.30]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  293835.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [372849.15]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  312180.50
+|   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 21.00
+|   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |   |--- Simple_Zone_int >  21.00
+|   |   |   |   |   |   |   |   |   |--- value: [141001.00]
+|   |   |   |   |--- Current_Improvement_Base_Value >  302700.00
+|   |   |   |   |   |--- Current_Improvement_Base_Value <= 359750.00
+|   |   |   |   |   |   |--- BD_LINE_2_Year_Changed <= 1983.50
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 79250.00
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.40
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2015.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [280002.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2015.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [360003.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.40
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 341600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [385103.99]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  341600.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [405003.80]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  79250.00
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 95388.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 329335.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [403003.82]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  329335.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [418439.90]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  95388.00
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 11.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [375003.00]
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int >  11.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [345003.00]
+|   |   |   |   |   |   |--- BD_LINE_2_Year_Changed >  1983.50
+|   |   |   |   |   |   |   |--- value: [208002.00]
+|   |   |   |   |   |--- Current_Improvement_Base_Value >  359750.00
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 407739.50
+|   |   |   |   |   |   |   |--- SA_Localization_int <= 46445.00
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.24
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [430004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.24
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 2.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [465004.00]
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  2.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [459004.00]
+|   |   |   |   |   |   |   |--- SA_Localization_int >  46445.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1854.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 2011.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [430004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  2011.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1854.00
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 5942.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [419504.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  5942.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [410004.00]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  407739.50
+|   |   |   |   |   |   |   |--- Zoning_Code_int <= 4000.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 49000.00
+|   |   |   |   |   |   |   |   |   |--- value: [445004.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  49000.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [459504.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [453004.00]
+|   |   |   |   |   |   |   |--- Zoning_Code_int >  4000.50
+|   |   |   |   |   |   |   |   |--- SA_Direction_int <= 3.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 409000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [478004.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  409000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [485004.00]
+|   |   |   |   |   |   |   |   |--- SA_Direction_int >  3.50
+|   |   |   |   |   |   |   |   |   |--- value: [499004.00]
+|   |   |--- Current_Land_Base_Value >  85900.00
+|   |   |   |--- Current_Improvement_Base_Value <= 292550.00
+|   |   |   |   |--- LAND_Curr_Value <= 142749.50
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 275716.00
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 111750.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 239865.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 113858.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1181.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [322007.12]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1181.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [215002.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  113858.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 60.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [418504.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  60.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [328003.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  239865.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 115043.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2962.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [349879.85]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2962.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [319002.72]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  115043.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location <= 6.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [40000.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location >  6.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [319336.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  111750.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 234702.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built <= 1953.50
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 935440000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [349689.80]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  935440000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [243752.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built >  1953.50
+|   |   |   |   |   |   |   |   |   |--- value: [142501.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  234702.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 251200.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [475004.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [365853.52]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  251200.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 285884.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [386010.35]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  285884.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [310003.00]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  275716.00
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 118154.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1996.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1984.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [478004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1984.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [481004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1996.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [465004.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [460004.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  118154.50
+|   |   |   |   |   |   |   |   |--- value: [435004.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 109350.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 113223.50
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 15940.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [373079.91]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  15940.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [497004.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  113223.50
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 18205.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  18205.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [300003.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  109350.00
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 900115008.00
+|   |   |   |   |   |   |   |   |   |--- value: [240002.00]
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  900115008.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [402494.30]
+|   |   |   |   |--- LAND_Curr_Value >  142749.50
+|   |   |   |   |   |--- Current_Improvement_Base_Value <= 252945.00
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 309726.00
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 163302.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 1995.00
+|   |   |   |   |   |   |   |   |   |--- value: [195001.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  1995.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [380413.84]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  2016.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [215002.00]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  163302.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 238591.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 167300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [386385.35]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  167300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [399370.54]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  238591.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2013.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [459432.43]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2013.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [412489.34]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  309726.00
+|   |   |   |   |   |   |   |--- value: [50000.00]
+|   |   |   |   |   |--- Current_Improvement_Base_Value >  252945.00
+|   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 1.50
+|   |   |   |   |   |   |   |--- SA_Zip_Cde <= 903560000.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 2.50
+|   |   |   |   |   |   |   |   |   |--- value: [410004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  2.50
+|   |   |   |   |   |   |   |   |   |--- value: [392003.00]
+|   |   |   |   |   |   |   |--- SA_Zip_Cde >  903560000.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main <= 53860.00
+|   |   |   |   |   |   |   |   |   |--- value: [47500.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main >  53860.00
+|   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  1.50
+|   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built <= 1985.50
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 173635.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 271200.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [417673.30]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  271200.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [434504.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  173635.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 275065.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [435928.18]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  275065.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [456587.32]
+|   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built >  1985.50
+|   |   |   |   |   |   |   |   |--- value: [200502.00]
+|   |   |   |--- Current_Improvement_Base_Value >  292550.00
+|   |   |   |   |--- IMPROVE_Curr_Value <= 311302.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 133250.00
+|   |   |   |   |   |   |--- SA_Zip_Cde <= 914684992.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2008.50
+|   |   |   |   |   |   |   |   |--- Cluster_Location <= 6.00
+|   |   |   |   |   |   |   |   |   |--- value: [299002.00]
+|   |   |   |   |   |   |   |   |--- Cluster_Location >  6.00
+|   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2008.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 338250.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Year_Changed <= 1989.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [416109.78]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_2_Year_Changed >  1989.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  338250.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 120041.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [481004.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  120041.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [461004.00]
+|   |   |   |   |   |   |--- SA_Zip_Cde >  914684992.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 96800.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2012.00
+|   |   |   |   |   |   |   |   |   |--- value: [225002.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2012.00
+|   |   |   |   |   |   |   |   |   |--- value: [210002.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  96800.00
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.30
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 302337.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  302337.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [247502.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.30
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 101041.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [366522.31]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  101041.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [408767.75]
+|   |   |   |   |   |--- Current_Land_Base_Value >  133250.00
+|   |   |   |   |   |   |--- BD_LINE_2_No_of_Units <= 2.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2412.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 166107.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [447212.33]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [468289.71]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  166107.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 303500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [471177.91]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  303500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [491254.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2412.00
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 95109.50
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int <= 46446.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int >  46446.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [439004.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  95109.50
+|   |   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Value <= 3500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [351003.00]
+|   |   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Value >  3500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [302003.00]
+|   |   |   |   |   |   |--- BD_LINE_2_No_of_Units >  2.50
+|   |   |   |   |   |   |   |--- value: [325003.00]
+|   |   |   |   |--- IMPROVE_Curr_Value >  311302.00
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 499302.00
+|   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 14.00
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 182172.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 23265.00
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [260002.00]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [431110.89]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  23265.00
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 11.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [297502.50]
+|   |   |   |   |   |   |   |   |   |--- Simple_Zone_int >  11.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  182172.00
+|   |   |   |   |   |   |   |   |--- value: [50000.00]
+|   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  14.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 114200.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 363930.00
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 4763.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [348169.83]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  4763.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [431326.30]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  363930.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 413186.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [475070.65]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  413186.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [365003.33]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  114200.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 385617.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 141350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [464894.83]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  141350.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [479185.43]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  385617.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [339669.67]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [453503.86]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  499302.00
+|   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 365.00
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 55158.00
+|   |   |   |   |   |   |   |   |--- value: [255502.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  55158.00
+|   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  365.00
+|   |   |   |   |   |   |   |--- SA_Localization_int <= 47604.00
+|   |   |   |   |   |   |   |   |--- value: [396503.00]
+|   |   |   |   |   |   |   |--- SA_Localization_int >  47604.00
+|   |   |   |   |   |   |   |   |--- value: [347503.00]
+|--- Current_Land_Base_Value >  184050.00
+|   |--- Current_Improvement_Base_Value <= 76802.50
+|   |   |--- LAND_Curr_Value <= 260115.00
+|   |   |   |--- IMPROVE_Curr_Value <= 54911.00
+|   |   |   |   |--- Cluster_Location <= 1.50
+|   |   |   |   |   |--- LAND_Curr_Value <= 180763.50
+|   |   |   |   |   |   |--- CENTER_LON <= -118.16
+|   |   |   |   |   |   |   |--- value: [237002.00]
+|   |   |   |   |   |   |--- CENTER_LON >  -118.16
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units >  0.50
+|   |   |   |   |   |   |   |   |--- value: [174001.00]
+|   |   |   |   |   |--- LAND_Curr_Value >  180763.50
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 17850.00
+|   |   |   |   |   |   |   |--- TRA_1 <= 13404.00
+|   |   |   |   |   |   |   |   |--- Simple_Zone_int <= 1.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 27.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  27.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |   |   |   |   |--- Simple_Zone_int >  1.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [488170.67]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [495504.00]
+|   |   |   |   |   |   |   |--- TRA_1 >  13404.00
+|   |   |   |   |   |   |   |   |--- value: [225002.00]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  17850.00
+|   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |--- value: [252502.00]
+|   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  0.50
+|   |   |   |   |   |   |   |   |--- value: [299002.00]
+|   |   |   |   |--- Cluster_Location >  1.50
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 5119.00
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1963.00
+|   |   |   |   |   |   |   |--- Cluster_Location <= 27.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 4500.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 205555.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [188856.23]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  205555.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [225554.87]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  4500.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 224400.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [490004.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  224400.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [264877.25]
+|   |   |   |   |   |   |   |--- Cluster_Location >  27.50
+|   |   |   |   |   |   |   |   |--- value: [490004.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1963.00
+|   |   |   |   |   |   |   |--- Cluster_Location <= 25.00
+|   |   |   |   |   |   |   |   |--- value: [32000.00]
+|   |   |   |   |   |   |   |--- Cluster_Location >  25.00
+|   |   |   |   |   |   |   |   |--- value: [176001.00]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  5119.00
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 53527.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 198307.50
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 904335008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [336702.80]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  904335008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [398753.75]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  198307.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [385003.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [461670.67]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  53527.50
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 46400.00
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [286752.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  46400.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main <= 3736.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [228502.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main >  3736.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [215002.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 132.00
+|   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  132.00
+|   |   |   |   |   |   |   |   |--- City_int <= 63.00
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [430004.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |   |--- City_int >  63.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 200550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [246634.62]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  200550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [269805.39]
+|   |   |   |--- IMPROVE_Curr_Value >  54911.00
+|   |   |   |   |--- LAND_Curr_Value <= 233420.00
+|   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |--- TRA_1 <= 7883.50
+|   |   |   |   |   |   |   |--- SA_Zip_Cde <= 900124992.00
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 1007.00
+|   |   |   |   |   |   |   |   |   |--- value: [224002.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  1007.00
+|   |   |   |   |   |   |   |   |   |--- value: [137501.00]
+|   |   |   |   |   |   |   |--- SA_Zip_Cde >  900124992.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 635.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.05
+|   |   |   |   |   |   |   |   |   |   |--- value: [292780.33]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.05
+|   |   |   |   |   |   |   |   |   |   |--- value: [190001.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  635.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1973.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [318002.60]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1973.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [396566.00]
+|   |   |   |   |   |   |--- TRA_1 >  7883.50
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 212057.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units >  0.50
+|   |   |   |   |   |   |   |   |   |--- MA_Direction_int <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [452504.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Direction_int >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [475504.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  212057.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2012.00
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 6601.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [390003.00]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  6601.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [397003.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2012.00
+|   |   |   |   |   |   |   |   |   |--- value: [330003.00]
+|   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 215416.00
+|   |   |   |   |   |   |   |--- BD_LINE_2_No_of_Units <= 1.50
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 2.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 214750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [263930.96]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  214750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [57500.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  2.50
+|   |   |   |   |   |   |   |   |   |--- value: [490004.00]
+|   |   |   |   |   |   |   |--- BD_LINE_2_No_of_Units >  1.50
+|   |   |   |   |   |   |   |   |--- value: [25000.00]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  215416.00
+|   |   |   |   |   |   |   |--- BD_LINE_3_Subpart <= 151.50
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 8428.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -117.73
+|   |   |   |   |   |   |   |   |   |   |--- value: [286865.22]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -117.73
+|   |   |   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  8428.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -117.91
+|   |   |   |   |   |   |   |   |   |   |--- value: [264868.73]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -117.91
+|   |   |   |   |   |   |   |   |   |   |--- value: [54500.00]
+|   |   |   |   |   |   |   |--- BD_LINE_3_Subpart >  151.50
+|   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |--- LAND_Curr_Value >  233420.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 225412.50
+|   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1987.00
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 245994.50
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 910579968.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 966.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [405670.33]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  966.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [341878.00]
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  910579968.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 14885.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [480004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  14885.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [490004.00]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  245994.50
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 64898.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 33.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [475504.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  33.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [440337.33]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  64898.00
+|   |   |   |   |   |   |   |   |   |--- value: [489004.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1987.00
+|   |   |   |   |   |   |   |--- value: [225002.00]
+|   |   |   |   |   |--- Current_Land_Base_Value >  225412.50
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 240850.00
+|   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main <= 4910.00
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -117.73
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 250636.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [299445.53]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  250636.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [222101.80]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -117.73
+|   |   |   |   |   |   |   |   |   |--- value: [115001.00]
+|   |   |   |   |   |   |   |--- BD_LINE_2_RCN_Main >  4910.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.00
+|   |   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.00
+|   |   |   |   |   |   |   |   |   |--- value: [475004.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  240850.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 97.00
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.02
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 66005.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [200002.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  66005.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [207002.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.02
+|   |   |   |   |   |   |   |   |   |--- value: [310003.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  97.00
+|   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Number <= 0.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [359780.78]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [318009.41]
+|   |   |   |   |   |   |   |   |--- Hmownr_Exempt_Number >  0.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1436.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [307959.73]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1436.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [180001.00]
+|   |   |--- LAND_Curr_Value >  260115.00
+|   |   |   |--- LAND_Curr_Value <= 290791.50
+|   |   |   |   |--- Current_Improvement_Base_Value <= 22625.00
+|   |   |   |   |   |--- Cluster_Appraisal_Unit <= 94.00
+|   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 2002.00
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 50718.00
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 46927.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.07
+|   |   |   |   |   |   |   |   |   |   |--- value: [183334.67]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.07
+|   |   |   |   |   |   |   |   |   |   |--- value: [271502.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  46927.50
+|   |   |   |   |   |   |   |   |   |--- value: [95000.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  50718.00
+|   |   |   |   |   |   |   |   |--- City_int <= 122.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 46.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [130001.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  46.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [260002.00]
+|   |   |   |   |   |   |   |   |--- City_int >  122.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 241000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [345003.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  241000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [275452.05]
+|   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  2002.00
+|   |   |   |   |   |   |   |--- MA_Direction_int <= 1.50
+|   |   |   |   |   |   |   |   |--- value: [269002.00]
+|   |   |   |   |   |   |   |--- MA_Direction_int >  1.50
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 1.00
+|   |   |   |   |   |   |   |   |   |--- value: [136001.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  1.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [84000.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [95000.00]
+|   |   |   |   |   |--- Cluster_Appraisal_Unit >  94.00
+|   |   |   |   |   |   |--- Current_Land_Base_Value <= 265698.50
+|   |   |   |   |   |   |   |--- value: [470004.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Value >  265698.50
+|   |   |   |   |   |   |   |--- value: [385003.00]
+|   |   |   |   |--- Current_Improvement_Base_Value >  22625.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 264950.00
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2005.50
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 34376.00
+|   |   |   |   |   |   |   |   |--- value: [220002.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  34376.00
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.86
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [397503.50]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.86
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 30980.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [461504.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  30980.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [389003.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2005.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2011.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 7245.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [275002.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [360003.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  7245.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2009.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [112501.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2009.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [25000.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2011.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2013.50
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [442504.00]
+|   |   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [465004.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2013.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 249375.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [434004.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  249375.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [325652.22]
+|   |   |   |   |   |--- Current_Land_Base_Value >  264950.00
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 271590.50
+|   |   |   |   |   |   |   |   |--- value: [450004.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  271590.50
+|   |   |   |   |   |   |   |   |--- City_int <= 202.50
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 3668.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [386003.00]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  3668.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |   |   |--- City_int >  202.50
+|   |   |   |   |   |   |   |   |   |--- value: [340003.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 55080.00
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 128767.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 280250.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [312877.88]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  280250.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [336003.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  128767.50
+|   |   |   |   |   |   |   |   |   |--- value: [40000.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  55080.00
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 917714976.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.42
+|   |   |   |   |   |   |   |   |   |   |--- value: [345696.51]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.42
+|   |   |   |   |   |   |   |   |   |   |--- value: [485004.00]
+|   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  917714976.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 70500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [347669.67]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  70500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [40000.00]
+|   |   |   |--- LAND_Curr_Value >  290791.50
+|   |   |   |   |--- LAND_Curr_Value <= 374076.00
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 36566.00
+|   |   |   |   |   |   |--- MA_Localization_int <= 34008.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 0.50
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.04
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 6747.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [136000.75]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  6747.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [289002.60]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.04
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 32185.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [332503.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  32185.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [160001.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  0.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 32500.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1926.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [90500.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1926.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [73500.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  32500.00
+|   |   |   |   |   |   |   |   |   |--- value: [175001.00]
+|   |   |   |   |   |   |--- MA_Localization_int >  34008.50
+|   |   |   |   |   |   |   |--- MA_Direction_int <= 4.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 306500.00
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [295862.09]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [178001.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  306500.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 163903.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [335384.73]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  163903.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [208502.00]
+|   |   |   |   |   |   |   |--- MA_Direction_int >  4.50
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 318727.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.99
+|   |   |   |   |   |   |   |   |   |   |--- value: [440004.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.99
+|   |   |   |   |   |   |   |   |   |   |--- value: [485004.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  318727.50
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [349003.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  4.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [390003.00]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  36566.00
+|   |   |   |   |   |   |--- BD_LINE_4_Year_Changed <= 986.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1192.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [418646.57]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 73950.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [360293.71]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  73950.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [374783.18]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1192.50
+|   |   |   |   |   |   |   |   |--- value: [116001.00]
+|   |   |   |   |   |   |--- BD_LINE_4_Year_Changed >  986.00
+|   |   |   |   |   |   |   |--- value: [20000.00]
+|   |   |   |   |--- LAND_Curr_Value >  374076.00
+|   |   |   |   |   |--- LAND_Curr_Value <= 567600.00
+|   |   |   |   |   |   |--- BD_LINE_3_No_of_Bedrooms <= 1.50
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 412800.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 927.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 911.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [389209.84]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  911.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [202501.50]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  927.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 333091.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [227002.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  333091.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [428829.91]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  412800.00
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.19
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 937.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [454794.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  937.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [413563.60]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.19
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.23
+|   |   |   |   |   |   |   |   |   |   |--- value: [257502.50]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.23
+|   |   |   |   |   |   |   |   |   |   |--- value: [413170.33]
+|   |   |   |   |   |   |--- BD_LINE_3_No_of_Bedrooms >  1.50
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 88718.50
+|   |   |   |   |   |   |   |   |--- value: [210002.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  88718.50
+|   |   |   |   |   |   |   |   |--- value: [260002.00]
+|   |   |   |   |   |--- LAND_Curr_Value >  567600.00
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 49990.00
+|   |   |   |   |   |   |   |--- Zoning_Code_int <= 5.00
+|   |   |   |   |   |   |   |   |--- value: [100001.00]
+|   |   |   |   |   |   |   |--- Zoning_Code_int >  5.00
+|   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.77
+|   |   |   |   |   |   |   |   |   |--- value: [112001.00]
+|   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.77
+|   |   |   |   |   |   |   |   |   |--- Commercial <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [402337.00]
+|   |   |   |   |   |   |   |   |   |--- Commercial >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [307669.33]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  49990.00
+|   |   |   |   |   |   |   |--- MA_Localization_int <= 55046.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_3_Sq_Ft_of_Main_Improve <= 1075.00
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 8359.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [41500.00]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  8359.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [50000.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_3_Sq_Ft_of_Main_Improve >  1075.00
+|   |   |   |   |   |   |   |   |   |--- value: [100001.00]
+|   |   |   |   |   |   |   |--- MA_Localization_int >  55046.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 1450000.00
+|   |   |   |   |   |   |   |   |   |--- value: [316003.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  1450000.00
+|   |   |   |   |   |   |   |   |   |--- value: [286002.00]
+|   |--- Current_Improvement_Base_Value >  76802.50
+|   |   |--- Current_Land_Base_Value <= 260275.00
+|   |   |   |--- Current_Improvement_Base_Value <= 163450.00
+|   |   |   |   |--- IMPROVE_Curr_Value <= 129772.00
+|   |   |   |   |   |--- LAND_Curr_Value <= 227962.50
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 103717.00
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2013.50
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 101996.00
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 917555008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [322068.04]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  917555008.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [186001.33]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  101996.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1351.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [395603.40]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1351.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [483504.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2013.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 207550.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1898.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [48000.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1898.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [284340.39]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  207550.00
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area <= 5199.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [286825.21]
+|   |   |   |   |   |   |   |   |   |--- Parcel_Area >  5199.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [309687.23]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  103717.00
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 200918.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 97370.50
+|   |   |   |   |   |   |   |   |   |--- value: [489004.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  97370.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 184250.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [205501.67]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  184250.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [304669.46]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  200918.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 192857.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [462504.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  192857.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 118300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [318318.90]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  118300.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [334459.06]
+|   |   |   |   |   |--- LAND_Curr_Value >  227962.50
+|   |   |   |   |   |   |--- Current_Land_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units <= 2.50
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 9629.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 209568.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [334502.50]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  209568.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [426528.36]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  9629.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 283140.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [362503.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  283140.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [136001.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units >  2.50
+|   |   |   |   |   |   |   |   |--- value: [80000.00]
+|   |   |   |   |   |   |--- Current_Land_Base_Year >  2014.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 102250.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 283745.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 238550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [315270.26]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  238550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [337244.16]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  283745.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2015.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [35000.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2015.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [75000.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  102250.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 219616.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 1724.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  1724.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [150001.33]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  219616.50
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 39.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [83500.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  39.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [352626.21]
+|   |   |   |   |--- IMPROVE_Curr_Value >  129772.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 226096.00
+|   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2014.50
+|   |   |   |   |   |   |   |--- City_int <= 103.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2004.50
+|   |   |   |   |   |   |   |   |   |--- value: [15000.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2004.50
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int <= 1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [437004.00]
+|   |   |   |   |   |   |   |   |   |--- SA_Direction_int >  1.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [262502.50]
+|   |   |   |   |   |   |   |--- City_int >  103.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main <= 520.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 5.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [448316.44]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  5.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [373337.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Unit_Cost_Main >  520.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 124864.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [423566.31]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  124864.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [297002.33]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2014.50
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 235335.50
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 142050.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 150677.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [331993.10]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  150677.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [199751.50]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  142050.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 208000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [346624.69]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  208000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [362855.42]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  235335.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 19245.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.08
+|   |   |   |   |   |   |   |   |   |   |--- value: [137501.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.08
+|   |   |   |   |   |   |   |   |   |   |--- value: [31500.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  19245.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 150383.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [357003.00]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  150383.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [275002.00]
+|   |   |   |   |   |--- Current_Land_Base_Value >  226096.00
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 295510.50
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 145010.50
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 250050.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 259203.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [366634.46]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  259203.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [250002.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  250050.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.76
+|   |   |   |   |   |   |   |   |   |   |--- value: [142001.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.76
+|   |   |   |   |   |   |   |   |   |   |--- value: [387743.75]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  145010.50
+|   |   |   |   |   |   |   |   |--- SA_Localization_int <= 94505.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 241150.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [379806.14]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  241150.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [397413.67]
+|   |   |   |   |   |   |   |   |--- SA_Localization_int >  94505.00
+|   |   |   |   |   |   |   |   |   |--- value: [135001.00]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  295510.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1978.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1975.00
+|   |   |   |   |   |   |   |   |   |--- value: [263002.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1975.00
+|   |   |   |   |   |   |   |   |   |--- value: [370003.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1978.50
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 311291.00
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 3301.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [80000.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  3301.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [50000.00]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  311291.00
+|   |   |   |   |   |   |   |   |   |--- value: [115001.00]
+|   |   |   |--- Current_Improvement_Base_Value >  163450.00
+|   |   |   |   |--- Current_Improvement_Base_Value <= 202250.00
+|   |   |   |   |   |--- Current_Land_Base_Value <= 212850.00
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 229993.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 146046.00
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 995.50
+|   |   |   |   |   |   |   |   |   |--- value: [366003.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  995.50
+|   |   |   |   |   |   |   |   |   |--- Agricultural <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [232502.00]
+|   |   |   |   |   |   |   |   |   |--- Agricultural >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [100001.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  146046.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year <= 2013.50
+|   |   |   |   |   |   |   |   |   |--- City_int <= 261.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [456185.73]
+|   |   |   |   |   |   |   |   |   |--- City_int >  261.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [331003.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Year >  2013.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 192550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [370978.14]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  192550.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [392124.87]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  229993.00
+|   |   |   |   |   |   |   |--- City_int <= 230.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1984.00
+|   |   |   |   |   |   |   |   |   |--- value: [277002.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1984.00
+|   |   |   |   |   |   |   |   |   |--- value: [350003.00]
+|   |   |   |   |   |   |   |--- City_int >  230.00
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 4362.00
+|   |   |   |   |   |   |   |   |   |--- value: [92000.00]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  4362.00
+|   |   |   |   |   |   |   |   |   |--- value: [196501.00]
+|   |   |   |   |   |--- Current_Land_Base_Value >  212850.00
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 181350.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 187544.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 276410.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 173477.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [396229.22]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  173477.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [410800.59]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  276410.50
+|   |   |   |   |   |   |   |   |   |--- value: [156001.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  187544.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1980.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.20
+|   |   |   |   |   |   |   |   |   |   |--- value: [419837.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.20
+|   |   |   |   |   |   |   |   |   |   |--- value: [481004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1980.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [335003.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [52666.67]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  181350.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 238189.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 252250.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 260648.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [419539.37]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  260648.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [207501.50]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  252250.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [448769.95]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  5.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [330003.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  238189.00
+|   |   |   |   |   |   |   |   |--- value: [35000.00]
+|   |   |   |   |--- Current_Improvement_Base_Value >  202250.00
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 321226.50
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 221650.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 227150.00
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 251031.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 207187.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [400818.88]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  207187.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [426881.02]
+|   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  251031.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.06
+|   |   |   |   |   |   |   |   |   |   |--- value: [237002.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.06
+|   |   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  227150.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 233414.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 242750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [444790.65]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  242750.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [459512.15]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  233414.50
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 95227.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [162501.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  95227.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [280002.00]
+|   |   |   |   |   |   |--- Current_Improvement_Base_Value >  221650.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 5.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1963.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 266396.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [444805.33]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  266396.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [330336.17]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1963.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 231850.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [456251.64]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  231850.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [479071.89]
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  5.50
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 5703.00
+|   |   |   |   |   |   |   |   |   |--- value: [489004.00]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  5703.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms <= 3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [112501.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Bedrooms >  3.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [108751.00]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  321226.50
+|   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 2005.50
+|   |   |   |   |   |   |   |--- SA_Zip_Cde <= 907675008.00
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 26141.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 249648.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [125001.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  249648.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [200502.00]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  26141.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 305000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [198334.67]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  305000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [400947.89]
+|   |   |   |   |   |   |   |--- SA_Zip_Cde >  907675008.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1956.00
+|   |   |   |   |   |   |   |   |   |--- value: [290002.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1956.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 87129.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [412670.56]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  87129.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [457781.78]
+|   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  2005.50
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 361603.00
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 2015.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 270641.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [426128.75]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  270641.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  2015.00
+|   |   |   |   |   |   |   |   |   |--- value: [103001.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  361603.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 210175.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 3335.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [70500.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  3335.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [143001.00]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  210175.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [152501.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [264002.00]
+|   |   |--- Current_Land_Base_Value >  260275.00
+|   |   |   |--- LAND_Curr_Value <= 419182.00
+|   |   |   |   |--- Current_Land_Base_Value <= 332050.00
+|   |   |   |   |   |--- Current_Improvement_Base_Value <= 130361.00
+|   |   |   |   |   |   |--- LAND_Curr_Value <= 300180.50
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 105111.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_3_Sq_Ft_of_Main_Improve <= 646.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 280050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [356776.47]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  280050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [374032.80]
+|   |   |   |   |   |   |   |   |--- BD_LINE_3_Sq_Ft_of_Main_Improve >  646.00
+|   |   |   |   |   |   |   |   |   |--- value: [60000.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  105111.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built <= 1959.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 275050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [381941.48]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  275050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [395179.78]
+|   |   |   |   |   |   |   |   |--- BD_LINE_2_Yr_Built >  1959.50
+|   |   |   |   |   |   |   |   |   |--- value: [149501.00]
+|   |   |   |   |   |   |--- LAND_Curr_Value >  300180.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 107150.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 114901.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 320050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [394336.18]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  320050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [411526.46]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  114901.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location <= 9.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [99167.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Location >  9.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [420004.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  107150.00
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 138465.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 349495.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [425363.50]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  349495.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [122501.00]
+|   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  138465.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 11820.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [124000.50]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  11820.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [279169.00]
+|   |   |   |   |   |--- Current_Improvement_Base_Value >  130361.00
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 302096.50
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 155050.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 290050.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 161004.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [413028.55]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  161004.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [247085.33]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  290050.00
+|   |   |   |   |   |   |   |   |   |--- TRA_1 <= 15955.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [444337.60]
+|   |   |   |   |   |   |   |   |   |--- TRA_1 >  15955.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [90000.00]
+|   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  155050.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 275250.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 185100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [427946.33]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  185100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [464155.16]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  275250.00
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 210855.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [464268.65]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  210855.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [424721.78]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  302096.50
+|   |   |   |   |   |   |   |--- City_int <= 150.50
+|   |   |   |   |   |   |   |   |--- SA_Localization_int <= 52766.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1973.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [80000.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1973.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [17000.00]
+|   |   |   |   |   |   |   |   |--- SA_Localization_int >  52766.50
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde <= 905024992.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [168001.33]
+|   |   |   |   |   |   |   |   |   |--- SA_Zip_Cde >  905024992.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [255502.00]
+|   |   |   |   |   |   |   |--- City_int >  150.50
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 94.00
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int <= 61161.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [399503.50]
+|   |   |   |   |   |   |   |   |   |--- SA_Localization_int >  61161.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [303211.00]
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  94.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1725.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [202668.33]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1725.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [129001.00]
+|   |   |   |   |--- Current_Land_Base_Value >  332050.00
+|   |   |   |   |   |--- IMPROVE_Curr_Value <= 166056.00
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 91396.00
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 76900.00
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 121336.50
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 40.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [324145.57]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  40.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [423337.33]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  121336.50
+|   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  76900.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 350200.00
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 349800.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [425511.26]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  349800.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [376211.75]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  350200.00
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 335000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [394947.89]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  335000.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [443775.72]
+|   |   |   |   |   |   |--- IMPROVE_Curr_Value >  91396.00
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 399800.00
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 375050.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 121100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [452223.52]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  121100.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [473004.44]
+|   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  375050.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 126050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [481032.37]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  126050.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [339069.57]
+|   |   |   |   |   |   |   |--- Current_Land_Base_Value >  399800.00
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 7553.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -117.89
+|   |   |   |   |   |   |   |   |   |   |--- value: [419770.91]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -117.89
+|   |   |   |   |   |   |   |   |   |   |--- value: [230752.00]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  7553.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1443.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [157501.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1443.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [378920.00]
+|   |   |   |   |   |--- IMPROVE_Curr_Value >  166056.00
+|   |   |   |   |   |   |--- MA_Direction_int <= 2.50
+|   |   |   |   |   |   |   |--- Cluster_Type <= 3.50
+|   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.56
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 549.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [100375.50]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  549.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [397860.57]
+|   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.56
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 1699.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [50000.00]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  1699.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [402443.49]
+|   |   |   |   |   |   |   |--- Cluster_Type >  3.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 1545.00
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int <= 66040.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [364324.57]
+|   |   |   |   |   |   |   |   |   |--- MA_Localization_int >  66040.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [255752.23]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  1545.00
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 175500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [273002.25]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  175500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [424415.59]
+|   |   |   |   |   |   |--- MA_Direction_int >  2.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 1108.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1977.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.31
+|   |   |   |   |   |   |   |   |   |   |--- value: [353128.25]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.31
+|   |   |   |   |   |   |   |   |   |   |--- value: [433170.50]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1977.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON <= -118.10
+|   |   |   |   |   |   |   |   |   |   |--- value: [291835.67]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LON >  -118.10
+|   |   |   |   |   |   |   |   |   |   |--- value: [75833.67]
+|   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  1108.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units <= 2.50
+|   |   |   |   |   |   |   |   |   |--- value: [30000.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Units >  2.50
+|   |   |   |   |   |   |   |   |   |--- value: [23500.00]
+|   |   |   |--- LAND_Curr_Value >  419182.00
+|   |   |   |   |--- Current_Land_Base_Value <= 666125.00
+|   |   |   |   |   |--- CENTER_LON <= -118.30
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 1950.50
+|   |   |   |   |   |   |   |--- SA_Localization_int <= 32033.00
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units <= 3.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 1970.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [264252.25]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  1970.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [363529.47]
+|   |   |   |   |   |   |   |   |--- Landlord_Number_of_Units >  3.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 5419.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [116001.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  5419.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [165001.00]
+|   |   |   |   |   |   |   |--- SA_Localization_int >  32033.00
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 6263.00
+|   |   |   |   |   |   |   |   |   |--- Residential <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [279669.00]
+|   |   |   |   |   |   |   |   |   |--- Residential >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [121107.93]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  6263.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 41.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [177429.93]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  41.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [309252.61]
+|   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  1950.50
+|   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main <= 149590.00
+|   |   |   |   |   |   |   |   |--- MA_Direction_int <= 1.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.26
+|   |   |   |   |   |   |   |   |   |   |--- value: [297174.59]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.26
+|   |   |   |   |   |   |   |   |   |   |--- value: [418191.25]
+|   |   |   |   |   |   |   |   |--- MA_Direction_int >  1.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 358.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [307253.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  358.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [448003.80]
+|   |   |   |   |   |   |   |--- BD_LINE_1_RCN_Main >  149590.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 11603.50
+|   |   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year <= 1000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [108501.00]
+|   |   |   |   |   |   |   |   |   |--- Landlord_Reappraisal_Year >  1000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [25750.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  11603.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year <= 2000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Year >  2000.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [215502.00]
+|   |   |   |   |   |--- CENTER_LON >  -118.30
+|   |   |   |   |   |   |--- TRA_1 <= 4423.50
+|   |   |   |   |   |   |   |--- TRA_1 <= 8.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 2012.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1102.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [400004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1102.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [107500.83]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  2012.50
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value <= 495719.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [417753.50]
+|   |   |   |   |   |   |   |   |   |--- IMPROVE_Curr_Value >  495719.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [150001.00]
+|   |   |   |   |   |   |   |--- TRA_1 >  8.50
+|   |   |   |   |   |   |   |   |--- MA_Localization_int <= 94567.50
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 181850.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [301073.95]
+|   |   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  181850.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [397368.85]
+|   |   |   |   |   |   |   |   |--- MA_Localization_int >  94567.50
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 33.95
+|   |   |   |   |   |   |   |   |   |   |--- value: [335502.88]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  33.95
+|   |   |   |   |   |   |   |   |   |   |--- value: [424987.07]
+|   |   |   |   |   |   |--- TRA_1 >  4423.50
+|   |   |   |   |   |   |   |--- LAND_Curr_Value <= 529127.00
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 44.50
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value <= 450500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [322074.21]
+|   |   |   |   |   |   |   |   |   |--- Current_Land_Base_Value >  450500.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [170195.67]
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  44.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1715.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [294127.56]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1715.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [395303.40]
+|   |   |   |   |   |   |   |--- LAND_Curr_Value >  529127.00
+|   |   |   |   |   |   |   |   |--- SA_Localization_int <= 4810.50
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value <= 564150.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [100001.00]
+|   |   |   |   |   |   |   |   |   |--- LAND_Curr_Value >  564150.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [202502.00]
+|   |   |   |   |   |   |   |   |--- SA_Localization_int >  4810.50
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 2794.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [131001.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  2794.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [404836.94]
+|   |   |   |   |--- Current_Land_Base_Value >  666125.00
+|   |   |   |   |   |--- LAND_Curr_Value <= 724005.50
+|   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int <= 553.50
+|   |   |   |   |   |   |   |--- Cluster_Location <= 9.50
+|   |   |   |   |   |   |   |   |--- Parcel_Area <= 14045.00
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT <= 34.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [272002.00]
+|   |   |   |   |   |   |   |   |   |--- CENTER_LAT >  34.09
+|   |   |   |   |   |   |   |   |   |   |--- value: [296002.00]
+|   |   |   |   |   |   |   |   |--- Parcel_Area >  14045.00
+|   |   |   |   |   |   |   |   |   |--- value: [330003.00]
+|   |   |   |   |   |   |   |--- Cluster_Location >  9.50
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 986.50
+|   |   |   |   |   |   |   |   |   |--- value: [180001.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  986.50
+|   |   |   |   |   |   |   |   |   |--- Commercial <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [122001.00]
+|   |   |   |   |   |   |   |   |   |--- Commercial >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [100001.00]
+|   |   |   |   |   |   |--- BD_LINE_1_Quality__Class___Shap_int >  553.50
+|   |   |   |   |   |   |   |--- Parcel_Area <= 7074.00
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value <= 299800.00
+|   |   |   |   |   |   |   |   |   |--- Residential <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [70000.00]
+|   |   |   |   |   |   |   |   |   |--- Residential >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [60000.00]
+|   |   |   |   |   |   |   |   |--- Current_Improvement_Base_Value >  299800.00
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type <= 2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [33000.00]
+|   |   |   |   |   |   |   |   |   |--- Cluster_Type >  2.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [48000.00]
+|   |   |   |   |   |   |   |--- Parcel_Area >  7074.00
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 2006.50
+|   |   |   |   |   |   |   |   |   |--- value: [200002.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  2006.50
+|   |   |   |   |   |   |   |   |   |--- value: [131001.00]
+|   |   |   |   |   |--- LAND_Curr_Value >  724005.50
+|   |   |   |   |   |   |--- BD_LINE_1_Year_Changed <= 2010.00
+|   |   |   |   |   |   |   |--- CENTER_LON <= -118.72
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 1555.00
+|   |   |   |   |   |   |   |   |   |--- value: [425004.00]
+|   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  1555.00
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int <= 6477.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [484004.00]
+|   |   |   |   |   |   |   |   |   |--- Zoning_Code_int >  6477.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [494504.00]
+|   |   |   |   |   |   |   |--- CENTER_LON >  -118.72
+|   |   |   |   |   |   |   |   |--- TRA_1 <= 31.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 6581.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [133000.80]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  6581.00
+|   |   |   |   |   |   |   |   |   |   |--- value: [334752.50]
+|   |   |   |   |   |   |   |   |--- TRA_1 >  31.00
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built <= 2002.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [271485.63]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Yr_Built >  2002.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [90500.67]
+|   |   |   |   |   |   |--- BD_LINE_1_Year_Changed >  2010.00
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths <= 1.00
+|   |   |   |   |   |   |   |   |--- value: [85000.00]
+|   |   |   |   |   |   |   |--- BD_LINE_1_No_of_Baths >  1.00
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit <= 85.50
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve <= 3011.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [484004.00]
+|   |   |   |   |   |   |   |   |   |--- BD_LINE_1_Sq_Ft_of_Main_Improve >  3011.50
+|   |   |   |   |   |   |   |   |   |   |--- value: [403303.60]
+|   |   |   |   |   |   |   |   |--- Cluster_Appraisal_Unit >  85.50
+|   |   |   |   |   |   |   |   |   |--- value: [280002.00]
+
