@@ -6,8 +6,7 @@ Python 3.6
 
 Please install all requirements with
 
-```pip install -r requirements.txt``` 
-
+```pip install -r requirements.txt```
 # Database import with docker [ linux, mac ]
 
 handy materials:

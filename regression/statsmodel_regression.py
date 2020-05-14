@@ -1,7 +1,7 @@
 import logging
 import statsmodels.api as sm
-from utils.getBasicTrainData import get_basic_splitted_train_data
-from utils.result_stats import get_result_stats
+from utils.get_basic_train_data import get_basic_data_splited_train_test
+from utils.result_stats import get_result_statistics
 
 
 def run_statsmodels_regression(x_train_set, x_test_set, y_train_set, y_test_set):
@@ -11,11 +11,11 @@ def run_statsmodels_regression(x_train_set, x_test_set, y_train_set, y_test_set)
 
     predicted_values = results.predict(x_test_set.astype(int))
 
-    get_result_stats(predicted_values=predicted_values, real_values=y_test_set)
+    get_result_statistics(predicted_values=predicted_values, real_values=y_test_set)
 
 
 if __name__ == '__main__':
-    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_splitted_train_data(price_groups='0;1;2',
+    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_data_splited_train_test(price_groups='0;1;2',
                                                                                      buildings_present='0;1'
                                                                                      )
     run_statsmodels_regression(x_train_set, x_test_set, y_train_set, y_test_set)
