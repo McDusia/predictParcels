@@ -5,7 +5,7 @@ CREATE OR ALTER PROCEDURE dbo.GetDateToTrainModel
     @LimitDate nvarchar(30),
     @ExcludedList nvarchar(MAX),
     @PriceGroupInt nvarchar(30),
-    @BuildingsPresent nvarchar(4)
+    @BuildingsPresent nvarchar(30)
 AS
 SELECT
 --         OBJECTID,
@@ -81,12 +81,13 @@ SELECT
         Zoning_Code_int,
         BD_LINE_1_Quality__Class___Shap_int,
         City_int,
-        Sale_Amount,
+        Sale_Amount
         -- remember about excluding this values when using non scaled resolution
         --ScaledPriceOnBuildingsPresentAndPriceGroup,
         --ScaledPriceOnBuildingsPresent,
 FROM PARCEL_VECTORS
-WHERE LS1_Sale_Date > @LimitDate
+WHERE LS1_Sale_Date >= @LimitDate
+      AND LS1_Sale_Date < 2017
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
