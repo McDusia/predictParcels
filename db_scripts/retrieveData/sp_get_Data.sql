@@ -87,7 +87,7 @@ SELECT
         --ScaledPriceOnBuildingsPresent,
 FROM PARCEL_VECTORS
 WHERE LS1_Sale_Date >= @LimitDate
-      AND LS1_Sale_Date < 2017
+      AND LS1_Sale_Date < 20170000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
