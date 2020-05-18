@@ -191,15 +191,5 @@ ADD ElementarySchoolsInNeighbourhood integer null,
 	RiverInNeighbourhood integer null, 
 	RailroadsInNeighbourhood integer null
 
-update PARCEL_VECTORS set
-ElementarySchoolsInNeighbourhood = 
-(
-	SELECT
-	Count(*) AS Quantity
-	FROM
-	Public_Elementary_Schools PES
 
-	WHERE
-	PES.POINT.Filter(shape.STBuffer(25000)) = 1	-- 7620.01524 meters
-)
-where OBJECTID < 10
+exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 100, 500
