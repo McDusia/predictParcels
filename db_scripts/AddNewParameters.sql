@@ -192,4 +192,4 @@ ADD ElementarySchoolsInNeighbourhood integer null,
 	RailroadsInNeighbourhood integer null
 
 
-exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 100, 500
+exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 2000, 5000
