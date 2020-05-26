@@ -9,6 +9,7 @@ exec CreateGeometryPoint @TableName='Manufacturing'
 exec CreateGeometryPoint @TableName='Economic_Development'
 exec CreateGeometryPoint @TableName='Business_Centers'
 exec CreateGeometryPoint @TableName='Agriculture_and_Food'
+exec CreateGeometryPoint @TableName='Health_Clinics'
 exec CreateGeometryPoint @TableName='Natural_Areas_and_Wildlife_Sanctuaries'
 exec CreateGeometryPoint @TableName='Child_Care'
 exec CreateGeometryPoint @TableName='Crime_Prevention_and_Support'
@@ -30,7 +31,10 @@ ADD DistanceToElementarySchool numeric(38,8) null,
 	DistanceToNatural_Areas_and_Wildlife_Sanctuaries numeric(38,8) null, 
 	DistanceToChild_Care numeric(38,8) null, 
 	DistanceToCrime_Prevention_and_Support numeric(38,8) null, 
-	DistanceToWater numeric(38,8) null
+	DistanceToWater numeric(38,8) null,
+	DistanceToAirport numeric(38,8) null,
+	DistanceToRiver numeric(38,8) null,
+	DistanceToRailroads numeric(38,8) null
 
 
 	-- Count Distance to Public Elementary Schools
@@ -131,3 +135,61 @@ ADD DistanceToElementarySchool numeric(38,8) null,
 	@index_start = 0,
 	@index_stop = 2400375
 
+	-- Count Distance to Airport
+	update PARCEL_VECTORS set DistanceToAirport = 
+	(
+		SELECT TOP 1 
+		([LosAngelesCounty].[dbo].[AIRPORTS].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) 
+		AS Distance
+		FROM [LosAngelesCounty].[dbo].[AIRPORTS]
+		ORDER BY ([LosAngelesCounty].[dbo].[AIRPORTS].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) ASC
+	) 
+	where OBJECTID BETWEEN CONVERT(varchar, 0) AND CONVERT(varchar, 2400375)
+
+		-- Count Distance to River
+	update PARCEL_VECTORS set DistanceToRiver = 
+	(
+		SELECT TOP 1 
+		([LosAngelesCounty].[dbo].[RIVERS].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) 
+		AS Distance
+		FROM [LosAngelesCounty].[dbo].[RIVERS]
+		ORDER BY ([LosAngelesCounty].[dbo].[RIVERS].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) ASC
+	) 
+	where OBJECTID BETWEEN CONVERT(varchar, 0) AND CONVERT(varchar, 2400375)
+
+		-- Count Distance to Railroads
+	update PARCEL_VECTORS set DistanceToRailroads = 
+	(
+		SELECT TOP 1 
+		([LosAngelesCounty].[dbo].[Railroads].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) 
+		AS Distance
+		FROM [LosAngelesCounty].[dbo].[Railroads]
+		ORDER BY ([LosAngelesCounty].[dbo].[Railroads].shape).STDistance([LosAngelesParcels].[dbo].[PARCEL_VECTORS].shape) ASC
+	) 
+	where OBJECTID BETWEEN CONVERT(varchar, 0) AND CONVERT(varchar, 2400375)
+
+-- Count how many POI are in specified distance from parcel
+	
+ALTER TABLE PARCEL_VECTORS
+ADD ElementarySchoolsInNeighbourhood integer null, 
+	MiddleSchoolInNeighbourhood integer null, 
+	HighSchoolInNeighbourhood integer null, 
+	Shopping_CentersInNeighbourhood integer null, 
+	Health_CentersInNeighbourhood integer null, 
+	Street_MaintenanceInNeighbourhood integer null, 
+	PoolsInNeighbourhood integer null, 
+	ManufacturingInNeighbourhood integer null, 
+	Economic_DevelopmentInNeighbourhood integer null, 
+	Business_CentersInNeighbourhood integer null, 
+	Agriculture_and_FoodInNeighbourhood integer null, 
+	Health_ClinicsInNeighbourhood integer null, 
+	Natural_Areas_and_Wildlife_SanctuariesInNeighbourhood integer null, 
+	Child_CareInNeighbourhood integer null, 
+	Crime_Prevention_and_SupportInNeighbourhood integer null, 
+	WaterInNeighbourhood integer null, 
+	AirportInNeighbourhood integer null, 
+	RiverInNeighbourhood integer null, 
+	RailroadsInNeighbourhood integer null
+
+
+exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 2000, 5000

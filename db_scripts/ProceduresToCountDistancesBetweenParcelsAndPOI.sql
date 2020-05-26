@@ -31,8 +31,3 @@ BEGIN
 END
 GO
 
---exec CountDistancesFromParcelsToObject @TableName = 'Public_Elementary_Schools',
---	@ColumnInParcelVectorsToUpdate = 'DistanceToElementarySchool',
---	@index_start = 700000,
---	@index_stop = 1000000
-
