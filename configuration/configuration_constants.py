@@ -46,14 +46,23 @@ model_overwrite = True
 """
 current_bucket = 'cheap'
 
-classification_buckets = [0, 1, 2]
-
 """
   Variable to set if the model will be training using price parameters or without it. 
   Depends on it, program will call different procedure, which return data with different amount of columns. 
 """
 train_model_with_price_parameters = False
 
+"""
+  Variable to set if overwrite file with neural network model or not. 
+  Warning! If set to True, previous model would be lost. 
+"""
+model_overwrite = False
+
+"""
+  Using in parcel_valuation.py.
+  Variable to set if predict prices using price parameters or not.
+"""
+predict_prices_using_price_parameters = True
 
 """
 check if all below variables are using:
