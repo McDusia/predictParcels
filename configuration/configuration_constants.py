@@ -1,7 +1,7 @@
 """
     Price classification module configuration constants
 """
-target_column_name = 'Sale_Amount'
+target_column_name = 'ScaledPriceOnBuildingsPresent'
 
 """
     Lower limit date to filter data in order to train the model
@@ -54,8 +54,6 @@ file_names_convention = 'model_' + str(limit_date) + '_' + current_bucket
 checkpoint_file_path = './../resources/'
 path_to_trained_models = './trained_models/'
 
-# TODO uzupelnic kolumnami ktore maja byc ominiete w podstawiwej wersji danych
+id_to_omit_from_data = ['OBJECTID']
 values_to_omit_in_basic_data_version = ['Zoning_Code_int', 'Hmownr_Exempt_Number', 'Hmownr_Exempt_Value',
-                                        'BD_LINE_2_Subpart', 'BD_LINE_2_Subpart', 'BD_LINE_1_RCN_Main',
-                                        'BD_LINE_2_RCN_Main', 'BD_LINE_3_RCN_Main', 'BD_LINE_4_Year_Changed',
-                                        'Landlord_Reappraisal_Year', 'Landlord_Number_of_Units']
+                                        'BD_LINE_2_Subpart', 'BD_LINE_2_Subpart']

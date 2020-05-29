@@ -1,38 +1,42 @@
 import logging
 from configuration.configuration_constants import excluded_values, \
     target_column_name, \
-    limit_date, values_to_omit_in_basic_data_version
+    limit_date, id_to_omit_from_data
 from utils.DataSplitter import DataSplitter
 from utils.database_handler import DatabaseHandler
 
 
-def get_basic_data(price_groups='0;1;2', buildings_present='0;1', basic_data_version=False):
+def get_basic_data(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
     logging.basicConfig(level=logging.DEBUG)
     database_handler = DatabaseHandler()
-    query = "EXEC GetDateToTrainModel @LimitDate = {}, @ExcludedList ='{}', @PriceGroupInt = '{}', @BuildingsPresent = '{}'"\
-        .format(
+    query = "EXEC GetDataToTrainModel @LimitDate = {}, @ExcludedList ='{}', @PriceGroupList = '{}', @BuildingsPresent = '{}'" \
+            .format(
             limit_date,
             excluded_values,
             price_groups,
-            buildings_present)
+            buildings_present
+    )
     data = database_handler.execute_query(query)
 
-    if basic_data_version:
-        data.drop(values_to_omit_in_basic_data_version, axis=1)
+    # Drop ObjectID column
+    data.drop(id_to_omit_from_data, axis=1)
+
+    if len(columns_to_omit) > 0:
+        data.drop(columns_to_omit, axis=1)
 
     logging.debug("Total samples in our dataset is: {}".format(data.shape[0]))
 
     return data
 
 
-def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', basic_data_version=False):
-    data = get_basic_data(price_groups, buildings_present, basic_data_version)
+def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
+    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_x_y(data)
 
 
-def get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1', basic_data_version=False,
+def get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[],
                                       random_state=0, test_size=0.2):
-    data = get_basic_data(price_groups, buildings_present, basic_data_version)
+    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_train_test(data, random_state, test_size)
 
 
