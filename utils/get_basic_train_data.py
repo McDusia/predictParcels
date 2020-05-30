@@ -56,14 +56,20 @@ def get_basic_data(price_groups='0;1;2', buildings_present='0;1', columns_to_omi
     return data
 
 
-def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
-    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
+def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[], use_distances=False):
+    if use_distances:
+        data = get_data_with_distances(price_groups, buildings_present, columns_to_omit)
+    else:
+        data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_x_y(data)
 
 
 def get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[],
-                                      random_state=0, test_size=0.2):
-    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
+                                      random_state=0, test_size=0.2, use_distances=False):
+    if use_distances:
+        data = get_data_with_distances(price_groups, buildings_present, columns_to_omit)
+    else:
+        data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_train_test(data, random_state, test_size)
 
 

@@ -120,7 +120,7 @@ IF (NOT EXISTS (SELECT * FROM information_schema.COLUMNS WHERE TABLE_NAME = 'PAR
     END
 
 UPDATE PARCEL_VECTORS
-SET PARCEL_VECTORS.ScaledPriceOnBuildingsPresent = PARCEL_VECTORS.Land_Curr_Value * (1 + (1 - pf.ScaledPrice))
+SET PARCEL_VECTORS.ScaledPriceOnBuildingsPresent = PARCEL_VECTORS.LS1_Sale_Amount * (1 + (1 - pf.ScaledPrice))
 FROM PARCEL_VECTORS
 INNER JOIN PRICE_FACTORS pf
 ON PARCEL_VECTORS.BuildingsPresent = pf.BuildingsPresent and pf.Price_group_int is null AND pf.YearSold = PARCEL_VECTORS.LS1_Sale_Date/10000
@@ -135,7 +135,7 @@ IF (NOT EXISTS (SELECT * FROM information_schema.COLUMNS WHERE TABLE_NAME = 'PAR
     END
     GO
 UPDATE PARCEL_VECTORS
-SET PARCEL_VECTORS.ScaledPriceOnBuildingsPresentAndPriceGroup = PARCEL_VECTORS.Land_Curr_Value * (1 + (1 - pf.ScaledPrice))
+SET PARCEL_VECTORS.ScaledPriceOnBuildingsPresentAndPriceGroup = PARCEL_VECTORS.LS1_Sale_Amount * (1 + (1 - pf.ScaledPrice))
 FROM PARCEL_VECTORS
 INNER JOIN PRICE_FACTORS pf
 ON PARCEL_VECTORS.BuildingsPresent = pf.BuildingsPresent and pf.Price_group_int = PARCEL_VECTORS.Price_Group_int AND pf.YearSold = PARCEL_VECTORS.LS1_Sale_Date/10000

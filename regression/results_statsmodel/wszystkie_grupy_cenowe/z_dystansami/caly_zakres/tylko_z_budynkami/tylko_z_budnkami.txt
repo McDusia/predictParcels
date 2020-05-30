@@ -1,0 +1,106 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 226927
+DEBUG:root:Total samples in our dataset is: 226927
+INFO:root:                                  OLS Regression Results
+=========================================================================================
+Dep. Variable:     ScaledPriceOnBuildingsPresent   R-squared:                       0.251
+Model:                                       OLS   Adj. R-squared:                  0.251
+Method:                            Least Squares   F-statistic:                     894.2
+Date:                           Sat, 30 May 2020   Prob (F-statistic):               0.00
+Time:                                   12:57:09   Log-Likelihood:            -3.1718e+06
+No. Observations:                         181541   AIC:                         6.344e+06
+Df Residuals:                             181472   BIC:                         6.344e+06
+Df Model:                                     68
+Covariance Type:                       nonrobust
+====================================================================================================================
+                                                       coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------------
+PERIMETER                                            1.0521      1.620      0.649      0.516      -2.123       4.227
+PARCEL_TYP                                        7.314e+06    8.7e+04     84.094      0.000    7.14e+06    7.48e+06
+SA_Zip_Cde                                           0.0014      0.000      7.091      0.000       0.001       0.002
+MA_Zip_Cde                                          -0.0125      0.000    -50.965      0.000      -0.013      -0.012
+Hmownr_Exempt_Number                                 0.0540      0.056      0.968      0.333      -0.055       0.163
+Hmownr_Exempt_Value                                -71.7924      7.645     -9.391      0.000     -86.776     -56.809
+BD_LINE_1_Yr_Built                                3827.3576     96.278     39.753      0.000    3638.655    4016.060
+BD_LINE_1_No_of_Units                             8.321e+04   3510.583     23.704      0.000    7.63e+04    9.01e+04
+BD_LINE_1_No_of_Bedrooms                          5.694e+04   1.29e+04      4.399      0.000    3.16e+04    8.23e+04
+BD_LINE_1_No_of_Baths                             1.361e+05   1.32e+04     10.327      0.000     1.1e+05    1.62e+05
+BD_LINE_2_Subpart                                -3.625e+04   4029.905     -8.995      0.000   -4.41e+04   -2.83e+04
+BD_LINE_2_Yr_Built                                 144.2827    396.669      0.364      0.716    -633.179     921.745
+BD_LINE_2_No_of_Units                            -4.929e+04   2.36e+04     -2.092      0.036   -9.55e+04   -3112.189
+BD_LINE_2_No_of_Bedrooms                          3.205e+05    5.4e+04      5.932      0.000    2.15e+05    4.26e+05
+BD_LINE_2_No_of_Baths                            -1.813e+05   6.12e+04     -2.965      0.003   -3.01e+05   -6.14e+04
+BD_LINE_2_Sq_Ft_of_Main_Improve                    121.5876      5.928     20.510      0.000     109.969     133.206
+BD_LINE_3_Subpart                                 1161.2422   4576.269      0.254      0.800   -7808.140    1.01e+04
+BD_LINE_3_Yr_Built                                -287.0220    710.249     -0.404      0.686   -1679.095    1105.051
+BD_LINE_3_No_of_Units                             3.802e+04   3.16e+04      1.205      0.228   -2.38e+04    9.99e+04
+BD_LINE_3_No_of_Bedrooms                         -3.025e+04    1.6e+05     -0.189      0.850   -3.44e+05    2.84e+05
+BD_LINE_3_No_of_Baths                             1.247e+05   1.94e+05      0.642      0.521   -2.56e+05    5.06e+05
+BD_LINE_3_Sq_Ft_of_Main_Improve                    107.9481      8.938     12.077      0.000      90.430     125.466
+Cluster_Location                                  7.285e+05   6951.317    104.801      0.000    7.15e+05    7.42e+05
+Cluster_Type                                     -1.668e+06   2.23e+04    -74.660      0.000   -1.71e+06   -1.62e+06
+Cluster_Appraisal_Unit                           -5.946e+04    999.606    -59.481      0.000   -6.14e+04   -5.75e+04
+Parcel_Area                                         11.7706      0.308     38.277      0.000      11.168      12.373
+CENTER_LAT                                        4.499e+06   6.54e+04     68.775      0.000    4.37e+06    4.63e+06
+CENTER_LON                                        1.187e+06   1.89e+04     62.905      0.000    1.15e+06    1.22e+06
+Residential                                      -2050.4316   6.01e+04     -0.034      0.973    -1.2e+05    1.16e+05
+Special_Purposes_Plan                             1.005e+05   1.78e+05      0.564      0.573   -2.49e+05     4.5e+05
+Agricultural                                     -4.084e+05   1.39e+05     -2.940      0.003   -6.81e+05   -1.36e+05
+Commercial                                        4.553e+06   1.28e+05     35.462      0.000     4.3e+06     4.8e+06
+Manufacturing                                    -2.161e+06   1.77e+05    -12.180      0.000   -2.51e+06   -1.81e+06
+SA_Localization_int                                -14.3298      0.903    -15.877      0.000     -16.099     -12.561
+MA_Localization_int                                  2.9019      0.502      5.783      0.000       1.918       3.885
+MA_Direction_int                                 -5.841e+05   2.38e+04    -24.492      0.000   -6.31e+05   -5.37e+05
+SA_Direction_int                                  5.411e+05   2.41e+04     22.442      0.000    4.94e+05    5.88e+05
+Simple_Zone_int                                   -1.35e+04   5432.765     -2.485      0.013   -2.41e+04   -2853.118
+Zoning_Code_int                                   -180.3814      9.944    -18.140      0.000    -199.871    -160.892
+BD_LINE_1_Year_Changed                           -4647.6793     63.075    -73.685      0.000   -4771.304   -4524.054
+BD_LINE_1_Unit_Cost_Main                          -134.5141     13.179    -10.206      0.000    -160.345    -108.683
+BD_LINE_1_RCN_Main                                   0.1673      0.043      3.853      0.000       0.082       0.252
+BD_LINE_2_Year_Changed                            4860.1260    171.958     28.263      0.000    4523.091    5197.161
+BD_LINE_2_Unit_Cost_Main                          -177.5247    161.632     -1.098      0.272    -494.320     139.270
+BD_LINE_2_RCN_Main                                  -0.3389      0.439     -0.772      0.440      -1.200       0.522
+BD_LINE_3_Year_Changed                            -219.4026    314.244     -0.698      0.485    -835.313     396.508
+BD_LINE_3_Unit_Cost_Main                           973.2568    429.265      2.267      0.023     131.908    1814.606
+BD_LINE_3_RCN_Main                                   4.6375      2.442      1.899      0.058      -0.148       9.423
+BD_LINE_4_Year_Changed                            -176.8327    270.064     -0.655      0.513    -706.151     352.486
+BD_LINE_1_Quality__Class___Shap_int                417.1744     70.376      5.928      0.000     279.238     555.111
+City_int                                         -1402.2747    431.369     -3.251      0.001   -2247.748    -556.801
+DistanceToElementarySchool                          21.2743      8.082      2.632      0.008       5.434      37.114
+DistanceToMiddleSchool                              18.2475      6.400      2.851      0.004       5.704      30.791
+DistanceToHighSchool                                31.9071      6.717      4.750      0.000      18.742      45.072
+DistanceToShopping_Centers                         -80.5700      4.592    -17.545      0.000     -89.570     -71.569
+DistanceToHealth_Centers                            34.1522      4.236      8.062      0.000      25.850      42.455
+DistanceToStreet_Maintenance                        33.9596      2.995     11.340      0.000      28.090      39.829
+DistanceToPools                                    -21.8494      1.793    -12.187      0.000     -25.363     -18.335
+DistanceToManufacturing                             21.4217      1.343     15.951      0.000      18.789      24.054
+DistanceToEconomic_Development                     -17.6371      3.588     -4.916      0.000     -24.669     -10.606
+DistanceToBusiness_Centers                           0.5171      0.986      0.525      0.600      -1.415       2.449
+DistanceToAgriculture_and_Food                      49.2470      3.393     14.513      0.000      42.596      55.898
+DistanceToHealth_Clinics                            42.8409      3.115     13.751      0.000      36.735      48.947
+DistanceToNatural_Areas_and_Wildlife_Sanctuaries    -6.9758      4.586     -1.521      0.128     -15.964       2.012
+DistanceToChild_Care                               -23.8595      4.615     -5.169      0.000     -32.906     -14.813
+DistanceToCrime_Prevention_and_Support            -103.1681      4.533    -22.757      0.000    -112.053     -94.283
+DistanceToWater                                    -32.5747      5.302     -6.144      0.000     -42.966     -22.184
+DistanceToAirport                                   35.4310      1.695     20.897      0.000      32.108      38.754
+DistanceToRiver                                    -40.4405      2.101    -19.246      0.000     -44.559     -36.322
+DistanceToRailroads                                 40.7394      4.228      9.636      0.000      32.453      49.026
+==============================================================================
+Omnibus:                   275322.225   Durbin-Watson:                   1.996
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        155053445.708
+Skew:                           9.483   Prob(JB):                         0.00
+Kurtosis:                     144.911   Cond. No.                     1.00e+16
+==============================================================================
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large,  1e+16. This might indicate that there are
+strong multicollinearity or other numerical problems.
+INFO:root:Max error: 204149929.912272
+INFO:root:Mean squared error: 84921701526039.4
+INFO:root:Root mean squared error: 9215297.14800556
+INFO:root:Mean absolute percentage error: 788.9798107354216
+INFO:root:Explained variance score: 0.257741
+INFO:root:r2 score: 0.257738
+INFO:root:Mean Absolute Error: 3561125.1037741993
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
