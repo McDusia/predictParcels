@@ -6,37 +6,70 @@ from utils.DataSplitter import DataSplitter
 from utils.database_handler import DatabaseHandler
 
 
-def get_basic_data(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
-    logging.basicConfig(level=logging.DEBUG)
-    database_handler = DatabaseHandler()
-    query = "EXEC GetDataToTrainModel @LimitDate = {}, @ExcludedList ='{}', @PriceGroupList = '{}', @BuildingsPresent = '{}'" \
-            .format(
-            limit_date,
-            excluded_values,
-            price_groups,
-            buildings_present
-    )
-    data = database_handler.execute_query(query)
-
-    # Drop ObjectID column
-    data.drop(id_to_omit_from_data, axis=1)
+def omit_columns(data, columns_to_omit):
+    data.drop(columns=id_to_omit_from_data, axis=1, inplace=True)
 
     if len(columns_to_omit) > 0:
-        data.drop(columns_to_omit, axis=1)
+        data.drop(columns=columns_to_omit, axis=1, inplace=True)
 
     logging.debug("Total samples in our dataset is: {}".format(data.shape[0]))
 
     return data
 
 
-def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
-    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
+def get_data_with_distances(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
+    logging.basicConfig(level=logging.DEBUG)
+    database_handler = DatabaseHandler()
+    query = "EXEC GetDataToTrainModelWithDistances @LimitDate = {}, @ExcludedList ='{}', @PriceGroupList = '{}', @BuildingsPresent = '{}'" \
+        .format(
+        limit_date,
+        excluded_values,
+        price_groups,
+        buildings_present
+    )
+    data = database_handler.execute_query(query)
+
+    data = omit_columns(data, columns_to_omit)
+
+    logging.debug("Total samples in our dataset is: {}".format(data.shape[0]))
+
+    return data
+
+
+def get_basic_data(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[]):
+    logging.basicConfig(level=logging.DEBUG)
+    database_handler = DatabaseHandler()
+    query = "EXEC GetDataToTrainModel @LimitDate = {}, @ExcludedList ='{}', @PriceGroupList = '{}', @BuildingsPresent = '{}'" \
+        .format(
+        limit_date,
+        excluded_values,
+        price_groups,
+        buildings_present
+    )
+    data = database_handler.execute_query(query)
+
+    # Drop ObjectID column
+    data = omit_columns(data, columns_to_omit)
+
+    logging.debug("Total samples in our dataset is: {}".format(data.shape[0]))
+
+    return data
+
+
+def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[], use_distances=False):
+    if use_distances:
+        data = get_data_with_distances(price_groups, buildings_present, columns_to_omit)
+    else:
+        data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_x_y(data)
 
 
 def get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[],
-                                      random_state=0, test_size=0.2):
-    data = get_basic_data(price_groups, buildings_present, columns_to_omit)
+                                      random_state=0, test_size=0.2, use_distances=False):
+    if use_distances:
+        data = get_data_with_distances(price_groups, buildings_present, columns_to_omit)
+    else:
+        data = get_basic_data(price_groups, buildings_present, columns_to_omit)
     return split_data_train_test(data, random_state, test_size)
 
 
