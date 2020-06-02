@@ -61,8 +61,10 @@ RETURN
         BD_LINE_4_Year_Changed,
         BD_LINE_1_Quality__Class___Shap_int,
         City_int,
-        --Sale_Amount
-        ScaledPriceOnBuildingsPresent
+        Current_Land_Base_Value_Avg,
+        Current_Improvement_Base_Value_Avg,
+        Sale_Amount
+        --ScaledPriceOnBuildingsPresent
 FROM PARCEL_VECTORS
 WHERE LS1_Sale_Date >= @LimitDate
       AND LS1_Sale_Date < 20170000

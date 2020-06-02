@@ -1,7 +1,7 @@
 """
     Price classification module configuration constants
 """
-target_column_name = 'ScaledPriceOnBuildingsPresent'
+target_column_name = 'Sale_Amount'
 
 """
     Lower limit date to filter data in order to train the model
