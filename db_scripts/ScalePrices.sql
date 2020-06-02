@@ -1,15 +1,24 @@
+
+use LosAngelesParcels
+CREATE TABLE Price_Factors (
+    BuildingsPresent INT NOT NULL,
+    Price_Group_int INT,
+    AveragePrice FLOAT(10) NOT NULL,
+    ScaledPrice FLOAT(10) NOT NULL,
+    YearSold INT,
+);
+
 -- Declarations
 DECLARE @ExcludedList VARCHAR(MAX);
 DECLARE @PriceGroupInt VARCHAR(10);
 DECLARE @BuildingsPresent VARCHAR(10);
 
-SET @ExcludedList = '0;9;999999999'
+SET @ExcludedList = '0;9;1;999999999'
 SET @PriceGroupInt = '0;1;2'
 SET @BuildingsPresent = '0;1'
 
 -- Extract prices
 use LosAngelesParcels
-
 SELECT avg(Price_Per_Single_Area_Unit), BuildingsPresent, Price_Group_int, LS1_Sale_Date/10000 as YearSold
 FROM PARCEL_VECTORS
 WHERE LS1_Sale_Date > 20140000
@@ -21,20 +30,17 @@ WHERE LS1_Sale_Date > 20140000
 GROUP BY BuildingsPresent, Price_Group_int, LS1_Sale_Date/10000
 ORDER BY Price_Group_int, BuildingsPresent, LS1_Sale_Date/10000 asc
 
----------
 
-use LosAngelesParcels
-CREATE TABLE Price_Factors (
-    BuildingsPresent INT NOT NULL,
-    Price_Group_int INT,
-    AveragePrice FLOAT(10) NOT NULL,
-    ScaledPrice FLOAT(10) NOT NULL,
-    YearSold INT,
-);
-
---
 -- -- insert values into Price_Factors
 -- -- scale on BuildingsPresent
+DECLARE @ExcludedList VARCHAR(MAX);
+DECLARE @PriceGroupInt VARCHAR(10);
+DECLARE @BuildingsPresent VARCHAR(10);
+
+SET @ExcludedList = '0;9;1;999999999'
+SET @PriceGroupInt = '0;1;2'
+SET @BuildingsPresent = '0;1'
+SELECT * FROM PARCEL_VECTORS WHERE BuildingsPresent = 0
 
 INSERT INTO Price_Factors
 SELECT BuildingsPresent, NULL as Price_Group_int, avg(Price_Per_Single_Area_Unit) as AveragePrice, avg(Price_Per_Single_Area_Unit)/538.1800919705275 as ScaledPrice, LS1_Sale_Date/10000 as YearSold
@@ -47,6 +53,15 @@ WHERE LS1_Sale_Date > 20140000
 	  AND BuildingsPresent = 0
 	  AND Parcel_Area != 0
 GROUP BY BuildingsPresent, LS1_Sale_Date/10000;
+
+DECLARE @ExcludedList VARCHAR(MAX);
+DECLARE @PriceGroupInt VARCHAR(10);
+DECLARE @BuildingsPresent VARCHAR(10);
+
+SET @ExcludedList = '0;9;1;999999999'
+SET @PriceGroupInt = '0;1;2'
+SET @BuildingsPresent = '0;1'
+SELECT * FROM PARCEL_VECTORS WHERE BuildingsPresent = 0
 
 INSERT INTO Price_Factors
 SELECT BuildingsPresent, NULL as Price_Group_int, avg(Price_Per_Single_Area_Unit) as AveragePrice, avg(Price_Per_Single_Area_Unit)/140.22179068848186 as ScaledPrice, LS1_Sale_Date/10000 as YearSold
@@ -67,7 +82,7 @@ DECLARE @ExcludedList VARCHAR(MAX);
 DECLARE @PriceGroupInt VARCHAR(10);
 DECLARE @BuildingsPresent VARCHAR(10);
 
-SET @ExcludedList = '0;9;999999999'
+SET @ExcludedList = '0;9;1;999999999'
 SET @PriceGroupInt = '0;1;2'
 SET @BuildingsPresent = '0;1'
 INSERT INTO Price_Factors
@@ -149,6 +164,14 @@ CREATE TABLE Price_Averages (
     AveragePrice FLOAT(10) NOT NULL,
     YearSold INT,
 );
+
+DECLARE @ExcludedList VARCHAR(MAX);
+DECLARE @PriceGroupInt VARCHAR(10);
+DECLARE @BuildingsPresent VARCHAR(10);
+
+SET @ExcludedList = '0;9;1;999999999'
+SET @PriceGroupInt = '0;1;2'
+SET @BuildingsPresent = '0;1'
 
 INSERT INTO Price_Averages
 SELECT avg(Price_Per_Single_Area_Unit) as AveragePrice, BuildingsPresent, LS1_Sale_Date/10000 as YearSold

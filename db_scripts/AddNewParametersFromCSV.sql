@@ -21,8 +21,8 @@ CREATE TABLE [dbo].[PARCEL_VECTORSNewParameters] (
 	DistanceToWater numeric(38,8) null,
 	DistanceToAirport numeric(38,8) null,
 	DistanceToRiver numeric(38,8) null,
-	DistanceToRailroads numeric(38,8) null,
-	ElementarySchoolsInNeighbourhood integer null, 
+	DistanceToRailroads numeric(38,8) null
+	/*,ElementarySchoolsInNeighbourhood integer null, 
 	MiddleSchoolInNeighbourhood integer null, 
 	HighSchoolInNeighbourhood integer null, 
 	Shopping_CentersInNeighbourhood integer null, 
@@ -40,11 +40,12 @@ CREATE TABLE [dbo].[PARCEL_VECTORSNewParameters] (
 	WaterInNeighbourhood integer null, 
 	AirportInNeighbourhood integer null, 
 	RiverInNeighbourhood integer null, 
-	RailroadsInNeighbourhood integer null
+	RailroadsInNeighbourhood integer null*/
+)
 
 
 BULK INSERT [PARCEL_VECTORSNewParameters]
-    FROM '\data\PARCEL_VECTORSNewParameters.csv'	-- Here change path
+    FROM '\data\PARCEL_VECTORSNewParameters_Part1_Vol2.csv'	-- Here change path
     WITH
     (
     FIRSTROW = 2,

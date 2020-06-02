@@ -172,8 +172,8 @@ ADD DistanceToElementarySchool numeric(38,8) null,
 	
 ALTER TABLE PARCEL_VECTORS
 ADD ElementarySchoolsInNeighbourhood integer null, 
-	MiddleSchoolInNeighbourhood integer null, 
-	HighSchoolInNeighbourhood integer null, 
+	MiddleSchoolsInNeighbourhood integer null, 
+	HighSchoolsInNeighbourhood integer null, 
 	Shopping_CentersInNeighbourhood integer null, 
 	Health_CentersInNeighbourhood integer null, 
 	Street_MaintenanceInNeighbourhood integer null, 
@@ -192,4 +192,28 @@ ADD ElementarySchoolsInNeighbourhood integer null,
 	RailroadsInNeighbourhood integer null
 
 
-exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 2000, 5000
+exec CountPOIInNeighbourhood 'ElementarySchoolsInNeighbourhood', 'Public_Elementary_Schools', 0, 2400375
+exec CountPOIInNeighbourhood 'MiddleSchoolsInNeighbourhood', 'Public_Middle_Schools', 0, 2400375
+exec CountPOIInNeighbourhood 'HighSchoolsInNeighbourhood', 'Public_High_Schools', 0, 2400375
+exec CountPOIInNeighbourhood 'Shopping_CentersInNeighbourhood', 'Shopping_Centers', 0, 2400375
+exec CountPOIInNeighbourhood 'Health_CentersInNeighbourhood', 'Health_Centers', 0, 2400375
+exec CountPOIInNeighbourhood 'Street_MaintenanceInNeighbourhood', 'Street_Maintenance', 0, 2400375
+
+-- TODO:
+exec CountPOIInNeighbourhood 'PoolsInNeighbourhood', 'Pools', 10000, 2400375
+exec CountPOIInNeighbourhood 'ManufacturingInNeighbourhood', 'Manufacturing', 0, 2400375
+exec CountPOIInNeighbourhood 'Economic_DevelopmentInNeighbourhood', 'Economic_Development', 0, 2400375
+exec CountPOIInNeighbourhood 'Business_CentersInNeighbourhood', 'Business_Centers', 0, 2400375
+exec CountPOIInNeighbourhood 'Agriculture_and_FoodInNeighbourhood', 'Agriculture_and_Food', 0, 2400375
+exec CountPOIInNeighbourhood 'Health_ClinicsInNeighbourhood', 'Health_Clinics', 0, 2400375
+exec CountPOIInNeighbourhood 'Natural_Areas_and_Wildlife_SanctuariesInNeighbourhood',
+	'Natural_Areas_and_Wildlife_Sanctuaries', 0, 2400375 
+exec CountPOIInNeighbourhood 'Child_CareInNeighbourhood', 'Child_Care', 0, 2400375
+exec CountPOIInNeighbourhood 'Crime_Prevention_and_SupportInNeighbourhood', 'Crime_Prevention_and_Support', 0, 2400375
+exec CountPOIInNeighbourhood 'WaterInNeighbourhood', 'Water', 0, 2400375
+
+/* TODO 
+exec CountPOIInNeighbourhood 'AirportInNeighbourhood', 'LosAngelesCounty.dbo.Airports' , 0, 2400375
+exec CountPOIInNeighbourhood 'RiverInNeighbourhood', 'River' , 0, 2400375
+exec CountPOIInNeighbourhood 'RailroadsInNeighbourhood', 'Railroads', 0, 2400375
+*/

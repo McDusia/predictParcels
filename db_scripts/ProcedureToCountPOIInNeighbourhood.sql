@@ -29,7 +29,12 @@ BEGIN
 	TAB.POINT.Filter(shape.STBuffer(25000)) = 1
 	)
 	where OBJECTID BETWEEN '+ 
-					CONVERT(varchar, @index_start) +' AND ' + CONVERT(varchar, @index_stop) + ' '
+					CONVERT(varchar, @index_start) +' AND ' + CONVERT(varchar, @index_stop) + 
+					'
+						AND LS1_Sale_Date >= 20140000
+						AND LS1_Sale_Date < 20170000
+						AND Price_Per_Single_Area_Unit > 1
+					 '
 	print @query
 	EXECUTE sp_executesql @query
 END

@@ -1,12 +1,8 @@
-from configuration.configuration_constants \
-    import model_target_folder,\
-    file_names_convention, \
-    checkpoint_file_target_folder,\
-    limit_date,\
-    predict_prices_using_price_parameters
+from configuration.configuration_constants import model_target_folder, file_names_convention, \
+    checkpoint_file_target_folder, limit_date, predict_prices_using_price_parameters
 
 
-def get_model_filename():
+def get_neural_network_model_filename():
     if predict_prices_using_price_parameters:
         return model_target_folder + file_names_convention + '.h5'
     else:
