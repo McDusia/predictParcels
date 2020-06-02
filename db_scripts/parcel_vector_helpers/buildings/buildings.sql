@@ -13,5 +13,5 @@ GO
 
 UPDATE PARCEL_VECTORS
 SET BuildingsPresent = 0
-  WHERE BD_LINE_1_No_of_Units = 0 and BD_LINE_2_No_of_Units = 0 and BD_LINE_1_No_of_Units = 3
+  WHERE BD_LINE_1_No_of_Units = 0 and BD_LINE_2_No_of_Units = 0 and BD_LINE_3_No_of_Units = 0
 

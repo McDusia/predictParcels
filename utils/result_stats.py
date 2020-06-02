@@ -20,7 +20,7 @@ def rmse(predictions, targets):
     return np.sqrt(((predictions - targets) ** 2).mean())
 
 
-def get_result_statistics(predicted_values, real_values):
+def get_result_statistics(predicted_values, real_values, plot_title=""):
     mse = mean_squared_error(real_values, predicted_values)
     rms = rmse(predicted_values, real_values)
     mean_absolute_percentage_e = mean_absolute_percentage_error(real_values, predicted_values)
@@ -44,7 +44,15 @@ def get_result_statistics(predicted_values, real_values):
     logging.info('Explained variance score: %s', round(explained_variance_score_result, 6))
     logging.info('r2 score: %s', round(r2_score_result, 6))
     logging.info("Mean Absolute Error: %s", mae)
-
-    values_one_plot(real_values, predicted_values, "Real values", "Estimated values", "Linear regression")
-    values_one_plot_with_linear_and_dots(real_values, predicted_values, "Real values", "Estimated values",
-                                         "Linear regression")
+    x_label = "Kolejne numery działek"
+    y_label = "cena za działkę [$]"
+    values_one_plot_with_linear_and_dots(real_values[:1000], predicted_values[:1000], "Rzeczywiste wartości",
+                                         "Predygowane wartości",
+                                         plot_title, x_label=x_label, y_label=y_label)
+    values_one_plot_with_linear_and_dots(real_values[:5000], predicted_values[:5000], "Rzeczywiste wartości",
+                                         "Predygowane wartości",
+                                         plot_title, x_label=x_label, y_label=y_label)
+    values_one_plot(real_values, predicted_values, "Rzeczywiste wartości", "Predygowane wartości", plot_title,
+                    x_label=x_label, y_label=y_label)
+    values_one_plot_with_linear_and_dots(real_values, predicted_values, "Rzeczywiste wartości", "Predygowane wartości",
+                                         plot_title, x_label=x_label, y_label=y_label)

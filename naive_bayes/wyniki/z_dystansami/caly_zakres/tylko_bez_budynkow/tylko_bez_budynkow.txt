@@ -1,0 +1,36 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 21644
+DEBUG:root:Total samples in our dataset is: 21644
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 1.70991016e+03 -3.69659199e+06 -8.71777226e-04 -1.92601721e-02
+ -2.44184987e+02 -8.71987381e+01  6.19702692e+02 -1.72469818e+03
+  1.05648072e+04 -1.38228575e+05 -2.29473885e+04  1.10242547e+03
+ -5.32322284e+02 -2.86591843e+05 -1.17011503e+05  1.59073530e+02
+ -2.21061355e+04  4.55324068e+03 -4.90856643e+02  7.21115802e+05
+ -1.97486639e+06  7.01641066e+01  1.09805712e+05  2.91696196e+05
+  1.77613649e+04  7.95745825e+00  1.65435664e+06  4.90012353e+05
+ -1.47291257e+06 -2.47196577e+06  3.59953093e+06 -2.85874546e+05
+ -2.07091282e+06  7.47623286e+00 -1.65688214e+00 -1.77621575e+05
+ -1.12670037e+05  3.23986612e+04 -2.58898556e+02 -1.97658349e+02
+  4.08368632e+01  3.73110618e+00  3.12569405e+02  9.18648649e+03
+  2.10638314e-02 -5.52726319e+02  3.14447526e+03  1.35162497e+00
+  1.01131743e+03 -7.95941363e+02  1.42652586e+04 -1.80856746e+02
+  2.73457664e+02 -7.84544517e+01 -1.97399626e+02 -3.38320598e+01
+  4.55566852e+01  2.66156995e+01  2.23957444e+01  9.09438615e+01
+  9.83017016e+00  8.53493064e+01 -2.09769511e+01 -8.44592653e+01
+ -8.86626865e+01 -1.42316459e+01  3.35380521e+00  8.26002186e+00
+ -8.73586388e+01 -4.73789908e+00]
+DEBUG:root:{'alpha_1': 10000000.0, 'alpha_2': 1e-10, 'lambda_1': 1e-07, 'lambda_2': 100, 'n_iter': 500}
+DEBUG:root:Model fitted
+DEBUG:root:Prediction was made
+DEBUG:root:Prediction was made
+INFO:root:Max error: 210363632.960328
+INFO:root:Mean squared error: 139721681810319.28
+INFO:root:Root mean squared error: 11820392.625049274
+INFO:root:Mean absolute percentage error: 2443.2535124328783
+INFO:root:Explained variance score: 0.180272
+INFO:root:r2 score: 0.180263
+INFO:root:Mean Absolute Error: 5464720.458059807
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
