@@ -19,4 +19,5 @@ def export_decision_tree_to_file(text):
 
 
 def convert_dot_to_svg():
-    call(['sfdp', '-x', '-Goverlap=scale', '-Tsvg', 'decision_tree.dot', '-o', 'decision_tree.svg'])
+    pass
+    # call(['sfdp', '-x', '-Goverlap=scale', '-Tsvg', 'decision_tree.dot', '-o', 'decision_tree.svg'])

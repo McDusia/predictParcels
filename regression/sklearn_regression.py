@@ -4,6 +4,7 @@ from sklearn.linear_model import LinearRegression
 from utils.get_basic_train_data import get_basic_data_splited_train_test
 from utils.plots.basic_plot import basic_plot, values_one_plot
 from utils.result_stats import get_result_statistics
+from configuration.configuration_constants import values_to_omit_in_basic_data_version
 
 
 def run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set):
@@ -25,8 +26,8 @@ def run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_s
 
 
 if __name__ == '__main__':
-    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_data_splited_train_test(price_groups='0',
-                                                                                         buildings_present='1',
-                                                                                         basic_data_version=True,
+    x_train_set, x_test_set, y_train_set, y_test_set = get_basic_data_splited_train_test(price_groups='0;1;2',
+                                                                                         buildings_present='0;1',
+                                                                                         columns_to_omit=values_to_omit_in_basic_data_version,
                                                                                          test_size=0.2)
     run_sklearn_linear_regression(x_train_set, x_test_set, y_train_set, y_test_set)
