@@ -1,9 +1,10 @@
 """
     Price classification module configuration constants
 """
-target_column_name = 'ScaledPriceOnBuildingsPresent'
+target_column_name = 'Sale_Amount'
 
 """
+'ScaledPriceOnBuildingsPresent'
     Lower limit date to filter data in order to train the model
     provided in format 'YYYYMMDD'.
     
@@ -22,18 +23,21 @@ excluded_values = '0;1;9;999999999'
 """
 predict_prices_using_price_parameters = True
 
-values_to_omit_in_basic_data_version = ['Zoning_Code_int', 'Hmownr_Exempt_Number', 'Hmownr_Exempt_Value',
-                                        'BD_LINE_2_Subpart', 'BD_LINE_2_Subpart', 'BD_LINE_1_RCN_Main',
-                                        'BD_LINE_2_RCN_Main', 'BD_LINE_3_RCN_Main', 'BD_LINE_4_Year_Changed',
-                                        'Landlord_Reappraisal_Year', 'Landlord_Number_of_Units']
+values_to_omit_in_basic_data_version = ['PERIMETER', 'PARCEL_TYP', 'Hmownr_Exempt_Number', 'Hmownr_Exempt_Value',
+                                        'BD_LINE_3_Yr_Built', 'BD_LINE_3_No_of_Units', 'BD_LINE_3_No_of_Bedrooms',
+                                        'BD_LINE_3_No_of_Baths', 'BD_LINE_3_Sq_Ft_of_Main_Improve',
+                                        'CENTER_LAT', 'CENTER_LON','BD_LINE_3_Year_Changed', 'BD_LINE_3_Unit_Cost_Main',
+                                        'BD_LINE_3_RCN_Main', 'BD_LINE_4_Year_Changed']
+
+id_to_omit_from_data = ['OBJECTID']
 
 """
     NEURAL NETWORK MODEL PARAMETERS
 """
-seed = 1000
-epochs_value = 2000
+seed = 100
+epochs_value = 10000
 validation_split_value = 0.15
-verbose_value = 2
+verbose_value = 1
 
 """
   Variable to set if overwrite file with neural network model or not. 
@@ -51,10 +55,9 @@ current_bucket = 'cheap'
   Depends on it, program will call different procedure, which return data with different amount of columns. 
 """
 train_model_with_price_parameters = False
-
+train_model_starting_from_init_weights = False
 
 """
-check if all below variables are using:
    Paths to:
     - initial weights for neural network before start training the model
     - folder to save trained models files
@@ -67,5 +70,3 @@ checkpoint_file_target_folder = './resources/best_results/checkpoint_'
 file_names_convention = 'model_' + str(limit_date) + '_' + current_bucket
 checkpoint_file_path = './resources/'
 path_to_trained_models = './trained_models/'
-
-id_to_omit_from_data = ['OBJECTID']
