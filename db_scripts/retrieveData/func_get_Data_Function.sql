@@ -47,7 +47,7 @@ RETURN
         MA_Localization_int,
         MA_Direction_int,
         SA_Direction_int,
-        Simple_Zone_int,
+        PARCEL_VECTORS.Simple_Zone_int,
         Zoning_Code_int,
         BD_LINE_1_Year_Changed,
         BD_LINE_1_Unit_Cost_Main,
@@ -61,8 +61,10 @@ RETURN
         BD_LINE_4_Year_Changed,
         BD_LINE_1_Quality__Class___Shap_int,
         City_int,
-		Current_Land_Base_Value_Avg,
-		Current_Improvement_Base_Value_Avg,
+		AP.Current_Land_Base_Value_Avg,
+        AP.Current_Improvement_Base_Value_Avg_Buildings,
+        AP.Current_Land_Base_Value_Avg_Buildings,
+        AP.Current_Land_Base_Value_Avg_No_Buildings,
 		Simple_Zone_1,
         Simple_Zone_2,
         Simple_Zone_3,
@@ -96,6 +98,7 @@ RETURN
         --10 *ScaledPriceOnBuildingsPresent as ScaledPriceOnBuildingsPresent
 		Sale_Amount
 FROM PARCEL_VECTORS
+JOIn Average_Prices AP ON AP.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
 WHERE LS1_Sale_Date >= @LimitDate
       AND LS1_Sale_Date < 20170000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
