@@ -1,23 +1,34 @@
 -- Add new column with average value of land base and improvement
+IF (NOT EXISTS (select * from information_schema.COLUMNS where TABLE_NAME = 'PARCEL_VECTORS' and COLUMN_NAME = 'Current_Land_Base_Value_Avg'))
+	BEGIN
 ALTER TABLE PARCEL_VECTORS
 ADD Current_Land_Base_Value_Avg int,
 	Current_Improvement_Base_Value_Avg int
+	END
+GO
 
-	use LosAngelesParcels
+
+IF (EXISTS (SELECT *
+                 FROM INFORMATION_SCHEMA.TABLES
+                 WHERE TABLE_NAME = 'Average_Prices'))
+BEGIN
+	DROP TABLE Average_Prices
+END
+
+use LosAngelesParcels
 CREATE TABLE Average_Prices (
     Simple_Zone_int INT,
     Current_Land_Base_Value_Avg INT,
     Current_Improvement_Base_Value_Avg INT,
 );
-
+--================================
 -- Count average values
+--================================
 DECLARE @ExcludedList VARCHAR(MAX);
-DECLARE @PriceGroupInt VARCHAR(10);
-DECLARE @BuildingsPresent VARCHAR(10);
 SET @ExcludedList = '0;9;1;999999999'
 
 INSERT INTO Average_Prices
-select Simple_Zone_int, avg(cast(Current_Land_Base_Value as bigint)), null
+select Simple_Zone_int, avg(cast((Current_Land_Base_Value/ Parcel_Area) as bigint)), null
 from PARCEL_VECTORS
 where LS1_Sale_Date >= 20140000 AND LS1_Sale_Date < 20170000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
@@ -31,19 +42,20 @@ where LS1_Sale_Date >= 20140000 AND LS1_Sale_Date < 20170000
 	  2216014,2216015,2216190,2216196,2223061,2223063,2223085,2223093,2223168,2223218,2242397,2248300,2249304,2313228,
 	  2313359,2313367,2313437,2314516,2315037,2316056,2316065,2316067,2316094,2316110,2316174,2316196,2319204,2319937,
 	  2319941,2319961,2323781,2328539,2339044,2342849,2344222,2355731,2374254,2379400,2387108,2387109,2387604,
-	  2390674,2398109)
+	  2390674,2398109) 
+	  AND Parcel_Area != 0
 group by Simple_Zone_int
 
+--------------
 DECLARE @ExcludedList VARCHAR(MAX);
-DECLARE @PriceGroupInt VARCHAR(10);
-DECLARE @BuildingsPresent VARCHAR(10);
 SET @ExcludedList = '0;9;1;999999999'
 
 UPDATE Average_Prices
 set Current_Improvement_Base_Value_Avg = A.Current_Improvement_Base_Value_Avg
 from 
 (
-select Simple_Zone_int, avg(cast(Current_Improvement_Base_Value as bigint)) as Current_Improvement_Base_Value_Avg
+select Simple_Zone_int, avg(cast((Current_Improvement_Base_Value/(BD_LINE_1_Sq_Ft_of_Main_Improve + BD_LINE_2_Sq_Ft_of_Main_Improve + BD_LINE_3_Sq_Ft_of_Main_Improve))
+ as bigint)) as Current_Improvement_Base_Value_Avg
 from PARCEL_VECTORS
 where LS1_Sale_Date >= 20140000 AND LS1_Sale_Date < 20170000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
@@ -57,7 +69,8 @@ where LS1_Sale_Date >= 20140000 AND LS1_Sale_Date < 20170000
 	  2216014,2216015,2216190,2216196,2223061,2223063,2223085,2223093,2223168,2223218,2242397,2248300,2249304,2313228,
 	  2313359,2313367,2313437,2314516,2315037,2316056,2316065,2316067,2316094,2316110,2316174,2316196,2319204,2319937,
 	  2319941,2319961,2323781,2328539,2339044,2342849,2344222,2355731,2374254,2379400,2387108,2387109,2387604,
-	  2390674,2398109)
+	  2390674,2398109) and BD_LINE_1_Sq_Ft_of_Main_Improve + BD_LINE_2_Sq_Ft_of_Main_Improve + BD_LINE_3_Sq_Ft_of_Main_Improve != 0
+	  AND Current_Improvement_Base_Value != 0
 group by Simple_Zone_int
 ) A
 where A.Simple_Zone_int = Average_Prices.Simple_Zone_int
@@ -71,14 +84,5 @@ select Simple_Zone_int, Current_Land_Base_Value_Avg
 	from Average_Prices) as A
 where A.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
 
-UPDATE PARCEL_VECTORS
-set Current_Improvement_Base_Value_Avg = A.Current_Improvement_Base_Value_Avg
-from 
-(
-select Simple_Zone_int, Current_Improvement_Base_Value_Avg 
-	from Average_Prices) as A
-where A.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
 
 
-select * from Average_Prices
-select top 10  * from PARCEL_VECTORS

@@ -61,8 +61,40 @@ RETURN
         BD_LINE_4_Year_Changed,
         BD_LINE_1_Quality__Class___Shap_int,
         City_int,
-        --Sale_Amount
-        ScaledPriceOnBuildingsPresent
+		Current_Land_Base_Value_Avg,
+		Current_Improvement_Base_Value_Avg,
+		Simple_Zone_1,
+        Simple_Zone_2,
+        Simple_Zone_3,
+        Simple_Zone_4,
+        Simple_Zone_5,
+        Simple_Zone_6,
+        Simple_Zone_7,
+        Simple_Zone_8,
+        Simple_Zone_9,
+        Simple_Zone_10,
+        Simple_Zone_11,
+        Simple_Zone_12,
+        Simple_Zone_13,
+        Simple_Zone_14,
+        Simple_Zone_15,
+        Simple_Zone_16,
+        Simple_Zone_17,
+        Simple_Zone_18,
+        Simple_Zone_19,
+        Simple_Zone_20,
+        Simple_Zone_21,
+        Simple_Zone_22,
+        Simple_Zone_23,
+        Simple_Zone_24,
+        Simple_Zone_25,
+        Simple_Zone_26,
+        Simple_Zone_27,
+        Simple_Zone_28,
+        Simple_Zone_29,
+        Simple_Zone_30,
+        --10 *ScaledPriceOnBuildingsPresent as ScaledPriceOnBuildingsPresent
+		Sale_Amount
 FROM PARCEL_VECTORS
 WHERE LS1_Sale_Date >= @LimitDate
       AND LS1_Sale_Date < 20170000
@@ -80,3 +112,4 @@ WHERE LS1_Sale_Date >= @LimitDate
 	  2313359,2313367,2313437,2314516,2315037,2316056,2316065,2316067,2316094,2316110,2316174,2316196,2319204,2319937,
 	  2319941,2319961,2323781,2328539,2339044,2342849,2344222,2355731,2374254,2379400,2387108,2387109,2387604,
 	  2390674,2398109)
+	  AND Parcel_Area != 0

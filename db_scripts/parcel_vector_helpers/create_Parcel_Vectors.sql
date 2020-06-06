@@ -624,3 +624,166 @@ UPDATE PARCEL_VECTORS SET Sale_Amount = LS1_Sale_Amount,
 						  Row_Version_Stamp = 0,
 						  Estimated_Amount = 0						
 GO
+
+-- =============================================
+-- Add Zoning Code info in oneHot format
+-- =============================================
+
+
+ALTER TABLE PARCEL_VECTORS
+ADD	Simple_Zone_1 int,
+	Simple_Zone_2 int,
+	Simple_Zone_3 int,
+	Simple_Zone_4 int,
+	Simple_Zone_5 int,
+	Simple_Zone_6 int,
+	Simple_Zone_7 int,
+	Simple_Zone_8 int,
+	Simple_Zone_9 int,
+	Simple_Zone_10 int,
+	Simple_Zone_11 int,
+	Simple_Zone_12 int,
+	Simple_Zone_13 int,
+	Simple_Zone_14 int,
+	Simple_Zone_15 int,
+	Simple_Zone_16 int,
+	Simple_Zone_17 int,
+	Simple_Zone_18 int,
+	Simple_Zone_19 int,
+	Simple_Zone_20 int,
+	Simple_Zone_21 int,
+	Simple_Zone_22 int,
+	Simple_Zone_23 int,
+	Simple_Zone_24 int,
+	Simple_Zone_25 int,
+	Simple_Zone_26 int,
+	Simple_Zone_27 int,
+	Simple_Zone_28 int,
+	Simple_Zone_29 int,
+	Simple_Zone_30 int
+GO
+
+
+UPDATE PARCEL_VECTORS
+SET Simple_Zone_1 = 0,
+	Simple_Zone_2 = 0,
+	Simple_Zone_3 = 0,
+    Simple_Zone_4 = 0,
+    Simple_Zone_5 = 0,
+    Simple_Zone_6 = 0,
+    Simple_Zone_7 = 0,
+    Simple_Zone_8 = 0,
+    Simple_Zone_9 = 0,
+    Simple_Zone_10 = 0,
+    Simple_Zone_11 = 0,
+    Simple_Zone_12 = 0,
+    Simple_Zone_13 = 0,
+    Simple_Zone_14 = 0,
+    Simple_Zone_15 = 0,
+    Simple_Zone_16 = 0,
+    Simple_Zone_17 = 0,
+    Simple_Zone_18 = 0,
+    Simple_Zone_19 = 0,
+    Simple_Zone_20 = 0,
+    Simple_Zone_21 = 0,
+    Simple_Zone_22 = 0,
+    Simple_Zone_23 = 0,
+    Simple_Zone_24 = 0,
+    Simple_Zone_25 = 0,
+    Simple_Zone_26 = 0,
+    Simple_Zone_27 = 0,
+    Simple_Zone_28 = 0,
+    Simple_Zone_29 = 0,
+    Simple_Zone_30 = 0
+GO
+
+---
+UPDATE PARCEL_VECTORS SET Simple_Zone_1 = 1
+WHERE Simple_Zone_int = 1
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_2 = 1
+WHERE Simple_Zone_int = 2
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_3 = 1
+WHERE Simple_Zone_int = 3
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_4 = 1
+WHERE Simple_Zone_int = 4
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_5 = 1
+WHERE Simple_Zone_int = 5
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_6 = 1
+WHERE Simple_Zone_int = 6
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_7 = 1
+WHERE Simple_Zone_int = 7
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_8 = 1
+WHERE Simple_Zone_int = 8
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_9 = 1
+WHERE Simple_Zone_int = 9
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_10 = 1
+WHERE Simple_Zone_int = 10
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_11 = 1
+WHERE Simple_Zone_int = 11
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_12 = 1
+WHERE Simple_Zone_int = 12
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_13 = 1
+WHERE Simple_Zone_int = 13
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_14 = 1
+WHERE Simple_Zone_int = 14
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_15 = 1
+WHERE Simple_Zone_int = 15
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_16 = 1
+WHERE Simple_Zone_int = 16
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_17 = 1
+WHERE Simple_Zone_int = 17
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_18 = 1
+WHERE Simple_Zone_int = 18
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_19 = 1
+WHERE Simple_Zone_int = 19
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_20 = 1
+WHERE Simple_Zone_int = 20
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_21 = 1
+WHERE Simple_Zone_int = 21
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_22 = 1
+WHERE Simple_Zone_int = 22
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_23 = 1
+WHERE Simple_Zone_int = 23
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_24 = 1
+WHERE Simple_Zone_int = 24
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_25 = 1
+WHERE Simple_Zone_int = 25
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_26 = 1
+WHERE Simple_Zone_int = 26
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_27 = 1
+WHERE Simple_Zone_int = 27
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_28 = 1
+WHERE Simple_Zone_int = 28
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_29 = 1
+WHERE Simple_Zone_int = 29
+
+UPDATE PARCEL_VECTORS SET Simple_Zone_30 = 1
+WHERE Simple_Zone_int = 30
