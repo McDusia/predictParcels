@@ -96,7 +96,8 @@ RETURN
         Simple_Zone_29,
         Simple_Zone_30,
         --10 *ScaledPriceOnBuildingsPresent as ScaledPriceOnBuildingsPresent
-		Sale_Amount
+		Sale_Amount,
+		Price_Group_int
 FROM PARCEL_VECTORS
 JOIn Average_Prices AP ON AP.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
 WHERE LS1_Sale_Date >= @LimitDate
