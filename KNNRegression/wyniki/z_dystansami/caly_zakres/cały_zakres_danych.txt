@@ -1,0 +1,59 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:{'n_neighbors': 10}
+DEBUG:root:Model fitted
+INFO:root:Max error: 6358713.4
+INFO:root:Mean squared error: 445855289525.1147
+INFO:root:Root mean squared error: 667723.9620719887
+INFO:root:Mean absolute percentage error: 108.58006346440952
+INFO:root:Explained variance score: 0.388736
+INFO:root:r2 score: 0.388587
+INFO:root:Mean Absolute Error: 319635.81011478574
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+
+10 neighbours- standaryzacja
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Max error: 0.897069
+INFO:root:Mean squared error: 0.008076069784659665
+INFO:root:Root mean squared error: 0.08986695602199768
+INFO:root:Mean absolute percentage error: inf
+INFO:root:Explained variance score: 0.473024
+INFO:root:r2 score: 0.472749
+INFO:root:Mean Absolute Error: 0.042886492738434735
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+
+
+Ze standaryzacja, i z 100 neigghbours
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Max error: 0.90734
+INFO:root:Mean squared error: 0.019094957004515484
+INFO:root:Root mean squared error: 0.13818450348905076
+INFO:root:Mean absolute percentage error: inf
+INFO:root:Explained variance score: -0.227831
+INFO:root:r2 score: -0.266052
+INFO:root:Mean Absolute Error: 0.0926939981536982
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+
+ze standaryzacja - najlepsze wyniki, ale nie wiaodmo jakie parametry
+{'n_neighbors': [8, 9, 10, 11]}
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:Model fitted
+INFO:root:Max error: 0.897198
+INFO:root:Mean squared error: 0.008071906054522468
+INFO:root:Root mean squared error: 0.0898437869555957
+INFO:root:Mean absolute percentage error: inf
+INFO:root:Explained variance score: 0.470855
+INFO:root:r2 score: 0.47049
+INFO:root:Mean Absolute Error: 0.042598059404003234
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
