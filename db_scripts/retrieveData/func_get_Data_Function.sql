@@ -96,17 +96,21 @@ RETURN
         Simple_Zone_29,
         Simple_Zone_30,
         --10 *ScaledPriceOnBuildingsPresent as ScaledPriceOnBuildingsPresent
-		Sale_Amount
+		Sale_Amount,
+		Price_Group_int,
+		Price_Group_int_second
 FROM PARCEL_VECTORS
-JOIn Average_Prices AP ON AP.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
+JOIN Average_Prices AP ON AP.Simple_Zone_int = PARCEL_VECTORS.Simple_Zone_int
 WHERE LS1_Sale_Date >= @LimitDate
       AND LS1_Sale_Date < 20170000
       AND Land_Curr_Value not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
+	  AND Price_Group_int_second in (SELECT value FROM STRING_SPLIT(@PriceGroupInt, ';'))
 	  AND Price_Group_int in (SELECT value FROM STRING_SPLIT(@PriceGroupInt, ';'))
 	  AND BuildingsPresent in (SELECT value FROM STRING_SPLIT(@BuildingsPresent, ';'))
-	  AND LS1_Sale_Amount < 250000000
+	  --AND LS1_Sale_Amount < 250000000
+	  AND LS1_Sale_Amount < 7000070
 	  AND OBJECTID not in (2188180, 2194874, 2194882, 2194928, 2194960, 2194981, 2200204, 2215273,2215288, 2215313,
 	  2215319,22152340,2215397,2215462,2215483,2215484,2215495,2215496,2215528,2215547,2215548,2215563,2215564,2215568,
 	  2215598,2215614,2215625,2215626,2215635,2215682,2215683,2215692,2215768,2215785,2215798,2215810,2215821,2215823,

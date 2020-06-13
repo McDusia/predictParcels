@@ -8,7 +8,7 @@ from keras.losses import mean_squared_error
 from keras.callbacks import ModelCheckpoint
 from utils.file_names_builder import get_checkpoints_filename, get_neural_network_model_filename
 from configuration.configuration_constants import weights_file_path, \
-    epochs_value, validation_split_value, verbose_value, seed, train_model_with_price_parameters
+    epochs_value, validation_split_value, verbose_value, seed, train_model_with_price_parameters, train_model_starting_from_init_weights
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
@@ -29,24 +29,22 @@ class Model:
         the activation function using the activation argument.
     """
 
-    def create_model(self):
+    def create_model(self, features_qnt):
         self.model = Sequential()
-        # TODO not hardcoded size of first layer, but flexible size of input data
-        #if train_model_with_price_parameters:
-        self.model.add(Dense(51, input_dim=51, kernel_initializer='normal', activation='relu'))
-        #else:
-        self.model.add(Dense(40, kernel_initializer='normal'))
+        self.model.add(Dense(features_qnt, input_dim=features_qnt, kernel_initializer='normal', activation='relu'))
         self.model.add(Dense(30, kernel_initializer='normal'))
         self.model.add(Dense(20, kernel_initializer='normal'))
         self.model.add(Dense(10, kernel_initializer='normal'))
         self.model.add(Dense(1, kernel_initializer='normal'))
 
-        try:
-            self.model.load_weights(self.weights_path)
-        except OSError:
-            logging.error('Problem with reading the file {}'.format(self.weights_path))
-            sys.exit(1)
-        logging.debug('Weights {} loaded to model.'.format(self.weights_path))
+        if train_model_starting_from_init_weights:
+            try:
+                self.model.load_weights(self.weights_path)
+            except OSError:
+                logging.error('Problem with reading the file {}'.format(self.weights_path))
+                sys.exit(1)
+            logging.debug('Weights {} loaded to model.'.format(self.weights_path))
+
         self.model.compile(loss=mean_squared_error, optimizer='adam',
                            metrics=['mean_squared_error',
                                     'mean_absolute_error',
