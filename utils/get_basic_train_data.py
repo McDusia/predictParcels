@@ -65,12 +65,13 @@ def get_basic_data_splited_x_y(price_groups='0;1;2', buildings_present='0;1', co
 
 
 def get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1', columns_to_omit=[],
-                                      random_state=0, test_size=0.2, use_distances=False):
+                                      random_state=0, test_size=0.2, use_distances=False,
+                                      target_column=target_column_name):
     if use_distances:
         data = get_data_with_distances(price_groups, buildings_present, columns_to_omit)
     else:
         data = get_basic_data(price_groups, buildings_present, columns_to_omit)
-    return split_data_train_test(data, random_state, test_size)
+    return split_data_train_test(data, random_state, test_size, target_column)
 
 
 def split_data_x_y(data):
@@ -80,9 +81,9 @@ def split_data_x_y(data):
     return x_data, y_data
 
 
-def split_data_train_test(data, random_state, test_size):
+def split_data_train_test(data, random_state, test_size, target_column=target_column_name):
     [x_train_set, x_test_set, y_train_set, y_test_set] \
-        = DataSplitter(data, target_column_name=target_column_name, random_state=random_state, test_size=test_size) \
+        = DataSplitter(data, target_column_name=target_column, random_state=random_state, test_size=test_size) \
         .get_x_y_data_train_test()
     return x_train_set, x_test_set, y_train_set, y_test_set
 

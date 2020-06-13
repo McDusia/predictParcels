@@ -107,9 +107,7 @@ WHERE LS1_Sale_Date >= @LimitDate
       AND LS1_Sale_Amount not in (SELECT value FROM STRING_SPLIT(@ExcludedList, ';'))
 	  AND Price_Per_Single_Area_Unit > 1
 	  AND Price_Group_int_second in (SELECT value FROM STRING_SPLIT(@PriceGroupInt, ';'))
-	  AND Price_Group_int in (SELECT value FROM STRING_SPLIT(@PriceGroupInt, ';'))
 	  AND BuildingsPresent in (SELECT value FROM STRING_SPLIT(@BuildingsPresent, ';'))
-	  --AND LS1_Sale_Amount < 250000000
 	  AND LS1_Sale_Amount < 7000070
 	  AND OBJECTID not in (2188180, 2194874, 2194882, 2194928, 2194960, 2194981, 2200204, 2215273,2215288, 2215313,
 	  2215319,22152340,2215397,2215462,2215483,2215484,2215495,2215496,2215528,2215547,2215548,2215563,2215564,2215568,
