@@ -793,30 +793,6 @@ WHERE Simple_Zone_int = 30
 -- Second approach for parcel price groups
 --==============================================
 
-ALTER TABLE PARCEL_VECTORS
-ADD	Price_Group_int_vol2 int
-
-
- UPDATE PARCEL_VECTORS
- SET Price_Group_int_vol2 = 0
-   WHERE LS1_Sale_Amount <= 500000
-
- UPDATE PARCEL_VECTORS
- SET Price_Group_int_vol2 = 1
-   WHERE ( LS1_Sale_Amount > 500000 and LS1_Sale_Amount < 1000000 )
-
- UPDATE PARCEL_VECTORS
- SET Price_Group_int_vol2 = 2
-    WHERE LS1_Sale_Amount >= 1000000
-
-UPDATE PARCEL_VECTORS
-SET Price_Group_int_vol2 = 3
-    WHERE LS1_Sale_Amount >= 1000000
-
-
-
----=========
-
 ALTER table PARCEL_VECTORS
 ADD Price_Group_int_second int
 
@@ -829,4 +805,5 @@ WHERE Sale_Amount > 700000
 
 UPDATE PARCEL_VECTORS
 SET Price_Group_int_second = 2
-WHERE Sale_Amount > 2000000
+WHERE Sale_Amount > 2000000 
+
