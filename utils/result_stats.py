@@ -12,8 +12,11 @@ def mean_absolute_percentage_error(y_true, y_pred):
     # Note: does not handle mix 1d representation
     # if _is_1d(y_true):
     #    y_true, y_pred = _check_1d_array(y_true, y_pred)
+    y_true, y_pred = y_true + 1, y_pred + 1#np.array(y_true), np.array(y_pred)
 
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+
+    #return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
 
 def rmse(predictions, targets):
@@ -28,7 +31,7 @@ def get_result_statistics(predicted_values, real_values, plot_title=""):
 
     max_error_val = max_error(real_values, predicted_values)
 
-    logging.info('Max error: %s', round(max_error_val, 6))
+    logging.info('Max error: %.3f', round(max_error_val, 6))
     # mean_absolute_percentage_error = np.mean(np.abs(predicted_values - real_values) / real_values) * 100
     # Calculate and log accuracy
     # accuracy = 100 - np.mean(mean_absolute_percentage_error)
@@ -38,12 +41,12 @@ def get_result_statistics(predicted_values, real_values, plot_title=""):
 
     explained_variance_score_result = explained_variance_score(real_values, predicted_values)
     r2_score_result = r2_score(real_values, predicted_values)
-    logging.info("Mean squared error: %s", mse)
-    logging.info("Root mean squared error: %s", rms)
-    logging.info("Mean absolute percentage error: %s", mean_absolute_percentage_e)
-    logging.info('Explained variance score: %s', round(explained_variance_score_result, 6))
-    logging.info('r2 score: %s', round(r2_score_result, 6))
-    logging.info("Mean Absolute Error: %s", mae)
+    logging.info('r2 score: %.3f', round(r2_score_result, 6))
+    logging.info('Explained variance score: %0.3f', round(explained_variance_score_result, 6))
+    logging.info("Mean squared error: %.3f", mse)
+    logging.info("Root mean squared error: %.3f", rms)
+    logging.info("Mean Absolute Error: %.3f", mae)
+    logging.info("Mean absolute percentage error: %.3f", mean_absolute_percentage_e)
     x_label = "Kolejne numery działek"
     y_label = "cena za działkę [$]"
     values_one_plot_with_linear_and_dots(real_values[:1000], predicted_values[:1000], "Rzeczywiste wartości",

@@ -812,3 +812,19 @@ ADD	Price_Group_int_vol2 int
 UPDATE PARCEL_VECTORS
 SET Price_Group_int_vol2 = 3
     WHERE LS1_Sale_Amount >= 1000000
+
+---=========
+
+ALTER table PARCEL_VECTORS
+ADD Price_Group_int_second int
+
+UPDATE PARCEL_VECTORS
+SET Price_Group_int_second = 0
+
+UPDATE PARCEL_VECTORS
+SET Price_Group_int_second = 1
+WHERE Sale_Amount > 700000
+
+UPDATE PARCEL_VECTORS
+SET Price_Group_int_second = 2
+WHERE Sale_Amount > 2000000 
