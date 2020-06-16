@@ -1,0 +1,80 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Z Wszystkimi danymi
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 6.88935578e-05 -1.72301448e-01 -5.57287826e-03 -6.76897418e-02
+ -7.99666457e-03 -7.99666459e-03 -7.19100415e-03 -2.36798841e-01
+ -1.61196699e-01  1.69557135e+00 -9.68349159e-02 -8.03743383e-04
+  4.42753135e-01 -1.50927636e-01  3.26597042e-01  1.41704365e+00
+  1.52940776e-01 -2.41218388e-02  7.02906856e-01 -4.26076498e-02
+ -6.16899193e-02  8.04736578e-01  1.30801937e-01  7.62273157e-02
+  3.62164548e-02  4.66871535e-01  5.80612653e+00  5.70344823e+00
+ -5.60197566e-02 -3.01814004e-02 -7.33901043e-03  5.57482106e-02
+  3.38701397e-02  2.39715948e-03  9.05226241e-04  4.13260876e-03
+ -2.47761060e-02  2.15231082e-02  1.65520061e-02 -6.11782822e-03
+ -2.55983864e-01  1.85217890e-01 -2.91104614e-03 -4.99044986e-03
+  5.45988680e-01 -1.62552146e-02 -4.15572215e-02  7.94881786e-02
+  5.93119003e-02 -1.16870900e-02  3.85061905e-03 -4.06608865e-02
+ -2.08453756e-03  5.88331903e-03 -2.26720549e-02 -3.52167485e-03
+ -2.59186259e-02  1.85796155e-02 -5.53853875e-02 -4.62134703e-02
+ -4.71860026e-02 -3.80526556e-02 -3.78425320e-02 -5.32366147e-02
+  4.46462131e-01 -1.12797258e-01 -1.13978746e-01 -1.71612462e-03
+ -1.23544741e-03  3.68217117e-02 -1.52499522e-02 -9.52863841e-03
+  2.81458727e-02 -5.66348758e-03  3.92960409e-02  2.99648633e-02
+  2.38427271e-02  3.55783243e-02  1.10103931e-01 -8.23742639e-02
+ -2.48909866e-02 -5.04255766e-02  4.23822454e-03 -2.91975458e-02
+ -1.86184514e-02 -2.43547145e-01  4.38684888e-01  5.06577660e-01
+ -3.94430098e-01 -1.16811780e-01 -1.62677754e-01 -1.44835824e-01
+  1.78679838e-02 -1.36902384e-02 -2.44538910e-01  1.77718651e-01
+  9.39934721e-03  9.54960168e-02 -8.43026548e-02 -3.72185836e-02
+  1.17769703e-01 -8.03567968e-02 -1.30279905e-02  2.30997396e-01]
+DEBUG:root:{'alpha_1': 1e-10, 'alpha_2': 1e-05, 'lambda_1': 1e-05, 'lambda_2': 1e-07, 'n_iter': 500}
+DEBUG:root:Model fitted
+DEBUG:root:Prediction was made
+DEBUG:root:Prediction was made
+INFO:root:Max error: 0.923008
+INFO:root:Mean squared error: 0.009667446956528963
+INFO:root:Root mean squared error: 0.09832317609052793
+INFO:root:Mean absolute percentage error: 4.557641938271576
+INFO:root:Explained variance score: 0.361252
+INFO:root:r2 score: 0.361226
+INFO:root:Mean Absolute Error: 0.05497604021296496
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Z use idstances false
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 2.29898288e-02 -2.23117103e-01 -9.79593548e-03 -1.05937741e-01
+ -7.52735525e-03 -7.52735525e-03 -5.52566389e-03 -3.43828213e-01
+ -3.54680892e-01  1.96924731e+00 -8.70323644e-02 -4.30076543e-04
+  4.86092008e-01 -1.53041949e-01  3.06873119e-01  1.40796806e+00
+  1.48630876e-01 -2.78401132e-02  7.09754212e-01 -2.85090252e-02
+ -7.69843369e-02  8.01200565e-01  9.43270531e-02  8.56004302e-02
+  8.85021733e-02  5.10367402e-01 -1.03600668e+00 -1.02459230e+00
+ -6.91454446e-02 -4.69137472e-02 -8.89080503e-03  5.82292518e-02
+  3.12163167e-02  1.72256926e-03  1.83810004e-03  5.96516896e-03
+ -2.51179167e-02  2.33513292e-02  1.47283467e-02 -1.60440287e-02
+ -1.25127227e-01  2.66657622e-01  1.51275178e-03 -2.75809997e-02
+  5.14460800e-01 -1.15397328e-02 -5.96866368e-02  6.31576948e-02
+  5.99020862e-02 -1.77191366e-02 -2.34015573e-02 -3.78802802e-02
+  6.34982606e-03  4.02441335e-03 -9.19916165e-04 -1.43808516e-02
+ -2.13731923e-02  1.24823873e-02 -5.37243618e-02 -4.33557358e-02
+ -4.14494736e-02 -4.12672423e-02 -2.21038918e-02 -6.26266779e-02
+  4.64756588e-01 -1.41999953e-01 -7.34669565e-02 -3.72932346e-03
+  4.67937975e-03  3.02662604e-02 -5.19522815e-02 -3.71745032e-02
+  4.30352208e-02 -9.09517933e-03  4.69547154e-02  3.08830892e-02
+  3.77703813e-02  6.17496999e-02  6.83591286e-02 -6.68484249e-02
+ -1.79292226e-02 -5.73258927e-02  8.18997856e-03 -4.90843796e-02
+ -2.39285188e-04]
+DEBUG:root:{'alpha_1': 1e-10, 'alpha_2': 1e-05, 'lambda_1': 1e-05, 'lambda_2': 1e-07, 'n_iter': 500}
+DEBUG:root:Model fitted
+DEBUG:root:Prediction was made
+DEBUG:root:Prediction was made
+INFO:root:Max error: 0.965479
+INFO:root:Mean squared error: 0.010841699542823248
+INFO:root:Root mean squared error: 0.10412348218736851
+INFO:root:Mean absolute percentage error: 4.892330650085048
+INFO:root:Explained variance score: 0.283661
+INFO:root:r2 score: 0.283637
+INFO:root:Mean Absolute Error: 0.059152012997566984
