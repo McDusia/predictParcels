@@ -1,0 +1,87 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 226927
+DEBUG:root:Total samples in our dataset is: 226927
+INFO:root:                                  OLS Regression Results
+=========================================================================================
+Dep. Variable:     ScaledPriceOnBuildingsPresent   R-squared:                       0.234
+Model:                                       OLS   Adj. R-squared:                  0.234
+Method:                            Least Squares   F-statistic:                     1133.
+Date:                           Sat, 30 May 2020   Prob (F-statistic):               0.00
+Time:                                   13:30:59   Log-Likelihood:            -3.1731e+06
+No. Observations:                         181541   AIC:                         6.346e+06
+Df Residuals:                             181491   BIC:                         6.347e+06
+Df Model:                                     49
+Covariance Type:                       nonrobust
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+PERIMETER                               0.9245      1.632      0.567      0.571      -2.274       4.123
+PARCEL_TYP                           6.644e+06    8.6e+04     77.284      0.000    6.48e+06    6.81e+06
+SA_Zip_Cde                              0.0013      0.000      6.642      0.000       0.001       0.002
+MA_Zip_Cde                             -0.0129      0.000    -53.130      0.000      -0.013      -0.012
+Hmownr_Exempt_Number                    0.1161      0.043      2.705      0.007       0.032       0.200
+Hmownr_Exempt_Value                   -71.9339      7.694     -9.349      0.000     -87.014     -56.854
+BD_LINE_1_Yr_Built                   4190.6492     96.341     43.498      0.000    4001.824    4379.475
+BD_LINE_1_No_of_Units                9.377e+04   3491.889     26.853      0.000    8.69e+04    1.01e+05
+BD_LINE_1_No_of_Bedrooms             3.987e+04   1.31e+04      3.043      0.002    1.42e+04    6.55e+04
+BD_LINE_1_No_of_Baths                1.452e+05   1.32e+04     11.023      0.000    1.19e+05    1.71e+05
+BD_LINE_2_Subpart                   -3.356e+04   4028.759     -8.330      0.000   -4.15e+04   -2.57e+04
+BD_LINE_2_Yr_Built                   -270.9944    396.914     -0.683      0.495   -1048.937     506.948
+BD_LINE_2_No_of_Units                -6.21e+04   2.45e+04     -2.535      0.011    -1.1e+05   -1.41e+04
+BD_LINE_2_No_of_Bedrooms             2.917e+05   5.33e+04      5.477      0.000    1.87e+05    3.96e+05
+BD_LINE_2_No_of_Baths               -1.287e+05   5.83e+04     -2.207      0.027   -2.43e+05   -1.44e+04
+BD_LINE_2_Sq_Ft_of_Main_Improve       110.5369      5.506     20.076      0.000      99.745     121.328
+BD_LINE_3_Subpart                   -1331.2077   4828.370     -0.276      0.783   -1.08e+04    8132.288
+BD_LINE_3_Yr_Built                   -530.3168    740.641     -0.716      0.474   -1981.956     921.322
+BD_LINE_3_No_of_Units                7.648e+04   2.26e+04      3.387      0.001    3.22e+04    1.21e+05
+BD_LINE_3_No_of_Bedrooms            -1.587e+05   1.63e+05     -0.971      0.332   -4.79e+05    1.62e+05
+BD_LINE_3_No_of_Baths                3.308e+05   1.97e+05      1.680      0.093   -5.52e+04    7.17e+05
+BD_LINE_3_Sq_Ft_of_Main_Improve        99.5979     10.136      9.826      0.000      79.731     119.465
+Cluster_Location                     6.521e+05   6047.292    107.828      0.000     6.4e+05    6.64e+05
+Cluster_Type                        -1.572e+06   2.17e+04    -72.314      0.000   -1.61e+06   -1.53e+06
+Cluster_Appraisal_Unit              -5.099e+04    882.594    -57.774      0.000   -5.27e+04   -4.93e+04
+Parcel_Area                            13.9164      0.318     43.708      0.000      13.292      14.540
+CENTER_LAT                           4.553e+06   5.75e+04     79.173      0.000    4.44e+06    4.67e+06
+CENTER_LON                           1.189e+06   1.66e+04     71.438      0.000    1.16e+06    1.22e+06
+Residential                         -1.265e+05   5.86e+04     -2.158      0.031   -2.41e+05   -1.16e+04
+Special_Purposes_Plan               -6.242e+05   1.75e+05     -3.576      0.000   -9.66e+05   -2.82e+05
+Agricultural                         9.542e+05   1.34e+05      7.118      0.000    6.91e+05    1.22e+06
+Commercial                           6.132e+06   1.25e+05     48.984      0.000    5.89e+06    6.38e+06
+Manufacturing                         -1.8e+06   1.78e+05    -10.116      0.000   -2.15e+06   -1.45e+06
+SA_Localization_int                   -14.2342      0.908    -15.676      0.000     -16.014     -12.454
+MA_Localization_int                     3.4845      0.505      6.901      0.000       2.495       4.474
+MA_Direction_int                    -6.262e+05   2.39e+04    -26.153      0.000   -6.73e+05   -5.79e+05
+SA_Direction_int                     5.201e+05   2.37e+04     21.941      0.000    4.74e+05    5.67e+05
+Simple_Zone_int                      3.117e+04   5213.533      5.978      0.000    2.09e+04    4.14e+04
+Zoning_Code_int                      -118.6407      9.619    -12.334      0.000    -137.494     -99.788
+BD_LINE_1_Year_Changed              -5075.8616     63.157    -80.369      0.000   -5199.648   -4952.075
+BD_LINE_1_Unit_Cost_Main             -109.6267     13.153     -8.335      0.000    -135.406     -83.847
+BD_LINE_1_RCN_Main                      0.1284      0.044      2.916      0.004       0.042       0.215
+BD_LINE_2_Year_Changed               5052.9017    174.078     29.027      0.000    4711.713    5394.091
+BD_LINE_2_Unit_Cost_Main             -394.9573    160.672     -2.458      0.014    -709.870     -80.044
+BD_LINE_2_RCN_Main                     -0.0267      0.414     -0.064      0.949      -0.838       0.785
+BD_LINE_3_Year_Changed                118.3550    321.621      0.368      0.713    -512.015     748.725
+BD_LINE_3_Unit_Cost_Main              945.4775    424.234      2.229      0.026     113.988    1776.967
+BD_LINE_3_RCN_Main                      4.3251      2.353      1.838      0.066      -0.288       8.938
+BD_LINE_4_Year_Changed                146.4915    269.041      0.544      0.586    -380.823     673.806
+BD_LINE_1_Quality__Class___Shap_int   303.8562     70.784      4.293      0.000     165.120     442.592
+City_int                            -5612.8747    379.050    -14.808      0.000   -6355.803   -4869.946
+==============================================================================
+Omnibus:                   280080.045   Durbin-Watson:                   2.001
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):        167763612.138
+Skew:                           9.804   Prob(JB):                         0.00
+Kurtosis:                     150.628   Cond. No.                     1.00e+16
+==============================================================================
+Warnings:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large,  1e+16. This might indicate that there are
+strong multicollinearity or other numerical problems.
+INFO:root:Max error: 157442132.269758
+INFO:root:Mean squared error: 89324998888729.45
+INFO:root:Root mean squared error: 9451190.34242404
+INFO:root:Mean absolute percentage error: 755.2993865829492
+INFO:root:Explained variance score: 0.242123
+INFO:root:r2 score: 0.242111
+INFO:root:Mean Absolute Error: 3525041.150864806
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000

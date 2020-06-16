@@ -1,87 +1,128 @@
 DEBUG:root:Reading data from database
-DEBUG:root:Total samples in our dataset is: 151219
-DEBUG:root:Total samples in our dataset is: 151219
-INFO:root:                                      OLS Regression Results
-==================================================================================================
-Dep. Variable:     ScaledPriceOnBuildingsPresent   R-squared (uncentered):                  -2.991
-Model:                                       OLS   Adj. R-squared (uncentered):             -2.992
-Method:                            Least Squares   F-statistic:                             -1812.
-Date:                           Sat, 30 May 2020   Prob (F-statistic):                        1.00
-Time:                                   13:42:08   Log-Likelihood:                     -2.1313e+06
-No. Observations:                         120975   AIC:                                  4.263e+06
-Df Residuals:                             120925   BIC:                                  4.263e+06
-Df Model:                                     50
-Covariance Type:                       nonrobust
-=======================================================================================================
-                                          coef    std err          t      P>|t|      [0.025      0.975]
--------------------------------------------------------------------------------------------------------
-PERIMETER                            2.085e+04    270.564     77.057      0.000    2.03e+04    2.14e+04
-PARCEL_TYP                           9.691e+06    1.2e+05     80.683      0.000    9.46e+06    9.93e+06
-SA_Zip_Cde                              0.0016      0.000      6.306      0.000       0.001       0.002
-MA_Zip_Cde                             -0.0176      0.000    -53.655      0.000      -0.018      -0.017
-Hmownr_Exempt_Number                   -0.0221      0.008     -2.615      0.009      -0.039      -0.006
-Hmownr_Exempt_Value                  -104.0403     11.228     -9.266      0.000    -126.047     -82.034
-BD_LINE_1_Yr_Built                   5449.9750    125.233     43.519      0.000    5204.520    5695.430
-BD_LINE_1_No_of_Units                6.668e+04   4096.910     16.274      0.000    5.86e+04    7.47e+04
-BD_LINE_1_No_of_Bedrooms             2.424e+04   1.61e+04      1.506      0.132   -7301.767    5.58e+04
-BD_LINE_1_No_of_Baths                1.974e+05   1.63e+04     12.145      0.000    1.66e+05    2.29e+05
-BD_LINE_2_Subpart                   -3.486e+04   5455.034     -6.391      0.000   -4.56e+04   -2.42e+04
-BD_LINE_2_Yr_Built                  -1070.8232    540.306     -1.982      0.047   -2129.815     -11.831
-BD_LINE_2_No_of_Units               -3.932e+04    2.3e+04     -1.707      0.088   -8.45e+04    5820.112
-BD_LINE_2_No_of_Bedrooms             3.806e+05   7.31e+04      5.208      0.000    2.37e+05    5.24e+05
-BD_LINE_2_No_of_Baths               -2.017e+05   7.87e+04     -2.563      0.010   -3.56e+05   -4.75e+04
-BD_LINE_2_Sq_Ft_of_Main_Improve       119.3618      6.499     18.367      0.000     106.625     132.099
-BD_LINE_3_Subpart                    6088.8077   5932.125      1.026      0.305   -5538.061    1.77e+04
-BD_LINE_3_Yr_Built                  -1332.3771    919.655     -1.449      0.147   -3134.886     470.131
-BD_LINE_3_No_of_Units                6.164e+04   3.49e+04      1.765      0.078   -6822.247     1.3e+05
-BD_LINE_3_No_of_Bedrooms            -4.895e+04   1.87e+05     -0.261      0.794   -4.16e+05    3.18e+05
-BD_LINE_3_No_of_Baths                 1.81e+05   2.32e+05      0.781      0.435   -2.73e+05    6.35e+05
-BD_LINE_3_Sq_Ft_of_Main_Improve       117.8136     10.742     10.968      0.000      96.759     138.868
-Cluster_Location                     8.413e+05   8119.109    103.616      0.000    8.25e+05    8.57e+05
-Cluster_Type                        -2.119e+06   2.93e+04    -72.329      0.000   -2.18e+06   -2.06e+06
-Cluster_Appraisal_Unit               -6.52e+04   1235.924    -52.755      0.000   -6.76e+04   -6.28e+04
-Parcel_Area                             7.0748      0.388     18.245      0.000       6.315       7.835
-CENTER_LAT                           6.038e+06   7.85e+04     76.901      0.000    5.88e+06    6.19e+06
-CENTER_LON                           1.578e+06   2.27e+04     69.399      0.000    1.53e+06    1.62e+06
-Residential                         -5.581e+05   8.28e+04     -6.741      0.000    -7.2e+05   -3.96e+05
-Special_Purposes_Plan               -8.889e+05   3.16e+05     -2.813      0.005   -1.51e+06    -2.7e+05
-Agricultural                         1.938e+06   1.81e+05     10.713      0.000    1.58e+06    2.29e+06
-Commercial                           7.983e+06    1.7e+05     46.904      0.000    7.65e+06    8.32e+06
-Manufacturing                       -1.354e+06   2.38e+05     -5.692      0.000   -1.82e+06   -8.88e+05
-SA_Localization_int                   -19.3870      1.278    -15.171      0.000     -21.892     -16.882
-MA_Localization_int                     4.5576      0.707      6.444      0.000       3.171       5.944
-MA_Direction_int                    -7.721e+05   3.28e+04    -23.564      0.000   -8.36e+05   -7.08e+05
-SA_Direction_int                     7.388e+05   3.26e+04     22.675      0.000    6.75e+05    8.03e+05
-Simple_Zone_int                      8.313e+04   7290.487     11.403      0.000    6.88e+04    9.74e+04
-Zoning_Code_int                       -98.5923     13.569     -7.266      0.000    -125.187     -71.998
-BD_LINE_1_Year_Changed              -6667.6147     84.980    -78.461      0.000   -6834.174   -6501.056
-BD_LINE_1_Unit_Cost_Main             -156.3506     19.255     -8.120      0.000    -194.089    -118.612
-BD_LINE_1_RCN_Main                      4.0499      0.227     17.873      0.000       3.606       4.494
-BD_LINE_2_Year_Changed               5083.2525    235.836     21.554      0.000    4621.018    5545.487
-BD_LINE_2_Unit_Cost_Main             1164.1520    252.665      4.607      0.000     668.933    1659.371
-BD_LINE_2_RCN_Main                     -0.2215      0.475     -0.466      0.641      -1.152       0.709
-BD_LINE_3_Year_Changed                 46.4394    420.132      0.111      0.912    -777.013     869.892
-BD_LINE_3_Unit_Cost_Main             1989.9425    691.191      2.879      0.004     635.220    3344.665
-BD_LINE_3_RCN_Main                      2.8896      2.695      1.072      0.284      -2.393       8.172
-BD_LINE_4_Year_Changed                429.6672    371.670      1.156      0.248    -298.800    1158.134
-BD_LINE_1_Quality__Class___Shap_int     9.3443     99.593      0.094      0.925    -185.856     204.545
-City_int                            -6735.9814    522.600    -12.889      0.000   -7760.268   -5711.694
+DEBUG:root:Total samples in our dataset is: 15816
+DEBUG:root:Total samples in our dataset is: 15816
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/statsmodels/base/model.py:1362: RuntimeWarning: invalid value encountered in true_divide
+  return self.params / self.bse
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scipy/stats/_distn_infrastructure.py:903: RuntimeWarning: invalid value encountered in greater
+  return (a < x) & (x < b)
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scipy/stats/_distn_infrastructure.py:903: RuntimeWarning: invalid value encountered in less
+  return (a < x) & (x < b)
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scipy/stats/_distn_infrastructure.py:1912: RuntimeWarning: invalid value encountered in less_equal
+  cond2 = cond0 & (x <= _a)
+INFO:root:                            OLS Regression Results
 ==============================================================================
-Omnibus:                   159061.362   Durbin-Watson:                   2.012
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):         45061230.727
-Skew:                           7.354   Prob(JB):                         0.00
-Kurtosis:                      96.398   Cond. No.                     1.00e+16
+Dep. Variable:            Sale_Amount   R-squared:                       0.055
+Model:                            OLS   Adj. R-squared:                  0.050
+Method:                 Least Squares   F-statistic:                     11.77
+Date:                Mon, 15 Jun 2020   Prob (F-statistic):          5.01e-111
+Time:                        19:50:55   Log-Likelihood:                -187.12
+No. Observations:               12652   AIC:                             500.2
+Df Residuals:                   12589   BIC:                             969.3
+Df Model:                          62
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+x1             0.5981      0.246      2.428      0.015       0.115       1.081
+x2            -0.0762      0.123     -0.618      0.536      -0.318       0.165
+x3            -0.1536      0.246     -0.624      0.533      -0.637       0.329
+const      -1.916e-15   1.72e-15     -1.114      0.265   -5.29e-15    1.46e-15
+x4            -0.0331      0.004     -9.375      0.000      -0.040      -0.026
+x5            -0.0331      0.004     -9.375      0.000      -0.040      -0.026
+x6            -0.0172      0.031     -0.555      0.579      -0.078       0.044
+x7             0.3078      0.246      1.249      0.212      -0.175       0.791
+x8             0.2991      0.191      1.568      0.117      -0.075       0.673
+x9             0.2548      0.191      1.336      0.181      -0.119       0.629
+x10           -0.2561      0.246     -1.039      0.299      -0.739       0.227
+x11           -0.1654      0.144     -1.150      0.250      -0.447       0.116
+x12            0.3143      0.123      2.550      0.011       0.073       0.556
+x13            0.0774      0.123      0.629      0.530      -0.164       0.319
+x14            0.0774      0.123      0.629      0.530      -0.164       0.319
+x15            0.6455      0.246      2.621      0.009       0.163       1.128
+x16            0.1079      0.246      0.438      0.661      -0.375       0.591
+x17            0.2979      0.123      2.420      0.016       0.057       0.539
+x18            0.6529      0.246      2.649      0.008       0.170       1.136
+x19         2.522e-16   2.06e-16      1.226      0.220   -1.51e-16    6.56e-16
+x20            0.3520      0.246      1.430      0.153      -0.131       0.835
+x21            0.0757      0.246      0.307      0.759      -0.407       0.559
+x22           -0.0546      0.174     -0.313      0.754      -0.396       0.287
+x23            0.3690      0.093      3.956      0.000       0.186       0.552
+x24            0.0442      0.014      3.092      0.002       0.016       0.072
+x25            0.1218      0.246      0.495      0.621      -0.361       0.604
+x26           -0.0560      0.291     -0.192      0.848      -0.627       0.515
+x27            0.0546      0.036      1.515      0.130      -0.016       0.125
+x28           -0.1110      0.033     -3.399      0.001      -0.175      -0.047
+x29            0.2407      0.064      3.773      0.000       0.116       0.366
+x30            0.1976      0.009     21.525      0.000       0.180       0.216
+x31            0.3085      0.042      7.413      0.000       0.227       0.390
+x32            0.2531      0.008     31.151      0.000       0.237       0.269
+x33           -0.1392      0.247     -0.565      0.572      -0.622       0.344
+x34           -0.2486      0.246     -1.010      0.313      -0.731       0.234
+x35            0.0286      0.010      2.907      0.004       0.009       0.048
+x36           -0.0080      0.010     -0.804      0.422      -0.028       0.012
+x37            0.1953      0.020      9.622      0.000       0.156       0.235
+x38            0.0133      0.113      0.118      0.906      -0.208       0.234
+x39         6.439e-17   1.53e-16      0.419      0.675   -2.36e-16    3.65e-16
+x40         -8.51e-17   1.23e-16     -0.690      0.490   -3.27e-16    1.57e-16
+x41           -0.3185      0.247     -1.292      0.197      -0.802       0.165
+x42         -1.65e-17   8.83e-17     -0.187      0.852    -1.9e-16    1.57e-16
+x43            0.0846      0.246      0.343      0.731      -0.398       0.567
+x44            0.6815      0.247      2.763      0.006       0.198       1.165
+x45        -4.625e-17   8.07e-17     -0.573      0.567   -2.04e-16    1.12e-16
+x46           -0.2325      0.246     -0.944      0.345      -0.715       0.250
+x47            0.5055      0.246      2.052      0.040       0.023       0.988
+x48            0.2979      0.123      2.420      0.016       0.057       0.539
+x49            0.3143      0.123      2.550      0.011       0.073       0.556
+x50           -0.1705      0.093     -1.830      0.067      -0.353       0.012
+x51            0.0171      0.005      3.606      0.000       0.008       0.026
+x52        -4.933e-17   7.86e-17     -0.628      0.530   -2.03e-16    1.05e-16
+x53            0.0171      0.005      3.606      0.000       0.008       0.026
+x54            0.0125      0.044      0.285      0.776      -0.073       0.098
+x55            0.3029      0.008     40.307      0.000       0.288       0.318
+x56            0.0194      0.015      1.302      0.193      -0.010       0.049
+x57            0.1781      0.014     12.670      0.000       0.151       0.206
+x58            0.0200      0.046      0.431      0.667      -0.071       0.111
+x59            0.0253      0.042      0.597      0.550      -0.058       0.108
+x60            0.0100      0.044      0.230      0.818      -0.075       0.095
+x61            0.0421      0.044      0.959      0.338      -0.044       0.128
+x62            0.0125      0.044      0.285      0.776      -0.073       0.098
+x63           -0.0165      0.049     -0.334      0.738      -0.113       0.080
+x64            0.4923      0.219      2.245      0.025       0.063       0.922
+x65           -0.2771      0.219     -1.263      0.207      -0.707       0.153
+x66            0.4801      0.246      1.949      0.051      -0.003       0.963
+x67            0.0171      0.005      3.606      0.000       0.008       0.026
+x68            0.1013      0.011      8.984      0.000       0.079       0.123
+x69            0.1347      0.017      7.934      0.000       0.101       0.168
+x70         9.908e-16      0.246   4.02e-15      1.000      -0.483       0.483
+x71           -0.2191      0.185     -1.182      0.237      -0.583       0.144
+x72            0.3956      0.038     10.531      0.000       0.322       0.469
+x73            0.2787      0.005     58.732      0.000       0.269       0.288
+x74            0.3374      0.032     10.436      0.000       0.274       0.401
+x75            0.3591      0.034     10.410      0.000       0.291       0.427
+x76            0.4036      0.033     12.093      0.000       0.338       0.469
+x77            0.4006      0.034     11.759      0.000       0.334       0.467
+x78        -6.037e-17   1.65e-17     -3.669      0.000   -9.26e-17   -2.81e-17
+x79        -6.237e-18    1.7e-18     -3.669      0.000   -9.57e-18    -2.9e-18
+x80            0.0166      0.069      0.239      0.811      -0.119       0.153
+x81                 0          0        nan        nan           0           0
+x82            0.4432      0.075      5.931      0.000       0.297       0.590
+x83            0.4039      0.110      3.669      0.000       0.188       0.620
+x84            0.1953      0.020      9.622      0.000       0.156       0.235
+==============================================================================
+Omnibus:                     1591.710   Durbin-Watson:                   1.990
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2261.998
+Skew:                           1.024   Prob(JB):                         0.00
+Kurtosis:                       3.309   Cond. No.                     6.49e+16
 ==============================================================================
 Warnings:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large,  1e+16. This might indicate that there are
-strong multicollinearity or other numerical problems.
-INFO:root:Max error: 252139979.40204
-INFO:root:Mean squared error: 110075816827479.6
-INFO:root:Root mean squared error: 10491702.284542752
-INFO:root:Mean absolute percentage error: 1294.6763440592829
-INFO:root:Explained variance score: 0.347425
-INFO:root:r2 score: 0.347422
-INFO:root:Mean Absolute Error: 4566314.629033896
-DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+[2] The smallest eigenvalue is 2.02e-30. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+INFO:root:Max error: 0.786712
+INFO:root:Mean squared error: 0.056792620809157056
+INFO:root:Root mean squared error: 0.238312024054929
+INFO:root:Mean absolute percentage error: 14.8132523408686
+INFO:root:Explained variance score: 0.042024
+INFO:root:r2 score: 0.041525
+INFO:root:Mean Absolute Error: 0.19174054000823554
 DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
