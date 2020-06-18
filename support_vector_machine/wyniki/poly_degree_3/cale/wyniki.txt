@@ -1,0 +1,29 @@
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.868034
+INFO:root:Mean squared error: 0.013918187598517201
+INFO:root:Root mean squared error: 0.11797536860937202
+INFO:root:Mean absolute percentage error: 7.075269570149612
+INFO:root:Explained variance score: 0.159806
+INFO:root:r2 score: 0.106392
+INFO:root:Mean Absolute Error: 0.08290760657501092
+
+
+BEX DYSTANSOW
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.874759
+INFO:root:Mean squared error: 0.014110235378024909
+INFO:root:Root mean squared error: 0.11878651176806611
+INFO:root:Mean absolute percentage error: 7.101169976605699
+INFO:root:Explained variance score: 0.14051
+INFO:root:r2 score: 0.094061
+INFO:root:Mean Absolute Error: 0.08322978440530034

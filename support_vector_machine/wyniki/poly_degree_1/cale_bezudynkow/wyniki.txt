@@ -1,0 +1,546 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 18598
+DEBUG:root:Total samples in our dataset is: 18598
+INFO:root:Z Wszystkimi danymi
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.864688
+INFO:root:Mean squared error: 0.04054397679712926
+INFO:root:Root mean squared error: 0.2013553495617369
+INFO:root:Mean absolute percentage error: 10.269968828070494
+INFO:root:Explained variance score: 0.163066
+INFO:root:r2 score: 0.136827
+INFO:root:Mean Absolute Error: 0.13620187628952166
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 119, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=1)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8646875812995619, 0.2013553495617369, 0.1630657224809665, 0.04054397679712926, 0.2013553495617369, 0.13620187628952166, 10.269968828070494)
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.815242
+INFO:root:Mean squared error: 0.04317612237461606
+INFO:root:Root mean squared error: 0.20778864832953714
+INFO:root:Mean absolute percentage error: 10.674409999344055
+INFO:root:Explained variance score: 0.111
+INFO:root:r2 score: 0.080789
+INFO:root:Mean Absolute Error: 0.14164022691163328
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 121, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8152416944751015, 0.20778864832953714, 0.11099997991866117, 0.04317612237461606, 0.20778864832953714, 0.14164022691163328, 10.674409999344055)
+INFO:root:RBF degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.824921
+INFO:root:Mean squared error: 0.038488012770350105
+INFO:root:Root mean squared error: 0.19618362003579734
+INFO:root:Mean absolute percentage error: 10.118590103294585
+INFO:root:Explained variance score: 0.199849
+INFO:root:r2 score: 0.180598
+INFO:root:Mean Absolute Error: 0.13370146519174997
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 125, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8249207472867619, 0.19618362003579734, 0.19984909078415125, 0.038488012770350105, 0.19618362003579734, 0.13370146519174997, 10.118590103294585)
+INFO:root:RBF degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.824921
+INFO:root:Mean squared error: 0.038488012770350105
+INFO:root:Root mean squared error: 0.19618362003579734
+INFO:root:Mean absolute percentage error: 10.118590103294585
+INFO:root:Explained variance score: 0.199849
+INFO:root:r2 score: 0.180598
+INFO:root:Mean Absolute Error: 0.13370146519174997
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 128, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8249207472867619, 0.19618362003579734, 0.19984909078415125, 0.038488012770350105, 0.19618362003579734, 0.13370146519174997, 10.118590103294585)
+INFO:root:RBF degree 5
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.824921
+INFO:root:Mean squared error: 0.038488012770350105
+INFO:root:Root mean squared error: 0.19618362003579734
+INFO:root:Mean absolute percentage error: 10.118590103294585
+INFO:root:Explained variance score: 0.199849
+INFO:root:r2 score: 0.180598
+INFO:root:Mean Absolute Error: 0.13370146519174997
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 130, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8249207472867619, 0.19618362003579734, 0.19984909078415125, 0.038488012770350105, 0.19618362003579734, 0.13370146519174997, 10.118590103294585)
+INFO:root:Z use idstances false
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.87128
+INFO:root:Mean squared error: 0.04194076855921653
+INFO:root:Root mean squared error: 0.20479445441519292
+INFO:root:Mean absolute percentage error: 10.479709737135462
+INFO:root:Explained variance score: 0.134716
+INFO:root:r2 score: 0.107089
+INFO:root:Mean Absolute Error: 0.1389088328451749
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 156, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=1)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8712804568094689, 0.20479445441519292, 0.13471565496552662, 0.04194076855921653, 0.20479445441519292, 0.1389088328451749, 10.479709737135462)
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.814765
+INFO:root:Mean squared error: 0.042841397498886845
+INFO:root:Root mean squared error: 0.20698163565612976
+INFO:root:Mean absolute percentage error: 10.654714475622091
+INFO:root:Explained variance score: 0.11668
+INFO:root:r2 score: 0.087915
+INFO:root:Mean Absolute Error: 0.14122679086996076
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 158, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8147651708146733, 0.20698163565612976, 0.11668043670833528, 0.042841397498886845, 0.20698163565612976, 0.14122679086996076, 10.654714475622091)
+INFO:root:RBF degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.823974
+INFO:root:Mean squared error: 0.03989845159208255
+INFO:root:Root mean squared error: 0.19974596764911814
+INFO:root:Mean absolute percentage error: 10.396911519765755
+INFO:root:Explained variance score: 0.169417
+INFO:root:r2 score: 0.15057
+INFO:root:Mean Absolute Error: 0.13706081878378393
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 161, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8239739272228446, 0.19974596764911814, 0.16941722629290012, 0.03989845159208255, 0.19974596764911814, 0.13706081878378393, 10.396911519765755)
+INFO:root:RBF degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.823974
+INFO:root:Mean squared error: 0.03989845159208255
+INFO:root:Root mean squared error: 0.19974596764911814
+INFO:root:Mean absolute percentage error: 10.396911519765755
+INFO:root:Explained variance score: 0.169417
+INFO:root:r2 score: 0.15057
+INFO:root:Mean Absolute Error: 0.13706081878378393
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 164, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8239739272228446, 0.19974596764911814, 0.16941722629290012, 0.03989845159208255, 0.19974596764911814, 0.13706081878378393, 10.396911519765755)
+INFO:root:RBF degree 5
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.823974
+INFO:root:Mean squared error: 0.03989845159208255
+INFO:root:Root mean squared error: 0.19974596764911814
+INFO:root:Mean absolute percentage error: 10.396911519765755
+INFO:root:Explained variance score: 0.169417
+INFO:root:r2 score: 0.15057
+INFO:root:Mean Absolute Error: 0.13706081878378393
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not enough arguments for format string
+Call stack:
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 483, in <module>
+    pydevconsole.start_client(host, port)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 411, in start_client
+    process_exec_queue(interpreter)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 258, in process_exec_queue
+    more = interpreter.add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_code_executor.py", line 106, in add_exec
+    more = self.do_add_exec(code_fragment)
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py", line 84, in do_add_exec
+    command.run()
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_console_types.py", line 35, in run
+    self.more = self.interpreter.runsource(text, '<input>', symbol)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 75, in runsource
+    self.runcode(code)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/code.py", line 91, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 197, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 166, in <module>
+    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py", line 79, in run_svm_regression
+    get_result_statistics(predicted_values=results, real_values=y_test_set)
+  File "/Users/joannapalewicz/IdeaProjects/predictParcels/utils/result_stats.py", line 66, in get_result_statistics
+    mean_absolute_percentage_e
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.8239739272228446, 0.19974596764911814, 0.16941722629290012, 0.03989845159208255, 0.19974596764911814, 0.13706081878378393, 10.396911519765755)

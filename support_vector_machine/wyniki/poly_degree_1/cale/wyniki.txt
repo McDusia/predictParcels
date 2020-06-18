@@ -1,0 +1,47 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Z Wszystkimi danymi
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Train accuracy: 0.2619136263924181, Test accuracy: 0.2718266917569204
+INFO:root:Max error: 0.88223
+INFO:root:Mean squared error: 0.011167404526618884
+INFO:root:Root mean squared error: 0.10567594109644297
+INFO:root:Mean absolute percentage error: 5.980227343067156
+INFO:root:Explained variance score: 0.306495
+INFO:root:r2 score: 0.271827
+INFO:root:Mean Absolute Error: 0.07037645251712958
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Z use idstances false
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Train accuracy: 0.16462470759176806, Test accuracy: 0.17643169652309143
+INFO:root:Max error: 0.873867
+INFO:root:Mean squared error: 0.012630400340296012
+INFO:root:Root mean squared error: 0.11238505390084579
+INFO:root:Mean absolute percentage error: 6.754003776192528
+INFO:root:Explained variance score: 0.225889
+INFO:root:r2 score: 0.176432
+INFO:root:Mean Absolute Error: 0.07889532547816488
+
+BEZ DYSTANSOW
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.874148
+INFO:root:Mean squared error: 0.01291337585711486
+INFO:root:Root mean squared error: 0.11363703558750052
+INFO:root:Mean absolute percentage error: 6.768066292246234
+INFO:root:Explained variance score: 0.219326
+INFO:root:r2 score: 0.170905
+INFO:root:Mean Absolute Error: 0.07917288225741653

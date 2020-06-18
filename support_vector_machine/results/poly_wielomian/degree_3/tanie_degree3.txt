@@ -1,0 +1,17 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 146333
+DEBUG:root:Total samples in our dataset is: 146333
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Train accuracy: 0.3008419862779994, Test accuracy: 0.30114613267395063
+INFO:root:Max error: 0.729305
+INFO:root:Mean squared error: 0.03160516578762197
+INFO:root:Root mean squared error: 0.1777784176654241
+INFO:root:Mean absolute percentage error: 9.196579195678515
+INFO:root:Explained variance score: 0.301152
+INFO:root:r2 score: 0.301146
+INFO:root:Mean Absolute Error: 0.14179570199733
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000

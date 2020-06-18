@@ -1,0 +1,44 @@
+/usr/local/bin/python3.6 "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py" --mode=client --port=55201
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/joannapalewicz/IdeaProjects/predictParcels'])
+PyDev console: starting.
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 03:02:14)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+>>> runfile('/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/support_vector_machine.py', wdir='/Users/joannapalewicz/IdeaProjects/predictParcels/regression')
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 146333
+DEBUG:root:Total samples in our dataset is: 146333
+INFO:root:Z Wszystkimi danymi
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 1.7364
+INFO:root:Mean squared error: 0.028625801272494894
+INFO:root:Root mean squared error: 0.16919161111738046
+INFO:root:Mean absolute percentage error: 8.288232596012724
+INFO:root:Explained variance score: 0.361258
+INFO:root:r2 score: 0.36125
+INFO:root:Mean Absolute Error: 0.12866180196571436
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (1.7364003763221376, 0.16919161111738046, 0.3612581837436988, 0.028625801272494894, 0.16919161111738046, 0.12866180196571436, 8.288232596012724)
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+
+INFO:root:Z use idstances false
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 1.698205
+INFO:root:Mean squared error: 0.03662472672912623
+INFO:root:Root mean squared error: 0.19137587812764237
+INFO:root:Mean absolute percentage error: 9.938841232961245
+INFO:root:Explained variance score: 0.182785
+INFO:root:r2 score: 0.182764
+INFO:root:Mean Absolute Error: 0.15316043526769735
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (1.6982052675788935, 0.19137587812764237, 0.18278537500360414, 0.03662472672912623, 0.19137587812764237, 0.15316043526769735, 9.938841232961245)

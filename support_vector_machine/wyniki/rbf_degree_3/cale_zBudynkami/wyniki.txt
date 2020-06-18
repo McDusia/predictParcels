@@ -1,0 +1,31 @@
+INFO:root:RBF degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.868913
+INFO:root:Mean squared error: 0.007755705061790265
+INFO:root:Root mean squared error: 0.08806648092089445
+INFO:root:Mean absolute percentage error: 5.263856725416916
+INFO:root:Explained variance score: 0.405977
+INFO:root:r2 score: 0.343626
+INFO:root:Mean Absolute Error: 0.06059118550883724
+Message: 'Overleaf: %.3f & %.3f & %.3f  & %.3f & %.3f  & %.3f  &  %.3f  & %.3f'
+Arguments: (0.8689125736406536, 0.08806648092089445, 0.40597656827464146, 0.007755705061790265, 0.08806648092089445, 0.06059118550883724, 5.263856725416916)
+
+INFO:root:RBF degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.898028
+INFO:root:Mean squared error: 0.009503198704412127
+INFO:root:Root mean squared error: 0.09748435107447824
+INFO:root:Mean absolute percentage error: 6.324226784730046
+INFO:root:Explained variance score: 0.309011
+INFO:root:r2 score: 0.195733
+INFO:root:Mean Absolute Error: 0.07220460920711852
+Message: 'Overleaf: %.3f & %.3f & %.3f  & %.3f & %.3f  & %.3f  &  %.3f  & %.3f'
+Arguments: (0.8980275493963817, 0.09748435107447824, 0.3090109445858361, 0.009503198704412127, 0.09748435107447824, 0.07220460920711852, 6.324226784730046)

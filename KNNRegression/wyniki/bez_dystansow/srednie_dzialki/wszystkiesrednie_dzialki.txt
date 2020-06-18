@@ -1,0 +1,12 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 57824
+DEBUG:root:Total samples in our dataset is: 57824
+INFO:root:Max error: 0.893806
+INFO:root:Mean squared error: 0.055867450407507825
+INFO:root:Root mean squared error: 0.23636296327366482
+INFO:root:Mean absolute percentage error: inf
+INFO:root:Explained variance score: 0.185606
+INFO:root:r2 score: 0.185461
+INFO:root:Mean Absolute Error: 0.18479040626636428
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000

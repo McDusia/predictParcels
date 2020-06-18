@@ -1,0 +1,34 @@
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.703994
+INFO:root:Mean squared error: 0.03158106315872478
+INFO:root:Root mean squared error: 0.1777106163365734
+INFO:root:Mean absolute percentage error: 9.192676908183474
+INFO:root:Explained variance score: 0.295314
+INFO:root:r2 score: 0.295307
+INFO:root:Mean Absolute Error: 0.14172501890299674
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.7039944972636599, 0.1777106163365734, 0.2953139709701882, 0.03158106315872478, 0.1777106163365734, 0.14172501890299674, 9.192676908183474)
+
+INFO:root:Z use idstances false
+
+INFO:root:Poly degree 3
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.767703
+INFO:root:Mean squared error: 0.03728626121898787
+INFO:root:Root mean squared error: 0.19309650752664553
+INFO:root:Mean absolute percentage error: 10.21855345656685
+INFO:root:Explained variance score: 0.168018
+INFO:root:r2 score: 0.168003
+INFO:root:Mean Absolute Error: 0.15669249260250065
+
+Message: 'Overleaf: %3f & %3f & %3f  & %3f & %3f  & %3f  &  %3f  & %3f'
+Arguments: (0.7677034704681128, 0.19309650752664553, 0.16801766821257913, 0.03728626121898787, 0.19309650752664553, 0.15669249260250065, 10.21855345656685)

@@ -1,0 +1,36 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 201375
+DEBUG:root:Total samples in our dataset is: 201375
+INFO:root:Z Wszystkimi danymi
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.881113
+INFO:root:Mean squared error: 0.008369977928841836
+INFO:root:Root mean squared error: 0.09148758346815067
+INFO:root:Mean absolute percentage error: 5.45674530945576
+INFO:root:Explained variance score: 0.347834
+INFO:root:r2 score: 0.291639
+INFO:root:Mean Absolute Error: 0.06288791053156483
+Message: 'Overleaf: %.3f & %.3f & %.3f  & %.3f & %.3f  & %.3f  &  %.3f  & %.3f'
+Arguments: (0.8811127463462294, 0.09148758346815067, 0.34783403258983847, 0.008369977928841836, 0.09148758346815067, 0.06288791053156483, 5.45674530945576)
+
+INFO:root:Z use idstances false
+INFO:root:Poly degree 1
+INFO:root:Evaluation started
+DEBUG:root:Model created
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+DEBUG:root:Fitted
+INFO:root:Max error: 0.872528
+INFO:root:Mean squared error: 0.009995770827022271
+INFO:root:Root mean squared error: 0.09997885189890046
+INFO:root:Mean absolute percentage error: 6.422623894885857
+INFO:root:Explained variance score: 0.257102
+INFO:root:r2 score: 0.154046
+INFO:root:Mean Absolute Error: 0.07344159244189058
+Message: 'Overleaf: %.3f & %.3f & %.3f  & %.3f & %.3f  & %.3f  &  %.3f  & %.3f'
+Arguments: (0.8725276032597005, 0.09997885189890046, 0.25710231071900036, 0.009995770827022271, 0.09997885189890046, 0.07344159244189058, 6.422623894885857)

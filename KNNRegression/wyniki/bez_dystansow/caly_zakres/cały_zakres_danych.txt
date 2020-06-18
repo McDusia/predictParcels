@@ -1,0 +1,12 @@
+standaryzacja tez 10 sasiadow
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Max error: 0.902967
+INFO:root:Mean squared error: 0.009132671670082979
+INFO:root:Root mean squared error: 0.09556501279277359
+INFO:root:Mean absolute percentage error: 105.40130431018791
+INFO:root:Explained variance score: 0.405007
+INFO:root:r2 score: 0.404186
+INFO:root:Mean Absolute Error: 0.047693216068045594
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
