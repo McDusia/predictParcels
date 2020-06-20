@@ -6,10 +6,17 @@ from sklearn.impute import SimpleImputer
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.model_selection import GridSearchCV
 from configuration.configuration_constants import columns_to_omit_for_non_buildings_parcels
+from utils.runner import runner
+import os
+
+
+def get_folder_name():
+    my_path = os.path.abspath(__file__)
+    return my_path + "/fajne_statystyki/"
 
 
 # Grid Search - too slow
-def run_KNN_regression(x_train, x_test_set, y_train, y_test_set):
+def run_KNN_regression(x_train, x_test_set, y_train, y_test_set, title_part):
     # logging.info("Evaluation started")
     # parameters = {'n_neighbors': [8, 9, 10, 11]}
     # knn = KNeighborsRegressor()
@@ -21,8 +28,7 @@ def run_KNN_regression(x_train, x_test_set, y_train, y_test_set):
 
     neigh = KNeighborsRegressor(n_neighbors=10)
     neigh.fit(x_train, y_train)
-    predicted_values = neigh.predict(x_test_set)
-    get_result_statistics(predicted_values=predicted_values, real_values=y_test_set)
+    runner(fitted_model=neigh, x_test_set=x_test_set, y_test_set=y_test_set, title_part=title_part)
 
 
 def fill_nan_values(df):
@@ -32,7 +38,7 @@ def fill_nan_values(df):
 
 if __name__ == '__main__':
     x_train, x_test, y_train, y_test = \
-        get_basic_data_splited_train_test(price_groups='0;', buildings_present='0;1',
+        get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1',
                                           use_distances=True,
                                           random_state=50, test_size=0.2,
                                           columns_to_omit=[
@@ -65,7 +71,8 @@ if __name__ == '__main__':
                                               'Price_Group_int',
                                               'Price_Group_int_second'])
     logging.info("Z Wszystkimi danymi")
-    run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test)
+    run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test,
+                       title_part=get_folder_name() + "zDystansami")
     logging.info("Z use idstances false")
     distances = [
         'DistanceToElementarySchool',
@@ -90,4 +97,5 @@ if __name__ == '__main__':
     ]
     x_train.drop(columns=distances, axis=1, inplace=True)
     x_test.drop(columns=distances, axis=1, inplace=True)
-    run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test)
+    run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test,
+                       title_part=get_folder_name() + "bezDystansow")
