@@ -1,0 +1,32 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 15816
+DEBUG:root:Total samples in our dataset is: 15816
+INFO:root:Z Wszystkimi danymi
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 4430043.9
+INFO:root:Mean squared error: 1400182919479.1633
+INFO:root:Root mean squared error: 0    1.183293e+06
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    26.787939
+dtype: float64
+INFO:root:Explained variance score: 0.13822
+INFO:root:r2 score: 0.136405
+INFO:root:Mean Absolute Error: 891099.7710493047
+INFO:root:Overleaf: 4430043.9 & 0.136 & 0.138  & 1400182919479.163 & 0    1183293.252
+dtype: float64  & 891099.771  &  0    26.788
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Z use idstances false
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 4430043.9
+INFO:root:Mean squared error: 1434455700965.1865
+INFO:root:Root mean squared error: 0    1.197688e+06
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    27.124595
+dtype: float64
+INFO:root:Explained variance score: 0.117244
+INFO:root:r2 score: 0.115267
+INFO:root:Mean Absolute Error: 902784.4381795196
+INFO:root:Overleaf: 4430043.9 & 0.115 & 0.117  & 1434455700965.186 & 0    1197687.647
+dtype: float64  & 902784.438  &  0    27.125
+dtype: float64

@@ -25,26 +25,27 @@ def rmse(predictions, targets):
 
 
 # def plots(real_values, predicted_values, plot_title, x_label="Kolejne numery działek", y_label="cena za działkę [$]"):
-def plots(real_values, predicted_values, plot_title, x_label="Kolejne numery działek", y_label="cena po standaryzacji"):
+def plots(real_values, predicted_values, plot_title, x_label="Kolejne numery działek", y_label="cena po normalizacji",
+          title=""):
     values_one_plot_with_linear_and_dots(real_values[:100], predicted_values[:100], "Rzeczywiste wartości",
-                    "Predygowane wartości",
-                    plot_title + "0", x_label=x_label, y_label=y_label)
+                                         "Predygowane wartości",
+                                         plot_title + "0", x_label=x_label, y_label=y_label, plot_title=title)
     values_one_plot(real_values[:100], predicted_values[:100], "Rzeczywiste wartości",
-                                         "Predygowane wartości",
-                                         plot_title + "1", x_label=x_label, y_label=y_label)
+                    "Predygowane wartości",
+                    plot_title + "1", x_label=x_label, y_label=y_label, plot_title=title)
     values_one_plot(real_values[:1000], predicted_values[:1000], "Rzeczywiste wartości",
-                                         "Predygowane wartości",
-                                         plot_title + "2", x_label=x_label, y_label=y_label)
+                    "Predygowane wartości",
+                    plot_title + "2", x_label=x_label, y_label=y_label, plot_title=title)
     values_one_plot(real_values[:5000], predicted_values[:5000], "Rzeczywiste wartości",
-                                         "Predygowane wartości",
-                                         plot_title + "3", x_label=x_label, y_label=y_label)
+                    "Predygowane wartości",
+                    plot_title + "3", x_label=x_label, y_label=y_label, plot_title=title)
     values_one_plot(real_values, predicted_values, "Rzeczywiste wartości", "Predygowane wartości", plot_title + "4",
                     x_label=x_label, y_label=y_label)
     values_one_plot_with_linear_and_dots(real_values, predicted_values, "Rzeczywiste wartości", "Predygowane wartości",
-                                         plot_title + "5", x_label=x_label, y_label=y_label)
+                                         plot_title + "5", x_label=x_label, y_label=y_label, plot_title=title)
 
 
-def get_result_statistics(predicted_values, real_values, file_title):
+def get_result_statistics(predicted_values, real_values, file_title, title):
     mse = mean_squared_error(real_values, predicted_values)
     rms = rmse(predicted_values, real_values)
     mean_absolute_percentage_e = mean_absolute_percentage_error(real_values, predicted_values)
@@ -77,7 +78,7 @@ def get_result_statistics(predicted_values, real_values, file_title):
                  round(mae, 3),
                  round(mean_absolute_percentage_e, 3),
                  )
-    plots(real_values, predicted_values, plot_title=file_title)
+    plots(real_values, predicted_values, plot_title=file_title, title=title)
 
 
 def get_classification_result_statistics(predicted_values, real_values, plot_title="", target_names=['1', '2', '3']):

@@ -1,0 +1,58 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 204157
+DEBUG:root:Total samples in our dataset is: 204157
+INFO:root:Z Wszystkimi danymi
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 1535515.9
+INFO:root:Mean squared error: 34120128990.49378
+INFO:root:Root mean squared error: 0    184716.347383
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    84.735659
+dtype: float64
+INFO:root:Explained variance score: -0.282773
+INFO:root:r2 score: -0.525571
+INFO:root:Mean Absolute Error: 115747.29766824386
+INFO:root:Overleaf: 1535515.9 & -0.526 & -0.283  & 34120128990.494 & 0    184716.347
+dtype: float64  & 115747.298  &  0    84.736
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 1653566.8
+INFO:root:Mean squared error: 158685713069.3785
+INFO:root:Root mean squared error: 0    398353.753678
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    24.290784
+dtype: float64
+INFO:root:Explained variance score: 0.01011
+INFO:root:r2 score: -0.346173
+INFO:root:Mean Absolute Error: 288253.1646093409
+INFO:root:Overleaf: 1653566.8 & -0.346 & 0.01  & 158685713069.378 & 0    398353.754
+dtype: float64  & 288253.165  &  0    24.291
+dtype: float64
+INFO:root:Z use idstances false
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 1486465.4
+INFO:root:Mean squared error: 38486017033.783714
+INFO:root:Root mean squared error: 0    196178.53357
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    84.942752
+dtype: float64
+INFO:root:Explained variance score: -0.41024
+INFO:root:r2 score: -0.720777
+INFO:root:Mean Absolute Error: 125192.493208973
+INFO:root:Overleaf: 1486465.4 & -0.721 & -0.41  & 38486017033.784 & 0    196178.534
+dtype: float64  & 125192.493  &  0    84.943
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 1653566.8
+INFO:root:Mean squared error: 168191903158.44315
+INFO:root:Root mean squared error: 0    410112.061708
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    25.250799
+dtype: float64
+INFO:root:Explained variance score: -0.011866
+INFO:root:r2 score: -0.426817
+INFO:root:Mean Absolute Error: 300254.66412920126
+INFO:root:Overleaf: 1653566.8 & -0.427 & -0.012  & 168191903158.443 & 0    410112.062
+dtype: float64  & 300254.664  &  0    25.251
+dtype: float64

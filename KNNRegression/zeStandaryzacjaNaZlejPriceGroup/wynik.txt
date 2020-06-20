@@ -1,0 +1,138 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:[[0.         0.         0.97577759 0.91324913 0.         0.
+  0.96777392 0.00186567 0.03030303 0.02020202 0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.06896552 0.11111111
+  0.11111111 0.00530361 0.98346485 0.0031266  0.         0.
+  0.         0.         0.         0.02515319 0.64068835 0.
+  0.         0.62068966 0.6753877  0.98165592 0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.87235772 0.31182796 0.21707317 0.24686192 0.09408034
+  0.35368957 0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         1.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.07141765 0.04848731 0.05734133 0.03809221 0.03435101
+  0.02577586 0.20164319 0.06479714 0.28415785 0.09710011 0.23959597
+  0.03704829 0.11558078 0.02773708 0.02962142 0.229549   0.05794284
+  0.09886095 0.00652766 0.03307885]]
+INFO:root:cheap_max_price: 0.07141765401513768
+INFO:root:medium_example: 0.14290822695629682
+INFO:root:Z Wszystkimi danymi
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 0.920075
+INFO:root:Mean squared error: 0.007999603130187312
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.473683
+INFO:root:r2 score: 0.473472
+INFO:root:Mean Absolute Error: 0.04265380158452493
+INFO:root:Overleaf: 0.92 & 0.473 & 0.474  & 0.008 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 0.043  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.920075
+INFO:root:Mean squared error: 0.002454165906770194
+INFO:root:Root mean squared error: 0    0.04954
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    2.167513
+dtype: float64
+INFO:root:Explained variance score: -7.66604
+INFO:root:r2 score: -9.226776
+INFO:root:Mean Absolute Error: 0.022628397737456535
+INFO:root:Overleaf: 0.92 & -9.227 & -7.666  & 0.002 & 0    0.05
+dtype: float64  & 0.023  &  0    2.168
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.894338
+INFO:root:Mean squared error: 0.002512592222311393
+INFO:root:Root mean squared error: 0    0.050126
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    2.584131
+dtype: float64
+INFO:root:Explained variance score: -5.39872
+INFO:root:r2 score: -5.816817
+INFO:root:Mean Absolute Error: 0.028469203215263833
+INFO:root:Overleaf: 0.894 & -5.817 & -5.399  & 0.003 & 0    0.05
+dtype: float64  & 0.028  &  0    2.584
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 0.886203
+INFO:root:Mean squared error: 0.03079299782938506
+INFO:root:Root mean squared error: 0    0.175479
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    8.089331
+dtype: float64
+INFO:root:Explained variance score: 0.209244
+INFO:root:r2 score: 0.021354
+INFO:root:Mean Absolute Error: 0.11506767687617392
+INFO:root:Overleaf: 0.886 & 0.021 & 0.209  & 0.031 & 0    0.175
+dtype: float64  & 0.115  &  0    8.089
+dtype: float64
+INFO:root:Z use idstances false
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 0.920075
+INFO:root:Mean squared error: 0.009027108270789995
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.406628
+INFO:root:r2 score: 0.405842
+INFO:root:Mean Absolute Error: 0.047261262214861786
+INFO:root:Overleaf: 0.92 & 0.406 & 0.407  & 0.009 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 0.047  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.920075
+INFO:root:Mean squared error: 0.0028697455535834637
+INFO:root:Root mean squared error: 0    0.05357
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    2.579556
+dtype: float64
+INFO:root:Explained variance score: -8.576475
+INFO:root:r2 score: -10.958542
+INFO:root:Mean Absolute Error: 0.026929081941882718
+INFO:root:Overleaf: 0.92 & -10.959 & -8.576  & 0.003 & 0    0.054
+dtype: float64  & 0.027  &  0    2.58
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.894338
+INFO:root:Mean squared error: 0.002625011215636308
+INFO:root:Root mean squared error: 0    0.051235
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    2.770294
+dtype: float64
+INFO:root:Explained variance score: -5.735745
+INFO:root:r2 score: -6.121817
+INFO:root:Mean Absolute Error: 0.030495245730138162
+INFO:root:Overleaf: 0.894 & -6.122 & -5.736  & 0.003 & 0    0.051
+dtype: float64  & 0.03  &  0    2.77
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 0.898913
+INFO:root:Mean squared error: 0.03487994861087031
+INFO:root:Root mean squared error: 0    0.186762
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    8.780867
+dtype: float64
+INFO:root:Explained variance score: 0.180601
+INFO:root:r2 score: -0.108535
+INFO:root:Mean Absolute Error: 0.12494028354442527
+INFO:root:Overleaf: 0.899 & -0.109 & 0.181  & 0.035 & 0    0.187
+dtype: float64  & 0.125  &  0    8.781
+dtype: float64

@@ -1,0 +1,66 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 146333
+DEBUG:root:Total samples in our dataset is: 146333
+INFO:root:Z Wszystkimi danymi
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 609806.0
+INFO:root:Mean squared error: 10738289279.032087
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.515033
+INFO:root:r2 score: 0.514964
+INFO:root:Mean Absolute Error: 74905.51584036628
+INFO:root:Overleaf: 609806.0 & 0.515 & 0.515  & 10738289279.032 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 74905.516  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 609806.0
+INFO:root:Mean squared error: 10738289279.032087
+INFO:root:Root mean squared error: 0    103625.717267
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    41.872365
+dtype: float64
+INFO:root:Explained variance score: 0.515033
+INFO:root:r2 score: 0.514964
+INFO:root:Mean Absolute Error: 74905.51584036628
+INFO:root:Overleaf: 609806.0 & 0.515 & 0.515  & 10738289279.032 & 0    103625.717
+dtype: float64  & 74905.516  &  0    41.872
+dtype: float64
+INFO:root:Z use idstances false
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 635206.0
+INFO:root:Mean squared error: 11475314437.034527
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.4818
+INFO:root:r2 score: 0.481673
+INFO:root:Mean Absolute Error: 77844.5042778556
+INFO:root:Overleaf: 635206.0 & 0.482 & 0.482  & 11475314437.035 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 77844.504  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 635206.0
+INFO:root:Mean squared error: 11475314437.034527
+INFO:root:Root mean squared error: 0    107122.894084
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    43.572495
+dtype: float64
+INFO:root:Explained variance score: 0.4818
+INFO:root:r2 score: 0.481673
+INFO:root:Mean Absolute Error: 77844.5042778556
+INFO:root:Overleaf: 635206.0 & 0.482 & 0.482  & 11475314437.035 & 0    107122.894
+dtype: float64  & 77844.504  &  0    43.572
+dtype: float64

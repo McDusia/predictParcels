@@ -1,0 +1,85 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 18598
+DEBUG:root:Total samples in our dataset is: 18598
+INFO:root:Z Wszystkimi danymi
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.526451
+INFO:root:Mean squared error: 0.017198062585538028
+INFO:root:Root mean squared error: 0    0.131141
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    8.563135
+dtype: float64
+INFO:root:Explained variance score: -9.448102
+INFO:root:r2 score: -17.252905
+INFO:root:Mean Absolute Error: 0.08944498198368854
+INFO:root:Overleaf: 0.526 & -17.253 & -9.448  & 0.017 & 0    0.131
+dtype: float64  & 0.089  &  0    8.563
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.565699
+INFO:root:Mean squared error: 0.013442080887928576
+INFO:root:Root mean squared error: 0    0.11594
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    7.513956
+dtype: float64
+INFO:root:Explained variance score: -3.62855
+INFO:root:r2 score: -4.377874
+INFO:root:Mean Absolute Error: 0.08774841168696236
+INFO:root:Overleaf: 0.566 & -4.378 & -3.629  & 0.013 & 0    0.116
+dtype: float64  & 0.088  &  0    7.514
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 0.881499
+INFO:root:Mean squared error: 0.09534305605614452
+INFO:root:Root mean squared error: 0    0.308777
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    15.302019
+dtype: float64
+INFO:root:Explained variance score: -0.082215
+INFO:root:r2 score: -1.561393
+INFO:root:Mean Absolute Error: 0.2467836816350978
+INFO:root:Overleaf: 0.881 & -1.561 & -0.082  & 0.095 & 0    0.309
+dtype: float64  & 0.247  &  0    15.302
+dtype: float64
+INFO:root:Z use idstances false
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.518816
+INFO:root:Mean squared error: 0.017576102473136315
+INFO:root:Root mean squared error: 0    0.132575
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    8.822951
+dtype: float64
+INFO:root:Explained variance score: -9.389134
+INFO:root:r2 score: -17.654131
+INFO:root:Mean Absolute Error: 0.09210791639781622
+INFO:root:Overleaf: 0.519 & -17.654 & -9.389  & 0.018 & 0    0.133
+dtype: float64  & 0.092  &  0    8.823
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.565699
+INFO:root:Mean squared error: 0.01366591764487922
+INFO:root:Root mean squared error: 0    0.116901
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    7.660682
+dtype: float64
+INFO:root:Explained variance score: -3.717651
+INFO:root:r2 score: -4.467426
+INFO:root:Mean Absolute Error: 0.08940524116923936
+INFO:root:Overleaf: 0.566 & -4.467 & -3.718  & 0.014 & 0    0.117
+dtype: float64  & 0.089  &  0    7.661
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 0.878424
+INFO:root:Mean squared error: 0.09923295864778953
+INFO:root:Root mean squared error: 0    0.315013
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    15.657924
+dtype: float64
+INFO:root:Explained variance score: -0.095777
+INFO:root:r2 score: -1.665895
+INFO:root:Mean Absolute Error: 0.2524933582477051
+INFO:root:Overleaf: 0.878 & -1.666 & -0.096  & 0.099 & 0    0.315
+dtype: float64  & 0.252  &  0    15.658
+dtype: float64

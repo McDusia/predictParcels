@@ -12,7 +12,7 @@ import os
 
 def get_folder_name():
     my_path = os.path.abspath(__file__)
-    return my_path + "/fajne_statystyki/"
+    return my_path.replace("knnRegressor.py", "") #+ "fajne_statystyki/"
 
 
 # Grid Search - too slow
@@ -38,7 +38,7 @@ def fill_nan_values(df):
 
 if __name__ == '__main__':
     x_train, x_test, y_train, y_test = \
-        get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1',
+        get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;',
                                           use_distances=True,
                                           random_state=50, test_size=0.2,
                                           columns_to_omit=[
@@ -72,7 +72,7 @@ if __name__ == '__main__':
                                               'Price_Group_int_second'])
     logging.info("Z Wszystkimi danymi")
     run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test,
-                       title_part=get_folder_name() + "zDystansami")
+                       title_part=get_folder_name() + "BezZabudowanzDystansami")
     logging.info("Z use idstances false")
     distances = [
         'DistanceToElementarySchool',
@@ -98,4 +98,4 @@ if __name__ == '__main__':
     x_train.drop(columns=distances, axis=1, inplace=True)
     x_test.drop(columns=distances, axis=1, inplace=True)
     run_KNN_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test,
-                       title_part=get_folder_name() + "bezDystansow")
+                       title_part=get_folder_name() + "BezZabudowanbezDystansow")
