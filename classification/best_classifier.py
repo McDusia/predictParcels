@@ -26,16 +26,18 @@ def fill_nan_values(df):
     return imp.fit_transform(df)
 
 
+path = "/Users/joannapalewicz/IdeaProjects/predictParcels/classification/"
+
 if __name__ == '__main__':
-    x_train, x_test, y_train, y_test = \
+    x_train, x_test_classification, y_train, y_test = \
         get_basic_data_splited_train_test(price_groups='0;1;2;', buildings_present='0;1',
                                           random_state=50, test_size=0.4,
                                           # columns_to_omit=['Sale_Amount', 'Price_Group_int'],
                                           columns_to_omit=['Price_Group_int'],
                                           use_distances=True, target_column="Price_Group_int_second")
-    sale_amount_test = x_test['Sale_Amount']
+    sale_amount_test = x_test_classification['Sale_Amount']
     x_train_for_classification = x_train.drop(columns=['Sale_Amount'], axis=1, inplace=False)
-    x_test_for_classification = x_test.drop(columns=['Sale_Amount'], axis=1, inplace=False)
+    x_test_for_classification = x_test_classification.drop(columns=['Sale_Amount'], axis=1, inplace=False)
     x_train_for_classification = fill_nan_values(x_train_for_classification)
     x_test_for_classification = fill_nan_values(x_test_for_classification)
 
@@ -43,72 +45,77 @@ if __name__ == '__main__':
                                                           X_test=x_test_for_classification,
                                                           y_train=y_train,
                                                           y_test=y_test)
-    regression_all_data = zip(x_test_for_classification, sale_amount_test)
+    # regression_all_data = zip(x_test_for_classification, sale_amount_test)
 
-    logging.info("Cale dame")
-    # regression_all_data2 = list(regression_all_data)
-    # all_x = list(regression_all_data2)[0]
-    # all_y = list(regression_all_data2)[1]
-    regresion_all_data_list = list(regression_all_data)
-    all_len = len(regresion_all_data_list)
+    logging.info("REGRESJA - Cale dame")
+    all_len = len(x_test_classification)
     train_size = math.floor(0.7 * all_len)
-    all_train = regresion_all_data_list[:train_size]
-    all_test = regresion_all_data_list[train_size:]
+    all_train = x_test_classification[:train_size]
+    all_test = x_test_classification[train_size:]
 
-    all_x_train, all_y_train = list(zip(*all_train))
-    all_x_test, all_y_test = list(zip(*all_test))
+    all_x_train = all_train.drop(columns=['Sale_Amount'], axis=1, inplace=False)
+    all_y_train = all_train['Sale_Amount']
+    all_x_test = all_test.drop(columns=['Sale_Amount'], axis=1, inplace=False)
+    all_y_test = all_test['Sale_Amount']
 
-    # all_y_test = sale_amount_test[:train_size]
-    # all_y_train = sale_amount_test[train_size:]
+    run_KNN_regression(x_train=fill_nan_values(all_x_train), x_test_set=fill_nan_values(all_x_test),
+                       y_train=all_y_train,
+                       y_test_set=all_y_test, title_part=path + "Cale")
 
-    run_KNN_regression(x_train=all_x_train, x_test_set=all_x_test, y_train=all_y_train,
-                       y_test_set=all_y_test, title_part="Cale")
 
     # Teraz chcemy ta sama regresje ale osobno na tanich, srednich i drogich
-    cheap, medium, expensive = get_data_splitted_for_price_groups_int(x_data=x_test,
+    cheap, medium, expensive = get_data_splitted_for_price_groups_int(x_data=x_test_classification,
                                                                       y_data=predicted_price_group_values)
 
-    logging.info("Cheap prediction")
-    cheap_len = len(cheap)
-    train_size = math.floor(0.7 * cheap_len)
+    logging.info("REGRESJA - Cheap prediction")
+    cheap_shape = cheap.shape
+    cheap_len_rows, cheap_len_cols = cheap_shape
+    cheap_train_size = math.floor(0.7 * cheap_len_rows)
     cheap_y = cheap['Sale_Amount']
     cheap_x = cheap.drop(columns=['Sale_Amount'], axis=1, inplace=False)
 
-    cheap_x_train = cheap_x[train_size:]
-    cheap_y_train = cheap_y[train_size:]
+    cheap_x_train = cheap_x.head(cheap_train_size)
+    cheap_y_train = cheap_y.head(cheap_train_size)
 
-    cheap_x_test = cheap_x[:train_size]
-    cheap_y_test = cheap_y[:train_size]
+    cheap_x_test = cheap_x.tail(cheap_len_rows - cheap_train_size)
+    cheap_y_test = cheap_y.tail(cheap_len_rows - cheap_train_size)
 
-    run_KNN_regression(x_train=cheap_x_train, x_test_set=cheap_x_test, y_train=cheap_y_train,
-                       y_test_set=cheap_y_test, title_part="KNNPoklasyfikacji_cheap")
-    logging.info("Medium prediction")
-    medium_x = medium[0]
-    medium_y = medium[1]
-    medium_len = len(medium[0])
-    train_size = math.floor(0.7 * medium_len)
-    medium_x_train = medium_x[train_size:]
-    medium_y_train = medium_y[train_size:]
+    run_KNN_regression(x_train=fill_nan_values(cheap_x_train), x_test_set=fill_nan_values(cheap_x_test),
+                       y_train=cheap_y_train,
+                       y_test_set=cheap_y_test, title_part=path + "KNNPoklasyfikacji_cheap", use_statistics_for_all=True)
+    logging.info("REGRESJA - Medium prediction")
+    medium_shape = medium.shape
+    medium_len_rows, medium_len_cols = medium_shape
+    medium_train_size = math.floor(0.7 * medium_len_rows)
+    medium_y = medium['Sale_Amount']
+    medium_x = medium.drop(columns=['Sale_Amount'], axis=1, inplace=False)
 
-    medium_x_test = medium_x[:train_size]
-    medium_y_test = medium_y[:train_size]
+    medium_x_train = medium_x.head(medium_train_size)
+    medium_y_train = medium_y.head(medium_train_size)
 
-    run_KNN_regression(x_train=medium_x_train, x_test_set=medium_x_test, y_train=medium_y_train,
-                       y_test_set=medium_y_test, title_part="KNNPoklasyfikacji_medium")
+    medium_x_test = medium_x.tail(medium_len_rows - medium_train_size)
+    medium_y_test = medium_y.tail(medium_len_rows - medium_train_size)
 
-    logging.info("Expensive prediction")
-    expensive_x = expensive[0]
-    expensive_y = expensive[1]
-    expensive_len = len(expensive[0])
-    train_size = math.floor(0.7 * expensive_len)
-    expensive_x_train = expensive_x[train_size:]
-    expensive_y_train = expensive_y[train_size:]
+    run_KNN_regression(x_train=fill_nan_values(medium_x_train), x_test_set=fill_nan_values(medium_x_test),
+                       y_train=medium_y_train,
+                       y_test_set=medium_y_test, title_part=path + "KNNPoklasyfikacji_medium", use_statistics_for_all=True)
 
-    expensive_x_test = expensive_x[:train_size]
-    expensive_y_test = expensive_y[:train_size]
+    logging.info("REGRESJA - Expensive prediction")
+    expensive_shape = expensive.shape
+    expensive_len_rows, expensive_len_cols = expensive_shape
+    expensive_train_size = math.floor(0.7 * expensive_len_rows)
+    expensive_y = expensive['Sale_Amount']
+    expensive_x = expensive.drop(columns=['Sale_Amount'], axis=1, inplace=False)
 
-    run_KNN_regression(x_train=expensive_x_train, x_test_set=expensive_x_test, y_train=expensive_y_train,
-                       y_test_set=expensive_y_test, title_part="KNNPoklasyfikacji_expensive")
+    expensive_x_train = expensive_x.head(expensive_train_size)
+    expensive_y_train = expensive_y.head(expensive_train_size)
+
+    expensive_x_test = expensive_x.tail(expensive_len_rows - expensive_train_size)
+    expensive_y_test = expensive_y.tail(expensive_len_rows - expensive_train_size)
+
+    run_KNN_regression(x_train=fill_nan_values(expensive_x_train), x_test_set=fill_nan_values(expensive_x_test),
+                       y_train=expensive_y_train,
+                       y_test_set=expensive_y_test, title_part= path + "KNNPoklasyfikacji_expensive", use_statistics_for_all=True)
 
     # w predicted_values mamy podzielone na grupy
 

@@ -1,0 +1,106 @@
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/joannapalewicz/IdeaProjects/predictParcels'])
+PyDev console: starting.
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 03:02:14)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+>>> runfile('/Users/joannapalewicz/IdeaProjects/predictParcels/classification/best_classifier.py', wdir='/Users/joannapalewicz/IdeaProjects/predictParcels/regression')
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:KNN Classifier
+INFO:root:Score: 0.7829639731787703
+INFO:root:Cheap amount: 58481 predicdted: 64109
+INFO:root:Medium amount: 23152 predicdted: 20663
+INFO:root:Expensive amount: 6357 predicdted: 3218
+INFO:root:Accuracy: 0.7829639731787703
+INFO:root:Accuracy not normalised: 68893, Count of test set: 87990
+INFO:root:Cohen Kappa score: 0.519109333854608
+INFO:root:              precision    recall  f1-score   support
+           1       0.84      0.92      0.87     58481
+           2       0.66      0.59      0.62     23152
+           3       0.55      0.28      0.37      6357
+    accuracy                           0.78     87990
+   macro avg       0.68      0.59      0.62     87990
+weighted avg       0.77      0.78      0.77     87990
+INFO:root:Haming loss score: 0.2170360268212297
+[[53548  4463   470]
+ [ 8595 13577   980]
+ [ 1966  2623  1768]]
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+
+INFO:root:REGRESJA - Cale dame
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 6518365.4
+INFO:root:Mean squared error: 521542492806.87134
+INFO:root:Root mean squared error: 0    722178.989453
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    105.345002
+dtype: float64
+INFO:root:Explained variance score: 0.305758
+INFO:root:r2 score: 0.30534
+INFO:root:Mean Absolute Error: 360376.0059095386
+INFO:root:Overleaf: 6518365.4 & 0.305 & 0.306  & 521542492806.871 & 0    722178.989
+dtype: float64  & 360376.006  &  0    105.345
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py:3997: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  errors=errors,
+
+
+INFO:root:REGRESJA - Cheap prediction
+INFO:root:Max error: 6518365.4
+INFO:root:Mean squared error: 351784094088.69385
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.137813
+INFO:root:r2 score: 0.135943
+INFO:root:Mean Absolute Error: 252042.05008059068
+INFO:root:Overleaf: 6518365.4 & 0.136 & 0.138  & 351784094088.694 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 252042.05  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+
+
+INFO:root:REGRESJA - Medium prediction
+INFO:root:Max error: 5933859.7
+INFO:root:Mean squared error: 759213387189.8346
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.112407
+INFO:root:r2 score: 0.111924
+INFO:root:Mean Absolute Error: 540979.8773350541
+INFO:root:Overleaf: 5933859.7 & 0.112 & 0.112  & 759213387189.835 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 540979.877  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+
+
+INFO:root:REGRESJA - Expensive prediction
+INFO:root:Max error: 4972250.1
+INFO:root:Mean squared error: 2253285440972.712
+INFO:root:Root mean squared error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.021383
+INFO:root:r2 score: 0.019548
+INFO:root:Mean Absolute Error: 1163821.0891304347
+INFO:root:Overleaf: 4972250.1 & 0.02 & 0.021  & 2253285440972.712 & 0             NaN
+Sale_Amount   NaN
+dtype: float64  & 1163821.089  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
