@@ -12,11 +12,11 @@ import os
 
 def get_folder_name():
     my_path = os.path.abspath(__file__)
-    return my_path.replace("knnRegressor.py", "") #+ "fajne_statystyki/"
+    return my_path.replace("knnRegressor.py", "")  # + "fajne_statystyki/"
 
 
 # Grid Search - too slow
-def run_KNN_regression(x_train, x_test_set, y_train, y_test_set, title_part):
+def run_KNN_regression(x_train, x_test_set, y_train, y_test_set, title_part, use_statistics_seperately_for_all=False):
     # logging.info("Evaluation started")
     # parameters = {'n_neighbors': [8, 9, 10, 11]}
     # knn = KNeighborsRegressor()
@@ -28,7 +28,16 @@ def run_KNN_regression(x_train, x_test_set, y_train, y_test_set, title_part):
 
     neigh = KNeighborsRegressor(n_neighbors=10)
     neigh.fit(x_train, y_train)
-    runner(fitted_model=neigh, x_test_set=x_test_set, y_test_set=y_test_set, title_part=title_part)
+    if use_statistics_seperately_for_all:
+        runner(fitted_model=neigh, x_test_set=x_test_set, y_test_set=y_test_set, title_part=title_part)
+    else:
+        predicted_values = neigh.predict(x_test_set)
+        get_result_statistics(predicted_values=predicted_values, real_values=y_test_set,
+                              file_title=title_part, title="")
+    # predicted_values_cheap = neigh.predict(list(x_test_set))
+    # predicted_values_cheap = fitted_model.predict(list(cheap_x))
+    # get_result_statistics(predicted_values=predicted_values_cheap, real_values=y_test_set,
+    #                       file_title=title_part, title="")
 
 
 def fill_nan_values(df):

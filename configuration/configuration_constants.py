@@ -1,7 +1,7 @@
 """
     Price classification module configuration constants
 """
-target_column_name = 'ScaledPriceOnBuildingsPresent'
+target_column_name = 'Sale_Amount'
 
 """
     Lower limit date to filter data in order to train the model
@@ -54,7 +54,6 @@ classification_buckets = [0, 1, 2]
 """
 train_model_with_price_parameters = False
 
-
 """
 check if all below variables are using:
    Paths to:
@@ -71,3 +70,29 @@ checkpoint_file_path = './resources/'
 path_to_trained_models = './trained_models/'
 
 id_to_omit_from_data = ['OBJECTID']
+columns_to_omit_for_non_buildings_parcels = ['Price_Group_int', 'Price_Group_int_second','BD_LINE_1_Year_Changed',
+                                             'BD_LINE_1_Unit_Cost_Main',
+                                             'BD_LINE_1_RCN_Main',
+                                             'BD_LINE_2_Year_Changed',
+                                             'BD_LINE_2_Unit_Cost_Main',
+                                             'BD_LINE_2_RCN_Main',
+                                             'BD_LINE_3_Year_Changed',
+                                             'BD_LINE_3_Unit_Cost_Main',
+                                             'BD_LINE_3_RCN_Main',
+                                             'BD_LINE_4_Year_Changed',
+                                             'BD_LINE_1_Yr_Built',
+                                             'BD_LINE_1_No_of_Units',
+                                             'BD_LINE_1_No_of_Bedrooms',
+                                             'BD_LINE_1_No_of_Baths',
+                                             'BD_LINE_2_Subpart',
+                                             'BD_LINE_2_Yr_Built',
+                                             'BD_LINE_2_No_of_Units',
+                                             'BD_LINE_2_No_of_Bedrooms',
+                                             'BD_LINE_2_No_of_Baths',
+                                             'BD_LINE_2_Sq_Ft_of_Main_Improve',
+                                             'BD_LINE_3_Subpart',
+                                             'BD_LINE_3_Yr_Built',
+                                             'BD_LINE_3_No_of_Units',
+                                             'BD_LINE_3_No_of_Bedrooms',
+                                             'BD_LINE_3_No_of_Baths',
+                                             'BD_LINE_3_Sq_Ft_of_Main_Improve']
