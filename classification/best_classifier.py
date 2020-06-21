@@ -4,8 +4,10 @@ from utils.get_basic_train_data import get_basic_data_splited_train_test
 from utils.result_stats import get_classification_result_statistics
 from sklearn.impute import SimpleImputer
 from utils.get_basic_train_data import get_data_splitted_for_price_groups_int
-from KNNRegression.knnRegressor import run_KNN_regression
+from decision_tree.decision_tree import create_decision_tree
 import math
+from utils.runner import runner
+from utils.result_stats import get_result_statistics
 
 h = .02  # step size in the mesh
 
@@ -19,6 +21,29 @@ def myKNeighborsClassifier(X_train, X_test, y_train, y_test):
     logging.info("Score: %s", score)
     get_classification_result_statistics(real_values=y_test, predicted_values=y_pred)
     return y_pred
+
+def run_regression(x_train, x_test_set, y_train, y_test_set, title_part, use_statistics_seperately_for_all=False):
+    # logging.info("Evaluation started")
+    # parameters = {'n_neighbors': [8, 9, 10, 11]}
+    # knn = KNeighborsRegressor()
+    # clf = GridSearchCV(knn, parameters)
+    # clf.fit(x_train, y_train)
+    # logging.debug(clf.best_estimator_.coef_)
+    # logging.debug(clf.best_params_)
+    # logging.debug("Model fitted")
+
+    model = create_decision_tree(x_test=x_test_set, x_train=x_train, y_train=y_train, y_test=y_test_set)
+    if use_statistics_seperately_for_all:
+        runner(fitted_model=model, x_test_set=x_test_set, y_test_set=y_test_set, title_part=title_part)
+    else:
+        predicted_values = model.predict(x_test_set)
+        get_result_statistics(predicted_values=predicted_values, real_values=y_test_set,
+                              file_title=title_part, title="")
+    # predicted_values_cheap = neigh.predict(list(x_test_set))
+    # predicted_values_cheap = fitted_model.predict(list(cheap_x))
+    # get_result_statistics(predicted_values=predicted_values_cheap, real_values=y_test_set,
+    #                       file_title=title_part, title="")
+
 
 
 def fill_nan_values(df):
@@ -55,7 +80,7 @@ if __name__ == '__main__':
     all_x_test = all_test.drop(columns=['Sale_Amount'], axis=1, inplace=False)
     all_y_test = all_test['Sale_Amount']
 
-    run_KNN_regression(x_train=fill_nan_values(all_x_train), x_test_set=fill_nan_values(all_x_test),
+    run_regression(x_train=fill_nan_values(all_x_train), x_test_set=fill_nan_values(all_x_test),
                        y_train=all_y_train,
                        y_test_set=all_y_test, title_part=path + "Cale", use_statistics_seperately_for_all=True)
 
@@ -76,7 +101,7 @@ if __name__ == '__main__':
     cheap_x_test = cheap_x.tail(cheap_len_rows - cheap_train_size)
     cheap_y_test = cheap_y.tail(cheap_len_rows - cheap_train_size)
 
-    run_KNN_regression(x_train=fill_nan_values(cheap_x_train), x_test_set=fill_nan_values(cheap_x_test),
+    run_regression(x_train=fill_nan_values(cheap_x_train), x_test_set=fill_nan_values(cheap_x_test),
                        y_train=cheap_y_train,
                        y_test_set=cheap_y_test, title_part=path + "KNNPoklasyfikacji_cheap",
                        use_statistics_seperately_for_all=False)
@@ -93,7 +118,7 @@ if __name__ == '__main__':
     medium_x_test = medium_x.tail(medium_len_rows - medium_train_size)
     medium_y_test = medium_y.tail(medium_len_rows - medium_train_size)
 
-    run_KNN_regression(x_train=fill_nan_values(medium_x_train), x_test_set=fill_nan_values(medium_x_test),
+    run_regression(x_train=fill_nan_values(medium_x_train), x_test_set=fill_nan_values(medium_x_test),
                        y_train=medium_y_train,
                        y_test_set=medium_y_test, title_part=path + "KNNPoklasyfikacji_medium",
                        use_statistics_seperately_for_all=False)
@@ -111,7 +136,7 @@ if __name__ == '__main__':
     expensive_x_test = expensive_x.tail(expensive_len_rows - expensive_train_size)
     expensive_y_test = expensive_y.tail(expensive_len_rows - expensive_train_size)
 
-    run_KNN_regression(x_train=fill_nan_values(expensive_x_train), x_test_set=fill_nan_values(expensive_x_test),
+    run_regression(x_train=fill_nan_values(expensive_x_train), x_test_set=fill_nan_values(expensive_x_test),
                        y_train=expensive_y_train,
                        y_test_set=expensive_y_test, title_part=path + "KNNPoklasyfikacji_expensive",
                        use_statistics_seperately_for_all=False)

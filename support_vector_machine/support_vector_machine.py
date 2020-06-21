@@ -3,11 +3,10 @@ import logging
 from utils.get_basic_train_data import get_basic_data_splited_train_test, log_shape
 from utils.data_preprocessor import fill_nan_values
 from utils.result_stats import get_result_statistics
-from sklearn.model_selection import GridSearchCV
-import numpy as np
+from utils.runner import runner
 
 
-def run_svm_regression(x_train_set, x_test_set, y_train_set, y_test_set, degree=1, kernel='poly'):
+def run_svm_regression(x_train_set, x_test_set, y_train_set, y_test_set, degree=1, kernel='poly', title_part=""):
     logging.info("Evaluation started")
     # parameters = {'kernel': ['rbf', 'poly'], 'degree': [3, 5, 10], 'epsilon': [0.1, 1, 10]}
     # svr = svm.SVR()
@@ -72,25 +71,21 @@ def run_svm_regression(x_train_set, x_test_set, y_train_set, y_test_set, degree=
     regressor.fit(x_train_set, y_train_set)
 
     logging.debug("Fitted")
-    # train_accuracy = regressor.score(x_train_set, y_train_set)
+    runner(fitted_model=regressor, x_test_set=x_test_set, y_test_set=y_test_set,
+           title_part="/Users/joannapalewicz/IdeaProjects/predictParcels/support_vector_machine/" + title_part + "SVM")
+
+# train_accuracy = regressor.score(x_train_set, y_train_set)
     # test_accuracy = regressor.score(x_test_set, y_test_set)
     # logging.info("Train accuracy: %s, Test accuracy: %s", train_accuracy, test_accuracy)
-    results = regressor.predict(x_test_set)
-    get_result_statistics(predicted_values=results, real_values=y_test_set)
-
-    for num, value in enumerate(results, start=0):
-        if num > 1:
-            results[num] = 1
-        else:
-            if num < 0:
-                results[num] = 0
-    logging.debug("Drugie statystyki\n")
-    get_result_statistics(predicted_values=results, real_values=y_test_set)
+    #
+    # results = regressor.predict(x_test_set)
+    # logging.debug("Wyniki dla wszystkich danych na raz")
+    # get_result_statistics(predicted_values=results, real_values=y_test_set, title=title_part)
 
 
 if __name__ == '__main__':
     x_train, x_test, y_train, y_test = \
-        get_basic_data_splited_train_test(price_groups='0', buildings_present='0;1',
+        get_basic_data_splited_train_test(price_groups='0;1;2', buildings_present='0;1',
                                           use_distances=True,
                                           random_state=50, test_size=0.2,
                                           columns_to_omit=[
@@ -125,16 +120,16 @@ if __name__ == '__main__':
     logging.info("Z Wszystkimi danymi ")
     logging.info("Poly degree 1")
     run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=1)
-    logging.info("Poly degree 3")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
-
-    logging.info("RBF degree 1")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
-
-    logging.info("RBF degree 3")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
-    logging.info("RBF degree 5")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)
+    # logging.info("Poly degree 3")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
+    #
+    # logging.info("RBF degree 1")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
+    #
+    # logging.info("RBF degree 3")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
+    # logging.info("RBF degree 5")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)
     logging.info("Z use idstances false")
     distances = [
         'DistanceToElementarySchool',
@@ -161,13 +156,13 @@ if __name__ == '__main__':
     x_test.drop(columns=distances, axis=1, inplace=True)
     logging.info("Poly degree 1")
     run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=1)
-    logging.info("Poly degree 3")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
-
-    logging.info("RBF degree 1")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
-
-    logging.info("RBF degree 3")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
-    logging.info("RBF degree 5")
-    run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)
+    # logging.info("Poly degree 3")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='poly', degree=3)
+    #
+    # logging.info("RBF degree 1")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=1)
+    #
+    # logging.info("RBF degree 3")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=3)
+    # logging.info("RBF degree 5")
+    # run_svm_regression(fill_nan_values(x_train), fill_nan_values(x_test), y_train, y_test, kernel='rbf', degree=5)

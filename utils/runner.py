@@ -4,10 +4,10 @@ from utils.result_stats import get_result_statistics
 
 
 def runner(fitted_model, x_test_set, y_test_set, title_part):
-#     logging.info("Statystki dla calosci")
-#     predicted_all = fitted_model.predict(x_test_set)
-#     get_result_statistics(predicted_values=predicted_all, real_values=y_test_set,
-#                           file_title=title_part + "cale", title="cale")
+    logging.info("Statystki dla calosci")
+    predicted_all = fitted_model.predict(x_test_set)
+    get_result_statistics(predicted_values=predicted_all, real_values=y_test_set,
+                          file_title=title_part + "cale", title="cale")
     cheap, medium, expensive = get_data_splitted_for_price_groups(x_data=x_test_set, y_data=y_test_set)
     if cheap:
         logging.info("Statystki dla tanich")

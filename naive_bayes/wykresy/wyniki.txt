@@ -1,0 +1,162 @@
+/usr/local/bin/python3.6 "/Users/joannapalewicz/Library/Application Support/IntelliJIdea2019.3/python/helpers/pydev/pydevconsole.py" --mode=client --port=50176
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['/Users/joannapalewicz/IdeaProjects/predictParcels'])
+PyDev console: starting.
+Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 03:02:14)
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+>>> runfile('/Users/joannapalewicz/IdeaProjects/predictParcels/naive_bayes/gaussian_bayes.py', wdir='/Users/joannapalewicz/IdeaProjects/predictParcels/regression')
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:Z Wszystkimi danymi
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 7.66803436e-05 -1.73229725e-01 -5.79258083e-03 -6.43648515e-02
+ -7.65128856e-03 -7.65128853e-03 -7.84050747e-03 -3.98960694e-02
+ -1.70387859e-01  1.67141608e+00 -1.05491909e-01 -1.14626883e-03
+  3.96323007e-01 -7.99788675e-02  3.07193943e-01  1.47222808e+00
+  1.08485838e-01 -1.04869786e-02  6.78901416e-01  5.37029945e-02
+ -8.30565854e-02  8.85776520e-01  1.28587655e-01  7.66075368e-02
+  3.73830960e-02  4.56649134e-01  5.67003183e+00  5.56941452e+00
+ -4.95014916e-02 -3.06383600e-02 -4.34499485e-03  6.17128054e-02
+  3.31034877e-02  3.19989092e-03  7.63094786e-04  5.05791799e-03
+ -2.58741753e-02  2.38218066e-02  1.62981733e-02 -5.69231976e-03
+ -2.32874624e-01  2.53249105e-01 -4.28677136e-03  6.24963694e-03
+  4.90192888e-01 -1.46007786e-02 -4.53436650e-02  1.03556842e-01
+  6.17125874e-02 -1.13312214e-02  3.77054228e-03 -3.90435452e-02
+ -4.01243009e-03  9.04496194e-03 -2.73352156e-02 -8.86024227e-05
+ -2.49227708e-02  2.05777760e-02 -5.98370886e-02 -4.54699346e-02
+ -5.27229437e-02 -4.35410841e-02 -4.16122759e-02 -4.83007042e-02
+  4.47299666e-01 -9.41028296e-02 -1.26121695e-01  9.29785444e-04
+ -7.13617520e-04  3.28873198e-02 -1.37828679e-02 -7.47984681e-03
+  3.03334227e-02 -2.74638800e-03  3.45284924e-02  2.52685708e-02
+  1.94021226e-02  3.20418154e-02  1.06707650e-01 -8.07942614e-02
+ -2.44826825e-02 -4.90094695e-02  1.32416929e-03 -3.22476891e-02
+ -3.32403938e-03 -2.31499846e-01  4.28936176e-01  5.00419956e-01
+ -3.90607520e-01 -1.04300062e-01 -1.62700521e-01 -1.41472701e-01
+  1.59820624e-02 -1.14102157e-02 -2.41584181e-01  1.78324943e-01
+  8.23839552e-03  8.52429347e-02 -8.95735146e-02 -3.78519049e-02
+  1.17563207e-01 -7.89771137e-02 -1.02331065e-02  2.24483912e-01]
+DEBUG:root:{'alpha_1': 1e-10, 'alpha_2': 1e-05, 'lambda_1': 1e-05, 'lambda_2': 1e-07, 'n_iter': 500}
+DEBUG:root:Model fitted
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 0.970556
+INFO:root:Mean squared error: 0.009793941910178643
+INFO:root:Root mean squared error: 0.09896434666170763
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.367412
+INFO:root:r2 score: 0.367396
+INFO:root:Mean Absolute Error: 0.055215642347274115
+INFO:root:Overleaf: 0.971 & 0.367 & 0.367  & 0.01 & 0.099  & 0.055  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.909074
+INFO:root:Mean squared error: 0.002864558498897066
+INFO:root:Root mean squared error: 0.05352157040761291
+INFO:root:Mean absolute percentage error: 0    3.607763
+dtype: float64
+INFO:root:Explained variance score: -3.695366
+INFO:root:r2 score: -5.273302
+INFO:root:Mean Absolute Error: 0.0381017885122484
+INFO:root:Overleaf: 0.909 & -5.273 & -3.695  & 0.003 & 0.054  & 0.038  &  0    3.608
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.719894
+INFO:root:Mean squared error: 0.0033583362920852526
+INFO:root:Root mean squared error: 0.057951154363698854
+INFO:root:Mean absolute percentage error: 0    3.686832
+dtype: float64
+INFO:root:Explained variance score: -0.452235
+INFO:root:r2 score: -0.454805
+INFO:root:Mean Absolute Error: 0.043005388312690435
+INFO:root:Overleaf: 0.72 & -0.455 & -0.452  & 0.003 & 0.058  & 0.043  &  0    3.687
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 0.970556
+INFO:root:Mean squared error: 0.0963941924937351
+INFO:root:Root mean squared error: 0.3104741414252322
+INFO:root:Mean absolute percentage error: 0    16.398792
+dtype: float64
+INFO:root:Explained variance score: -0.132131
+INFO:root:r2 score: -2.042019
+INFO:root:Mean Absolute Error: 0.25612526992486573
+INFO:root:Overleaf: 0.971 & -2.042 & -0.132  & 0.096 & 0.31  & 0.256  &  0    16.399
+dtype: float64
+INFO:root:Z use idstances false
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 2.31649609e-02 -2.22868613e-01 -1.06940233e-02 -1.01933817e-01
+ -7.19124966e-03 -7.19124965e-03 -6.63438721e-03 -1.50365736e-01
+ -3.63189321e-01  1.94686403e+00 -1.06349531e-01  8.37647915e-04
+  4.46295862e-01 -8.21103183e-02  2.94501451e-01  1.46984051e+00
+  1.04827490e-01 -1.39408738e-02  7.08974720e-01  9.91643947e-02
+ -1.44948743e-01  8.78728038e-01  9.28950194e-02  8.57151090e-02
+  8.89963673e-02  5.00279097e-01 -1.05189732e+00 -1.03981230e+00
+ -6.02527810e-02 -4.60066041e-02 -5.82331919e-03  6.35109690e-02
+  3.06889047e-02  2.37867977e-03  1.50741306e-03  6.44370792e-03
+ -2.59361466e-02  2.48286522e-02  1.49858559e-02 -1.54468314e-02
+ -1.06173632e-01  3.24078384e-01  1.06841710e-03 -1.62498754e-02
+  4.81806713e-01 -9.13864615e-03 -6.87084568e-02  6.93636934e-02
+  6.34378729e-02 -1.70861164e-02 -2.27712992e-02 -3.57005071e-02
+  5.06722633e-03  7.17089954e-03 -5.29652185e-03 -1.01755678e-02
+ -2.07653380e-02  1.49420188e-02 -5.81849440e-02 -4.20289569e-02
+ -4.60624007e-02 -4.62724621e-02 -2.64461049e-02 -5.44167570e-02
+  4.65050951e-01 -1.28128356e-01 -8.67523073e-02 -1.80767570e-03
+  6.91842309e-03  2.55781573e-02 -4.81065223e-02 -3.44935438e-02
+  4.59732257e-02 -5.55701663e-03  4.09407345e-02  2.46880772e-02
+  3.16780991e-02  5.64246444e-02  6.49708724e-02 -6.46452686e-02
+ -1.70699056e-02 -5.47275955e-02  5.55684532e-03 -5.16485938e-02
+  1.45672683e-02]
+DEBUG:root:{'alpha_1': 1e-10, 'alpha_2': 1e-05, 'lambda_1': 1e-05, 'lambda_2': 1e-07, 'n_iter': 500}
+DEBUG:root:Model fitted
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 1.061554
+INFO:root:Mean squared error: 0.0111114586282916
+INFO:root:Root mean squared error: 0.10541090374478154
+INFO:root:Mean absolute percentage error: 0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Explained variance score: 0.2823
+INFO:root:r2 score: 0.282296
+INFO:root:Mean Absolute Error: 0.059725112304236945
+INFO:root:Overleaf: 1.062 & 0.282 & 0.282  & 0.011 & 0.105  & 0.06  &  0             NaN
+Sale_Amount   NaN
+dtype: float64
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 0.920192
+INFO:root:Mean squared error: 0.0030513150434607027
+INFO:root:Root mean squared error: 0.05523870964695594
+INFO:root:Mean absolute percentage error: 0    3.842949
+dtype: float64
+INFO:root:Explained variance score: -2.933351
+INFO:root:r2 score: -5.682293
+INFO:root:Mean Absolute Error: 0.04053336994521603
+INFO:root:Overleaf: 0.92 & -5.682 & -2.933  & 0.003 & 0.055  & 0.041  &  0    3.843
+dtype: float64
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 0.818115
+INFO:root:Mean squared error: 0.004020967994849141
+INFO:root:Root mean squared error: 0.06341110308809603
+INFO:root:Mean absolute percentage error: 0    3.993296
+dtype: float64
+INFO:root:Explained variance score: -0.615033
+INFO:root:r2 score: -0.741852
+INFO:root:Mean Absolute Error: 0.046922777418819964
+INFO:root:Overleaf: 0.818 & -0.742 & -0.615  & 0.004 & 0.063  & 0.047  &  0    3.993
+dtype: float64
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 1.061554
+INFO:root:Mean squared error: 0.110451607922005
+INFO:root:Root mean squared error: 0.3323426062394122
+INFO:root:Mean absolute percentage error: 0    18.160992
+dtype: float64
+INFO:root:Explained variance score: -0.181388
+INFO:root:r2 score: -2.485644
+INFO:root:Mean Absolute Error: 0.2818931359077254
+INFO:root:Overleaf: 1.062 & -2.486 & -0.181  & 0.11 & 0.332  & 0.282  &  0    18.161
+dtype: float64

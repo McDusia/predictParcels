@@ -9,18 +9,18 @@ import pandas as pd
 
 
 def mean_absolute_percentage_error(y_true, y_pred):
-    y_true = pd.DataFrame(y_true)
-    y_pred = pd.DataFrame(y_pred)
+    # y_true = pd.DataFrame(y_true)
+    # y_pred = pd.DataFrame(y_pred)
     # y_true = np.array(y_true)
     # y_pred = np.array(y_pred)
-    y_true = y_true + 1
-    y_pred = y_pred + 1
+    # y_true = y_true + 1
+    # y_pred = y_pred + 1
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
 
 def rmse(predictions, targets):
-    predictions = pd.DataFrame(predictions)
-    targets = pd.DataFrame(targets)
+    # predictions = pd.DataFrame(predictions)
+    # targets = pd.DataFrame(targets)
     return np.sqrt(((predictions - targets) ** 2).mean())
 
 

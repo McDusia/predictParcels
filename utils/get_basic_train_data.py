@@ -112,8 +112,8 @@ def log_shape(train_features, train_labels, test_features, test_labels):
 #  to dziala, ale nie uwzgl
 def filterCheap(input):
     x, y = input
-    if y <= 0.1000143121264603:
-        # if y < 700000:
+    # if y <= 0.1000143121264603:
+    if y < 700000:
         return True
     else:
         return False
@@ -121,8 +121,8 @@ def filterCheap(input):
 
 def filterMedium(input):
     x, y = input
-    if y > 0.1000143121264603 and y < 0.28588794305575194:
-        # if y >= 700000 and y < 2000000:
+    # if y > 0.1000143121264603 and y < 0.28588794305575194:
+    if y >= 700000 and y < 2000000:
         return True
     else:
         return False
@@ -130,8 +130,8 @@ def filterMedium(input):
 
 def filterExpensive(input):
     x, y = input
-    if y >= 0.28588794305575194:
-        # if y >= 2000000:
+    # if y >= 0.28588794305575194:
+    if y >= 2000000:
         return True
     else:
         return False
@@ -152,6 +152,26 @@ def get_data_splitted_for_price_groups(x_data, y_data):
     c = list(zip(*expensive_parcels))
 
     return a, b, c
+
+
+def get_data_splitted_for_price_groups_df(x_data, y_data):
+    sale_amount_id = 'Sale_amount'
+    x_data[sale_amount_id] = y_data
+
+    cheap_parcels = x_data[x_data[sale_amount_id] < 700000]
+    medium_parcels = x_data[2000000 > x_data[sale_amount_id] >= 700000]
+    expensive_parcels = x_data[x_data[sale_amount_id] >= 2000000]
+
+    cheap_parcels_y = cheap_parcels[sale_amount_id]
+    cheap_parcels_x = cheap_parcels.drop(columns=[sale_amount_id], axis=1, inplace=False)
+
+    medium_parcels_y = medium_parcels[sale_amount_id]
+    medium_parcels_x = medium_parcels.drop(columns=[sale_amount_id], axis=1, inplace=False)
+
+    expendive_parcels_y = expensive_parcels[sale_amount_id]
+    expendive_parcels_x = expensive_parcels.drop(columns=[sale_amount_id], axis=1, inplace=False)
+
+    return cheap_parcels_x, cheap_parcels_y, medium_parcels_x, medium_parcels_y, expendive_parcels_x, expendive_parcels_y
 
 
 def get_data_splitted_for_price_groups_int(x_data, y_data):

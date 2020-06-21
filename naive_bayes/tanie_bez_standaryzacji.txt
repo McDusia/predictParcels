@@ -1,0 +1,99 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 146333
+DEBUG:root:Total samples in our dataset is: 146333
+INFO:root:Z Wszystkimi danymi
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 5.16084692e+01 -6.39235095e+04  7.70789981e-05 -1.73210673e-05
+  2.04298828e-01  1.36495041e+00  2.89853758e+01 -1.25579697e+04
+  1.18661713e+04  3.12066436e+04 -9.72331385e+01  3.04731207e+01
+  1.92787952e+03  9.71614614e+03 -4.38470427e+03  4.42217946e+00
+  1.08147061e+02 -8.4358068 6e+00  2.08900671e+04 -7.50656598e+03
+ -2.51872923e+04 -5.39918184e+00  5.93866099e+02 -6.45985371e+03
+  2.18204343e+02 -1.06440584e-02  8.15869421e+04  2.37171243e+04
+ -3.28825010e+04  3.95358609e+04 -1.42068096e+04 -2.31906403e+04
+  3.11158575e+03  9.86057706e-02 -2.04085731e-02  1.11136207e+03
+ -5.02912820e+03 -9.54007954e+02  3.03656641e+00 -1.04819495e+01
+ -9.20828568e-04  2.98549589e-03  1.13896206e+00  5.86892894e+00
+  4.17174641e-01  1.72099381e+01  1.51133686e+01  8.24543032e-01
+  1.24524361e+01 -1.46692860e+01 -4.29100417e+01  3.79377314e+02
+  3.57543154e+02 -1.28966729e+02 -2.50497168e+02 -3.69678828e+04
+ -3.39124887e+04  1.97056550e+04 -1.51081839e+04 -3.20457379e+04
+  1.16607670e+04  1.33945581e+04 -1.06079007e+04 -6.17608112e+03
+ -5.15424606e-04  1.56919753e+04  2.17516134e+04  8.35730798e+02
+  1.14123444e+04 -9.13654083e+03  7.86674611e+02  5.67922097e+04
+  8.04649441e+04 -7.69953308e+03  2.09399349e+04 -7.39416123e+03
+ -1.03996466e+04 -1.19904716e+03  1.03545336e+03  4.01891773e+04
+  3.71469880e+04 -6.13237625e+04 -5.44033475e+04 -3.42459041e+04
+ -1.11878092e+04  5.02808343e-01  1.23094286e+00  2.03329171e+00
+ -5.07086591e+00  1.62158714e-02 -1.39794550e-01 -6.76978523e-01
+ -3.72983439e-01  9.74553904e-01 -1.31899984e+00  9.29453459e-01
+  6.74262668e-01 -9.35338078e-01 -1.09767485e-01 -2.20904485e+00
+  1.83695642e+00  5.23386791e-01 -1.25519964e+00  1.61885708e+00]
+DEBUG:root:{'alpha_1': 1e-05, 'alpha_2': 1e-10, 'lambda_1': 1e-07, 'lambda_2': 1e-05, 'n_iter': 500}
+DEBUG:root:Model fitted
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 1776335.066689
+INFO:root:Mean squared error: 14082397217.415583
+INFO:root:Root mean squared error: 118669.27663643856
+INFO:root:Mean absolute percentage error: 57.0259470266873
+INFO:root:Explained variance score: 0.37314
+INFO:root:r2 score: 0.373107
+INFO:root:Mean Absolute Error: 90172.65476643118
+INFO:root:Overleaf: 1776335.067 & 0.373 & 0.373  & 14082397217.416 & 118669.277  & 90172.655  &  57.026
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 1776335.066689
+INFO:root:Mean squared error: 14082397217.415583
+INFO:root:Root mean squared error: 118669.27663643856
+INFO:root:Mean absolute percentage error: 57.025947026687284
+INFO:root:Explained variance score: 0.37314
+INFO:root:r2 score: 0.373107
+INFO:root:Mean Absolute Error: 90172.65476643118
+INFO:root:Overleaf: 1776335.067 & 0.373 & 0.373  & 14082397217.416 & 118669.277  & 90172.655  &  57.026
+INFO:root:Z use idstances false
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/model_selection/_split.py:1978: FutureWarning: The default value of cv will change from 3 to 5 in version 0.22. Specify it explicitly to silence this warning.
+  warnings.warn(CV_WARNING, FutureWarning)
+DEBUG:root:[ 3.33571718e+01 -8.73557183e+04  5.24114631e-05 -5.18680763e-05
+  4.81049153e+00  1.91974232e+00  3.99282524e+01 -1.31525897e+04
+  9.42414367e+03  3.23093143e+04  1.20150077e+01  2.12540692e+01
+ -4.04131577e+03  8.20796284e+03 -4.15261112e+03  8.92374980e+00
+  1.72637706e+02 -2.68093421e+01  2.56547654e+04 -6.88236832e+03
+ -2.86950988e+04 -1.62219904e+00 -4.02103337e+03 -3.06297876e+03
+  8.25444635e+02 -1.12512978e-02 -2.68243833e+05 -7.70303318e+04
+ -6.43744380e+04  7.61111437e+03 -9.78631693e+03 -2.42796449e+04
+  1.20499479e+04  8.59957411e-02 -6.91126349e-03  7.89746716e+02
+ -7.56360639e+03 -1.61594979e+02  3.58694591e+00 -1.78348622e+01
+  7.51352267e-01  3.69276795e-03  3.05851260e+00  7.46603122e-01
+  3.23642118e-01  2.24410654e+01  1.23711588e+01  8.36052620e-01
+  1.23023049e+01 -1.44752003e+01 -1.32045164e+02  6.89680949e+02
+  3.91613673e+02 -2.59760284e+02 -9.27142934e+01 -3.21989915e+04
+ -2.40759888e+04  1.42907332e+04 -2.69294319e+04 -3.01366787e+04
+  2.09663443e+04  9.60371910e+03 -4.15597563e+03  9.73071362e+03
+ -8.59694054e-02 -3.35653898e+03  5.64092234e+04  4.99526746e+02
+  1.38744059e+04 -2.32407014e+03 -2.57640707e+04  1.79769485e+04
+  7.10756165e+04 -4.71261250e+04  2.78087287e+04 -7.95248796e+02
+  5.54445817e+03  2.64801903e+04  2.78487218e+04 -3.75397620e+03
+  1.19701679e+04 -3.53834352e+04 -2.23378681e+04 -6.19061288e+04
+  6.16964464e+03]
+DEBUG:root:{'alpha_1': 1e-05, 'alpha_2': 1e-10, 'lambda_1': 1e-07, 'lambda_2': 1e-07, 'n_iter': 500}
+DEBUG:root:Model fitted
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 1837259.683525
+INFO:root:Mean squared error: 16887843881.011625
+INFO:root:Root mean squared error: 129953.23728561604
+INFO:root:Mean absolute percentage error: 61.68842306561809
+INFO:root:Explained variance score: 0.248303
+INFO:root:r2 score: 0.248219
+INFO:root:Mean Absolute Error: 102501.67264458312
+INFO:root:Overleaf: 1837259.684 & 0.248 & 0.248  & 16887843881.012 & 129953.237  & 102501.673  &  61.688
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 1837259.683525
+INFO:root:Mean squared error: 16887843881.011604
+INFO:root:Root mean squared error: 129953.23728561595
+INFO:root:Mean absolute percentage error: 61.68842306561801
+INFO:root:Explained variance score: 0.248303
+INFO:root:r2 score: 0.248219
+INFO:root:Mean Absolute Error: 102501.67264458303
+INFO:root:Overleaf: 1837259.684 & 0.248 & 0.248  & 16887843881.012 & 129953.237  & 102501.673  &  61.688
