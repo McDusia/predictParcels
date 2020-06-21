@@ -1,0 +1,62 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:KNN Classifier
+INFO:root:Score: 0.7819752244573247
+INFO:root:Cheap amount: 58548 predicdted: 63970
+INFO:root:Medium amount: 23059 predicdted: 20868
+INFO:root:Expensive amount: 6383 predicdted: 3152
+INFO:root:Accuracy: 0.7819752244573247
+INFO:root:Accuracy not normalised: 68806, Count of test set: 87990
+INFO:root:Cohen Kappa score: 0.5171085716323731
+INFO:root:              precision    recall  f1-score   support
+           1       0.84      0.91      0.87     58548
+           2       0.65      0.59      0.62     23059
+           3       0.56      0.28      0.37      6383
+    accuracy                           0.78     87990
+   macro avg       0.68      0.59      0.62     87990
+weighted avg       0.77      0.78      0.77     87990
+INFO:root:Haming loss score: 0.2180247755426753
+[[53485  4594   469]
+ [ 8579 13559   921]
+ [ 1906  2715  1762]]
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Cheap prediction
+INFO:root:Max error: 6591066.2
+INFO:root:Mean squared error: 354024401613.76996
+INFO:root:Root mean squared error: 0    594999.497154
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    105.764524
+dtype: float64
+INFO:root:Explained variance score: 0.082397
+INFO:root:r2 score: 0.08151
+INFO:root:Mean Absolute Error: 259941.97715893612
+INFO:root:Overleaf: 6591066.2 & 0.082 & 0.082  & 354024401613.77 & 0    594999.497
+dtype: float64  & 259941.977  &  0    105.765
+dtype: float64
+INFO:root:Medium prediction
+INFO:root:Max error: 6015960.2
+INFO:root:Mean squared error: 796610941875.435
+INFO:root:Root mean squared error: 0    892530.63918
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    132.604351
+dtype: float64
+INFO:root:Explained variance score: 0.062717
+INFO:root:r2 score: 0.061298
+INFO:root:Mean Absolute Error: 559572.0601150133
+INFO:root:Overleaf: 6015960.2 & 0.061 & 0.063  & 796610941875.435 & 0    892530.639
+dtype: float64  & 559572.06  &  0    132.604
+dtype: float64
+INFO:root:Expensive prediction
+INFO:root:Max error: 5106451.3
+INFO:root:Mean squared error: 2826976865632.923
+INFO:root:Root mean squared error: 0    1.681362e+06
+dtype: float64
+INFO:root:Mean absolute percentage error: 0    366.469592
+dtype: float64
+INFO:root:Explained variance score: -0.034671
+INFO:root:r2 score: -0.036806
+INFO:root:Mean Absolute Error: 1337073.0338621938
+INFO:root:Overleaf: 5106451.3 & -0.037 & -0.035  & 2826976865632.923 & 0    1681361.611
+dtype: float64  & 1337073.034  &  0    366.47
+dtype: float64
