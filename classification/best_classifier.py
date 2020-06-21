@@ -31,8 +31,7 @@ path = "/Users/joannapalewicz/IdeaProjects/predictParcels/classification/"
 if __name__ == '__main__':
     x_train, x_test_classification, y_train, y_test = \
         get_basic_data_splited_train_test(price_groups='0;1;2;', buildings_present='0;1',
-                                          random_state=50, test_size=0.4,
-                                          # columns_to_omit=['Sale_Amount', 'Price_Group_int'],
+                                          random_state=50, test_size=0.6,
                                           columns_to_omit=['Price_Group_int'],
                                           use_distances=True, target_column="Price_Group_int_second")
     sale_amount_test = x_test_classification['Sale_Amount']
@@ -45,8 +44,6 @@ if __name__ == '__main__':
                                                           X_test=x_test_for_classification,
                                                           y_train=y_train,
                                                           y_test=y_test)
-    # regression_all_data = zip(x_test_for_classification, sale_amount_test)
-
     logging.info("REGRESJA - Cale dame")
     all_len = len(x_test_classification)
     train_size = math.floor(0.7 * all_len)
@@ -60,8 +57,7 @@ if __name__ == '__main__':
 
     run_KNN_regression(x_train=fill_nan_values(all_x_train), x_test_set=fill_nan_values(all_x_test),
                        y_train=all_y_train,
-                       y_test_set=all_y_test, title_part=path + "Cale")
-
+                       y_test_set=all_y_test, title_part=path + "Cale", use_statistics_seperately_for_all=True)
 
     # Teraz chcemy ta sama regresje ale osobno na tanich, srednich i drogich
     cheap, medium, expensive = get_data_splitted_for_price_groups_int(x_data=x_test_classification,
@@ -82,7 +78,8 @@ if __name__ == '__main__':
 
     run_KNN_regression(x_train=fill_nan_values(cheap_x_train), x_test_set=fill_nan_values(cheap_x_test),
                        y_train=cheap_y_train,
-                       y_test_set=cheap_y_test, title_part=path + "KNNPoklasyfikacji_cheap", use_statistics_for_all=True)
+                       y_test_set=cheap_y_test, title_part=path + "KNNPoklasyfikacji_cheap",
+                       use_statistics_seperately_for_all=False)
     logging.info("REGRESJA - Medium prediction")
     medium_shape = medium.shape
     medium_len_rows, medium_len_cols = medium_shape
@@ -98,7 +95,8 @@ if __name__ == '__main__':
 
     run_KNN_regression(x_train=fill_nan_values(medium_x_train), x_test_set=fill_nan_values(medium_x_test),
                        y_train=medium_y_train,
-                       y_test_set=medium_y_test, title_part=path + "KNNPoklasyfikacji_medium", use_statistics_for_all=True)
+                       y_test_set=medium_y_test, title_part=path + "KNNPoklasyfikacji_medium",
+                       use_statistics_seperately_for_all=False)
 
     logging.info("REGRESJA - Expensive prediction")
     expensive_shape = expensive.shape
@@ -115,7 +113,8 @@ if __name__ == '__main__':
 
     run_KNN_regression(x_train=fill_nan_values(expensive_x_train), x_test_set=fill_nan_values(expensive_x_test),
                        y_train=expensive_y_train,
-                       y_test_set=expensive_y_test, title_part= path + "KNNPoklasyfikacji_expensive", use_statistics_for_all=True)
+                       y_test_set=expensive_y_test, title_part=path + "KNNPoklasyfikacji_expensive",
+                       use_statistics_seperately_for_all=False)
 
     # w predicted_values mamy podzielone na grupy
 

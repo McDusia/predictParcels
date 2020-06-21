@@ -1,0 +1,92 @@
+DEBUG:root:Reading data from database
+DEBUG:root:Total samples in our dataset is: 219973
+DEBUG:root:Total samples in our dataset is: 219973
+INFO:root:KNN Classifier
+INFO:root:Score: 0.7817251960450051
+INFO:root:Cheap amount: 58504 predicdted: 64178
+INFO:root:Medium amount: 23156 predicdted: 20484
+INFO:root:Expensive amount: 6330 predicdted: 3328
+INFO:root:Accuracy: 0.7817251960450051
+INFO:root:Accuracy not normalised: 68784, Count of test set: 87990
+INFO:root:Cohen Kappa score: 0.5160794792830645
+INFO:root:              precision    recall  f1-score   support
+           1       0.83      0.91      0.87     58504
+           2       0.65      0.58      0.61     23156
+           3       0.56      0.29      0.38      6330
+    accuracy                           0.78     87990
+   macro avg       0.68      0.60      0.62     87990
+weighted avg       0.77      0.78      0.77     87990
+INFO:root:Haming loss score: 0.21827480395499488
+[[53512  4524   468]
+ [ 8740 13414  1002]
+ [ 1926  2546  1858]]
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:REGRESJA - Cale dame
+INFO:root:Statystki dla calosci
+INFO:root:Max error: 6393663.5
+INFO:root:Mean squared error: 497952078459.25214
+INFO:root:Root mean squared error: 705657.1961365179
+INFO:root:Mean absolute percentage error: 103.80015078480494
+INFO:root:Explained variance score: 0.329722
+INFO:root:r2 score: 0.329341
+INFO:root:Mean Absolute Error: 350420.23830972036
+INFO:root:Overleaf: 6393663.5 & 0.329 & 0.33  & 497952078459.252 & 705657.196  & 350420.238  &  103.8
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:root:Statystki dla tanich
+INFO:root:Max error: 4160741.4
+INFO:root:Mean squared error: 140915362958.1337
+INFO:root:Root mean squared error: 375386.95096944127
+INFO:root:Mean absolute percentage error: 138.49662443336916
+INFO:root:Explained variance score: -4.121787
+INFO:root:r2 score: -5.285164
+INFO:root:Mean Absolute Error: 200432.91611447503
+INFO:root:Overleaf: 4160741.4 & -5.285 & -4.122  & 140915362958.134 & 375386.951  & 200432.916  &  138.497
+INFO:root:Statystki dla srednich
+INFO:root:Max error: 3848038.5
+INFO:root:Mean squared error: 241211713853.79538
+INFO:root:Root mean squared error: 491133.0917926376
+INFO:root:Mean absolute percentage error: 32.00001642712817
+INFO:root:Explained variance score: -1.072935
+INFO:root:r2 score: -1.073753
+INFO:root:Mean Absolute Error: 347890.81383190886
+INFO:root:Overleaf: 3848038.5 & -1.074 & -1.073  & 241211713853.795 & 491133.092  & 347890.814  &  32.0
+INFO:root:Statystki dla drogich
+INFO:root:Max error: 6393663.5
+INFO:root:Mean squared error: 4799555764940.496
+INFO:root:Root mean squared error: 2190788.845356963
+INFO:root:Mean absolute percentage error: 48.58672957707312
+INFO:root:Explained variance score: -0.186629
+INFO:root:r2 score: -2.040504
+INFO:root:Mean Absolute Error: 1762511.382638889
+INFO:root:Overleaf: 6393663.5 & -2.041 & -0.187  & 4799555764940.496 & 2190788.845  & 1762511.383  &  48.587
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py:3997: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  errors=errors,
+INFO:root:REGRESJA - Cheap prediction
+INFO:root:Max error: 6393663.5
+INFO:root:Mean squared error: 325988099153.2183
+INFO:root:Root mean squared error: 570953.6751376755
+INFO:root:Mean absolute percentage error: 91.49353407780963
+INFO:root:Explained variance score: 0.136011
+INFO:root:r2 score: 0.134489
+INFO:root:Mean Absolute Error: 243869.65781655756
+INFO:root:Overleaf: 6393663.5 & 0.134 & 0.136  & 325988099153.218 & 570953.675  & 243869.658  &  91.494
+INFO:root:REGRESJA - Medium prediction
+INFO:root:Max error: 5875108.6
+INFO:root:Mean squared error: 707817573290.0742
+INFO:root:Root mean squared error: 841318.9486099039
+INFO:root:Mean absolute percentage error: 81.00318841698483
+INFO:root:Explained variance score: 0.108807
+INFO:root:r2 score: 0.108596
+INFO:root:Mean Absolute Error: 520044.75245688256
+INFO:root:Overleaf: 5875108.6 & 0.109 & 0.109  & 707817573290.074 & 841318.949  & 520044.752  &  81.003
+INFO:root:REGRESJA - Expensive prediction
+INFO:root:Max error: 4849348.9
+INFO:root:Mean squared error: 2383678408689.1333
+INFO:root:Root mean squared error: 1543916.5808712377
+INFO:root:Mean absolute percentage error: 333.14284055573313
+INFO:root:Explained variance score: 0.087159
+INFO:root:r2 score: 0.082044
+INFO:root:Mean Absolute Error: 1205513.7557557558
+INFO:root:Overleaf: 4849348.9 & 0.082 & 0.087  & 2383678408689.134 & 1543916.581  & 1205513.756  &  333.143
