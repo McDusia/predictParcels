@@ -11,14 +11,14 @@ In order to do this, the classification of algorithms was also examined. The fol
 
 This thesis proved that it is possible to use automation in order to determine property prices. Moreover, choosing proper property attributes is crucial for better model performance.
 
-# Set up
+## Set up
 
 Python 3.6
 
 Please install all requirements with
 
 ```pip install -r requirements.txt```
-# Database import with docker [ linux, mac ]
+## Database import with docker [ linux, mac ]
 
 handy materials:
 
